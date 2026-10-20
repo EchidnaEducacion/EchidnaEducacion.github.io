@@ -121,7 +121,7 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 
 ### Comprobaciones con el equipo o con la placa
 
-- [ ] **Licencia del hardware**: no se permite su reproducción con fines comerciales; falta que el responsable del diseño electrónico elija una licencia compatible con eso. Hay cuatro incoherencias que resolver (web actual, certificación OSHWA, repositorio `recursos` y web nueva), detalladas en [`estructura.md`](estructura.md#pendiente).
+- [ ] **Licencia del hardware**: no se permite su reproducción con fines comerciales. La web publica de momento el texto provisional del responsable del diseño electrónico (versión adaptada de la CERN OHL-S v2 sin uso comercial); falta que el equipo decida la licencia definitiva. Las incoherencias que hay que resolver (adaptar la CERN OHL, web actual, certificación OSHWA y logo de la placa, repositorio `recursos`) están detalladas en [`estructura.md`](estructura.md#pendiente).
 - [ ] **Aclarar con Jorge Lobo la licencia de ¡La Tierra se mueve!**: los créditos dicen CC BY-SA y el pie de algunas páginas, CC BY-NC-SA 4.0.
 - [ ] **Número del certificado CE de la EchidnaBlack2**: falta en el apartado Certificaciones de Características técnicas. El que daba la web anterior (AT1813C601983126) es de otra placa.
 - [ ] **Revisar Modo sensores / Modo MkMk**: (1) el manual (2.2) no incluye el sensor de luz en la lista del modo sensores, aunque A3 se comparte con MkMk3; (2) la web anterior decía que en modo MkMk funcionan «todas las I/O», pero según su propio esquema A2 pasa a ser MkMk2. La página sigue los esquemas; confirmar con la placa.

@@ -5,12 +5,12 @@ template: pagina
 toc: true
 ---
 
-Todo lo que hace Echidna Educación es libre: puedes usarlo, estudiarlo, modificarlo y compartirlo. Cada parte del proyecto tiene su propia licencia, así que, si haces algo a partir de Echidna, mira cuál le corresponde.
+El software y los materiales de Echidna Educación son libres: puedes usarlos, estudiarlos, modificarlos y compartirlos. Los diseños de la placa también son abiertos, pero solo para uso no comercial. Cada parte del proyecto tiene su propia licencia, así que, si haces algo a partir de Echidna, mira cuál le corresponde.
 
 | Qué | Licencia |
 |---|---|
 | Materiales educativos (guías, manuales, situaciones de aprendizaje, diapositivas…) | CC BY-SA 4.0 |
-| Hardware (EchidnaBlack2 y sus diseños) | CERN OHL-S v2 |
+| Hardware (EchidnaBlack2 y sus diseños) | Versión adaptada de la CERN OHL-S v2, sin uso comercial |
 | Software (EchidnaML y sus componentes) | GPL-3.0, AGPL-3.0 y BSD-3-Clause, según el programa |
 
 ## Materiales educativos
@@ -30,16 +30,23 @@ Por ejemplo: «Basado en *Guía de inicio EchidnaML*, de Echidna Educación (ech
 
 ## Hardware
 
-La placa EchidnaBlack2 se publica con la licencia [CERN Open Hardware Licence – Strongly Reciprocal v2](https://ohwr.org/cern_ohl_s_v2.txt) (CERN OHL-S v2). Puedes estudiar los diseños, modificarlos, fabricar placas y venderlas, siempre que:
+Los diseños de la placa EchidnaBlack2 se publican con estas condiciones, provisionales mientras el equipo define la licencia definitiva. Parten de la [CERN Open Hardware Licence – Strongly Reciprocal v2](https://ohwr.org/cern_ohl_s_v2.txt) (CERN OHL-S v2).
 
-- publiques los diseños de tus cambios con la misma licencia;
-- y mantengas los avisos de autoría y de licencia de los originales.
+### Licencia y términos de uso
+
+Este diseño de hardware se distribuye bajo una versión adaptada de la CERN Open Hardware Licence – Strongly Reciprocal v2 (CERN OHL-S v2) con las siguientes condiciones especiales:
+
+1. **Uso no comercial**: se autoriza el estudio, copia, modificación y fabricación de placas exclusivamente para uso personal, educativo o de investigación sin fines lucrativos.
+2. **Prohibición comercial**: queda estrictamente prohibida la fabricación masiva, comercialización, reventa o distribución con ánimo de lucro de este hardware o de sus derivados sin el consentimiento previo por escrito del autor.
+3. **Reciprocidad**: cualquier modificación o diseño derivado debe mantener los avisos de autoría y compartirse bajo estas mismas condiciones.
+
+Si quieres fabricar o vender placas, [escríbenos](/contacta/) antes.
 
 ### El nombre y el logo
 
-La licencia cubre los diseños, pero no el nombre «Echidna» ni el logo de Echidna Educación. Si fabricas o vendes placas basadas en las nuestras, usa otro nombre y no las presentes como placas oficiales de Echidna. Para usar la marca, [escríbenos](/contacta/) antes.
+Estas condiciones cubren los diseños, pero no el nombre «Echidna» ni el logo de Echidna Educación. Si haces placas basadas en las nuestras, usa otro nombre y no las presentes como placas oficiales de Echidna. Para usar la marca, [escríbenos](/contacta/) antes.
 
-Puedes decir que tu placa está basada en la EchidnaBlack2 o que es compatible con ella: eso es reconocer la autoría, que es justo lo que pide la licencia.
+Puedes decir que tu placa está basada en la EchidnaBlack2 o que es compatible con ella: eso es reconocer la autoría, que es justo lo que piden las condiciones.
 
 ## Software
 

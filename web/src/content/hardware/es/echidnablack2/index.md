@@ -1,6 +1,6 @@
 ---
 title: EchidnaBlack2
-description: Placa educativa libre y autónoma, compatible con Arduino, con sensores y actuadores integrados para usar en el aula sin cables ni protoboard.
+description: Placa educativa abierta y autónoma, compatible con Arduino, con sensores y actuadores integrados para usar en el aula sin cables ni protoboard.
 kind: placa
 order: 2
 image: ./echidnablack2.png

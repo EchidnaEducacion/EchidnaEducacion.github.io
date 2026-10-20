@@ -12,7 +12,7 @@ cards:
     href: https://github.com/EchidnaEducacion
 ---
 
-Todo lo que hace Echidna Educación es libre: la placa, el software y los materiales se pueden usar, estudiar, modificar y compartir (mira las [licencias](/quienes-somos/licencias/)). El proyecto lo hace una comunidad de docentes, y cualquiera puede aportar, sepa o no de programación.
+El software y los materiales de Echidna Educación son libres, y los diseños de la placa, abiertos para uso no comercial: se pueden usar, estudiar, modificar y compartir (mira las [licencias](/quienes-somos/licencias/)). El proyecto lo hace una comunidad de docentes, y cualquiera puede aportar, sepa o no de programación.
 
 ## Formas de colaborar
 
