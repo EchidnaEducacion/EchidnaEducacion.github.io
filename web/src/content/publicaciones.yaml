@@ -1,6 +1,15 @@
 # Publicaciones sobre Echidna de otros medios, centros e instituciones (página 5.3).
 # El listado de trabajo, con las que faltan por confirmar y las descartadas, está en publicaciones.md (raíz).
 # date: AAAA-MM-DD, AAAA-MM o AAAA. importance: 1 a 5 (escala en publicaciones.md).
+- id: catedu-libro-echidna
+  title: Echidna
+  medium: CATEDU
+  date: "2026-10"
+  type: Curso
+  url: https://libros.catedu.es/books/echidna
+  importance: 4
+  summary: Libro del curso «Programa Arduino con Echidna» del Gobierno de Aragón, con la EchidnaBlack, mBlock, Echidna Scratch e inteligencia artificial.
+
 - id: hisparob-conociendo-echidna
   title: Conociendo Echidna
   medium: Hisparob

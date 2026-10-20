@@ -31,6 +31,7 @@ Listado de trabajo para la página 5.2 Publicaciones (`/quienes-somos/publicacio
 
 | Fecha | Medio | Título | Importancia | Tipo | Origen | Notas |
 |---|---|---|---|---|---|---|
+| 2026-10 | CATEDU | [Echidna (libro del curso «Programa Arduino con Echidna»)](https://libros.catedu.es/books/echidna) | 4 | Curso | Búsqueda | Fecha de la última actualización (octubre de 2026); creado en 2018 y revisado en 2024 y 2025 (Javier Quintana). Licencia CC BY-NC-SA |
 | 2026-04-28 | Hisparob | [Conociendo Echidna](https://robotica-educativa.hisparob.es/conociendo-echidna/) | 3 | Artículo | Búsqueda | Escrito por GM Technology (distribuidor): la EchidnaBlack2 con sus situaciones de aprendizaje |
 | 2026-04 | Junta de Andalucía (eAprendizaje) | [Ficha técnica EchidnaBlack2](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/04/L2P09-PLaca-componentes-IA.pdf) | 4 | Recurso educativo (REA) | Búsqueda | PDF de un REA con la placa y la IA. Ojo: da la licencia «CERN Open Hardware Licence -W- V2-M» con restricción comercial (ver el pendiente de la licencia del hardware en `estructura.md`) |
 | 2026-02-06 | Educación 3.0 | [Echidna educación: el proyecto que usa herramientas de código abierto para llevar la programación y la robótica al aula](https://www.educaciontrespuntocero.com/tecnologia/echidna-educacion/) | 5 | Artículo | Búsqueda | Revista educativa de ámbito nacional. La fecha puede ser la de actualización |
@@ -65,7 +66,6 @@ Listado de trabajo para la página 5.2 Publicaciones (`/quienes-somos/publicacio
 | 2022-03 | Buen Educador (blog) | [Estas son las cinco placas de programación más utilizadas en educación](https://buen-educador.blogspot.com/2022/03/estas-son-las-cinco-placas-de.html) | 1 | Echidna es una de las cinco; parece reproducir un artículo de otro medio, que habría que localizar |
 | 2021-07-01 | SlideShare (Jorge Lobo) | [Robótica educativa + IA con Echidna](https://www.slideshare.net/slideshow/20210701-robtica-educativa-ia-con-echidna-jorge-lobo/249578716) | 2 | Presentación de un miembro de Echidna; decidir si las charlas propias entran |
 | 2017-10-20 | Código 21 (Gobierno de Navarra) | «EchidnaShield, programación gráfica con Arduino» | 4 | El [enlace](https://codigo21.educacion.navarra.es/2017/10/20/echidnashield-programacion-grafica-con-arduino/) da error 404; buscar si hay copia archivada |
-| ? | CATEDU | [Echidna (libro del curso «Programa Arduino con Echidna»)](https://libros.catedu.es/books/echidna) | 4 | Curso completo sobre Echidna; falta la fecha |
 
 ## Descartadas
 
