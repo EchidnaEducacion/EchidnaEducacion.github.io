@@ -3,7 +3,7 @@
 // por grupo y una tarjeta con miniatura por recurso. Los recursos son enlaces, casi siempre externos;
 // los que aún no tienen url salen como «Próximamente», atenuados y sin enlace.
 import { Image } from 'astro:assets';
-import { url } from '../lib/url';
+import { pestana, url } from '../lib/url';
 import { anclaEntorno, recursosPorEntorno, sitio } from '../lib/recursos';
 
 interface Props {
@@ -12,8 +12,6 @@ interface Props {
 const entornos = await recursosPorEntorno(Astro.props.publico);
 // Las rutas internas llevan base; las URL externas, no
 const enlace = (href: string) => (href.startsWith('/') ? url(href.slice(1)) : href);
-// Los recursos externos se abren en una pestaña nueva
-const pestana = (href: string) => (href.startsWith('/') ? {} : { target: '_blank', rel: 'noopener' });
 // Las situaciones de aprendizaje (alumnado) y los otros recursos (docentes) van cuatro por fila en ordenador; el resto, tres
 const cuatroPorFila = ['Situaciones de aprendizaje', 'Otros recursos'];
 const columnas = (entorno: string, grupo?: string) => (cuatroPorFila.includes(grupo || entorno) ? 4 : 3);

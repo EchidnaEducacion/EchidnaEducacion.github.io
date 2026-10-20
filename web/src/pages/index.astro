@@ -5,7 +5,7 @@
 import { Image } from 'astro:assets';
 import { getCollection, getEntries, getEntry } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { url } from '../lib/url';
+import { pestana, url } from '../lib/url';
 import { entradasPublicadas, fechaLarga, rutaEntrada } from '../lib/blog';
 import { sitio } from '../lib/recursos';
 
@@ -136,7 +136,7 @@ const ultimas = await Promise.all(
                 <span class="chip">{r.type}</span>
                 {r.level && <span class="chip chip--outline">{r.level}</span>}
               </p>
-              <h3 class="card__title"><a class="card__link" href={enlace(r.url!)}>{r.title}</a></h3>
+              <h3 class="card__title"><a class="card__link" href={enlace(r.url!)} {...pestana(r.url!)}>{r.title}</a></h3>
               <p class="card__text">{r.description}</p>
               {sitio(r.url) && <p class="recursos__sitio">{sitio(r.url)} ↗</p>}
             </div>
@@ -184,7 +184,7 @@ const ultimas = await Promise.all(
           <p>Los diseños de la placa, el software y los materiales están en GitHub. Imprime las piezas en 3D, adapta los materiales a tu clase y comparte tus propuestas.</p>
         </div>
         <div class="btn-row">
-          <a class="btn" href="https://github.com/EchidnaEducacion"><svg aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
+          <a class="btn" href="https://github.com/EchidnaEducacion" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github"/></svg> GitHub</a>
           <a class="btn btn--ghost" href={url('docentes/colabora/')}>Cómo colaborar</a>
         </div>
       </div>

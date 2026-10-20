@@ -3,3 +3,6 @@
 const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 export const url = (path = '') => base + path.replace(/^\//, '');
+
+// Los enlaces externos se abren en una pestaña nueva; las rutas internas (/…), en la misma
+export const pestana = (href: string) => (href.startsWith('/') ? {} : { target: '_blank', rel: 'noopener' });

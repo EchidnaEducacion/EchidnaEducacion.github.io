@@ -33,7 +33,7 @@ const { entradas, pagina, total, todas, autor } = Astro.props;
     <div>
       <strong>{autor.data.role}</strong>
       <p>{autor.data.description}</p>
-      {autor.data.url && <p><a href={autor.data.url}>{autor.data.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a></p>}
+      {autor.data.url && <p><a href={autor.data.url} target="_blank" rel="noopener">{autor.data.url.replace(/^https?:\/\//, '').replace(/\/$/, '')}</a></p>}
     </div>
   </div>
 </ListadoBlog>

@@ -2,7 +2,7 @@
 // Tarjetas de enlace de la página genérica (campo `cards`): título, texto y, si la hay, imagen
 import type { ImageMetadata } from 'astro';
 import { Image } from 'astro:assets';
-import { url } from '../lib/url';
+import { pestana, url } from '../lib/url';
 
 interface Props {
   cards: { title: string; text: string; href: string; image?: ImageMetadata; group?: string }[];
@@ -22,8 +22,6 @@ for (const c of cards.filter((c) => c.group)) {
 const TituloTarjeta = grupos.some((g) => g.titulo) ? 'h3' : 'h2';
 // Las rutas internas llevan base; las URL externas, no
 const enlace = (href: string) => (href.startsWith('/') ? url(href.slice(1)) : href);
-// Los enlaces externos se abren en una pestaña nueva
-const pestana = (href: string) => (href.startsWith('/') ? {} : { target: '_blank', rel: 'noopener' });
 ---
 {grupos.filter((g) => g.cards.length > 0).map((g) => (
   <>

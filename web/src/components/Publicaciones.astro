@@ -17,7 +17,7 @@ const grupos = await publicacionesPorAño(Astro.props.minimo);
         <li class="card">
           <div class="card__body">
             <span class="chip">{p.medium} · {p.type}</span>
-            <h3 class="card__title"><a class="card__link" href={p.url}>{p.title}</a></h3>
+            <h3 class="card__title"><a class="card__link" href={p.url} target="_blank" rel="noopener">{p.title}</a></h3>
             <p class="card__text">{p.summary}</p>
             <p class="publicaciones__fecha"><time datetime={p.date}>{fechaLegible(p.date)}</time></p>
           </div>
