@@ -30,8 +30,8 @@ bun run dev      # http://localhost:4321/
 | 4 | Ficha de hardware | `src/layouts/Ficha.astro` (plantilla real; maqueta borrada) | `/ecosistema/echidnablack2/`, `/ecosistema/echidnablack2/leds/` |
 | 5 | Página genérica | `src/layouts/Pagina.astro` (plantilla real; maqueta borrada) | `/quienes-somos/` |
 | 6 | Contacto | `src/pages/maquetas/contacto.astro` | `/contacta/` |
-| 7 | Entrada de blog | `src/pages/maquetas/entrada-blog.astro` | `/AAAA/MM/slug/` |
-| 8 | Listado / taxonomía | `src/pages/maquetas/listado.astro` | `/blog/`, categorías, etiquetas, autores |
+| 7 | Entrada de blog | `src/layouts/Entrada.astro` (plantilla real; maqueta borrada) | `/AAAA/MM/slug/` |
+| 8 | Listado / taxonomía | `src/components/ListadoBlog.astro` (plantilla real; maqueta borrada) | `/blog/`, categorías, etiquetas, autores, años |
 | 9 | Error 404 | `src/pages/404.astro` (plantilla real; no usa colección) | cualquier URL que no exista |
 | + | Componentes de contenido (MDX) | `src/pages/maquetas/componentes.astro` | Aviso, Descarga, Vídeo, Galería, Tarjeta |
 
@@ -66,14 +66,17 @@ web/
 │   │   ├── Base.astro       # <head>, iconos, cabecera, pie y scripts
 │   │   ├── Pagina.astro     # plantilla «Página genérica»
 │   │   ├── Indice.astro     # plantilla «Índice de sección»: intro + tarjetas de las hijas
-│   │   └── Ficha.astro      # plantilla «Ficha de hardware»
-│   ├── components/          # Cabecera (menú activo según `section`), Pie, Iconos (sprite SVG)
-│   ├── lib/                 # url(): rutas con `base`; paginas.ts y hardware.ts: URL de cada página o ficha; rss.ts: el RSS del blog
+│   │   ├── Ficha.astro      # plantilla «Ficha de hardware»
+│   │   └── Entrada.astro    # plantilla «Entrada de blog»
+│   ├── components/          # Cabecera (menú activo según `section`), Pie, Iconos (sprite SVG); ListadoBlog y BlogLateral, del blog
+│   ├── lib/                 # url(): rutas con `base`; paginas.ts y hardware.ts: URL de cada página o ficha; blog.ts: rutas y paginación del blog; rss.ts: el RSS
 │   └── pages/
 │       ├── [...slug].astro  # genera las páginas de la colección `paginas`
 │       ├── ecosistema/[...slug].astro # genera las fichas de la colección `hardware`
 │       ├── index.astro      # portada: textos fijos; placa, materiales destacados y últimas entradas, de sus colecciones
 │       ├── 404.astro
+│       ├── [anio]/[mes]/[entrada].astro # entradas del blog en /AAAA/MM/slug/
+│       ├── blog/, category/, tag/, author/, [anio]/ # listados del blog, paginados en …/page/2/
 │       ├── rss.xml.ts       # RSS del blog en /rss.xml; feed/index.html.ts, la misma copia en /feed/
 │       └── maquetas/        # index.astro: «Propuesta de plantillas»; el resto, maquetas con contenido escrito a mano
 └── public/
@@ -119,7 +122,7 @@ Páginas hechas:
 - **Recursos docentes** (`docentes.md`, con `resources: docentes`): las mismas tarjetas de `recursos.yaml`, con un título por material; los recursos sin `url` salen «Próximamente».
 - **Ecosistema**: `ecosistema.md` y `ecosistema/echidnaml.md` son índices de sección, con una tarjeta por cada página hija que existe. Las hijas de EchidnaML están en `ecosistema/echidnaml/` (cada una con su carpeta de imágenes): Descarga (la versión va escrita en el texto y los enlaces, y se actualiza a mano con cada versión publicada en `echidnaml-releases`), Conectar EchidnaML y EchidnaBlack, Empezar con EchidnaBlocks, Empezar con LearningML e Instalar StandardFirmata (`listed: false`).
 - **EchidnaBlack2**: Características técnicas (`ecosistema/echidnablack2/caracteristicas-tecnicas.md`, que cuelga de una ficha de hardware: las migas buscan en las dos colecciones). Complementos (`ecosistema/echidnablack2/complementos.md`) es un índice de sección cuyas tarjetas son las fichas de `hardware/es/echidnablack2/complementos/` (con `kind: complemento`); las migas de esas fichas enlazan a él.
-- **Blog**: la entrada Rotógrafo (`blog/es/2026/05/rotografo/`), con la plantilla `layouts/Entrada.astro` y la ruta `pages/[anio]/[mes]/[entrada].astro`. La entrada lleva un lateral con todas las categorías del blog (con su número de entradas; las de la entrada, destacadas) y las 5 entradas más recientes (no sale mientras solo haya una). El listado `/blog/` (`pages/blog/index.astro`) es una versión básica, parecida a la de la web anterior: las entradas en dos columnas de tarjetas (miniatura en proporción 2:1, título, autor, fecha, categorías y extracto) y el mismo lateral que las entradas (`components/BlogLateral.astro`); aún sin páginas de categoría ni paginación, así que las categorías enlazan a `/blog/`. El formato está pendiente de que lo revise el equipo.
+- **Blog**: 61 entradas (las importadas de WordPress y las nuevas), en `src/content/blog/es/AAAA/MM/slug/` (cada una con sus imágenes), con la plantilla `layouts/Entrada.astro` y la ruta `pages/[anio]/[mes]/[entrada].astro`. Los listados usan `components/ListadoBlog.astro`: tarjetas en dos columnas (miniatura 2:1, título, autor, fecha, categorías y extracto), 12 por página (`POR_PAGINA` en `lib/blog.ts`), con las páginas siguientes en `…/page/2/` como en WordPress. Hay listado general (`/blog/`), por categoría (`/category/…/`, con subcategorías; la madre incluye las entradas de sus hijas), por etiqueta (`/tag/…/`), por autor (`/author/…/`, con su ficha) y por año (`/AAAA/`). Entradas y listados comparten el lateral `components/BlogLateral.astro`: categorías con su número de entradas (las de la entrada, destacadas), las 5 últimas entradas, las etiquetas y el archivo por años. El RSS está en `/rss.xml` y `/feed/`. El formato lo aprobó el equipo (ver «Decisiones tomadas» del README); las entradas nuevas se escriben como explica [`escribir-blog.md`](../escribir-blog.md).
 - **Fichas de hardware**: EchidnaBlack2, Pulsadores, Joystick, Sensor de luz LDR, Acelerómetro, Micrófono, Sensor de temperatura, LED RGB, LEDs ROG, Audio y Conexiones MkMk. Con ellas están todos los componentes de la placa. Y los cuatro complementos: Servomotor de posición, Servomotor de rotación continua, Sensor de distancia de infrarrojos y Sensor de humedad del suelo.
 
 ## Cómo migrar una página
