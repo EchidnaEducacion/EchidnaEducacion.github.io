@@ -184,3 +184,13 @@
   url: /docentes/comprobar-placa/
   image: ./recursos/docentes-comprobar-placa.svg
   order: 4
+
+- id: docentes-catedu-libro-echidna
+  title: Curso de CATEDU
+  description: Libro del curso «Programa Arduino con Echidna» del Gobierno de Aragón, con la EchidnaBlack, mBlock, Echidna Scratch e inteligencia artificial.
+  audience: docentes
+  environment: Comunidad
+  type: Curso
+  url: https://libros.catedu.es/books/echidna
+  image: ./recursos/docentes-catedu.svg
+  order: 1

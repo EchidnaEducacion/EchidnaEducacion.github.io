@@ -9,7 +9,7 @@ const ordenEntornos = [
   'EchidnaML', 'Snap!', 'Arduino IDE',
   // Recursos docentes: un título por material
   'Proyectos de inicio con EchidnaML', 'Situaciones de aprendizaje', 'Proyectos de inicio con Arduino IDE',
-  'Otros recursos',
+  'Otros recursos', 'Comunidad',
 ];
 const ordenGrupos = ['Proyectos y Manual', 'Proyectos', 'Situaciones de aprendizaje', 'Guías'];
 const posicion = (lista: string[], valor: string) => (lista.includes(valor) ? lista.indexOf(valor) : lista.length);

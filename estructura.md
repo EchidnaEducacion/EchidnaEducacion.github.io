@@ -214,7 +214,7 @@ Igual en todas las páginas. No repite el menú principal: lleva a las páginas 
 
 - [x] Tabla de redirecciones de las URL de WordPress a las nuevas: [`redirecciones.md`](redirecciones.md). Todas las páginas tienen destino; quedan detalles en su sección «Pendiente».
 - [x] Contenido sin sitio: componentes, páginas de apoyo y complementos cuelgan de 1.2 EchidnaBlack2; talleres pasan a categoría del blog; la página de comunidad desaparece; publicaciones pasa a 5.2.
-- [ ] Ubicar los cursos de la comunidad (CATEDU, Programo Ergo Sum) en `/alumnado/` o `/docentes/`, según a quién vayan dirigidos. No tendrán página ni apartado propio: se enlazarán desde los materiales con los que tengan relación.
+- [x] Ubicar los cursos de la comunidad (CATEDU, Programo Ergo Sum). No tienen página ni menú propio, pero el curso de CATEDU, que no acompaña a un material concreto, va en un apartado «Comunidad» al final de Recursos docentes (octubre de 2026). Queda por decidir el de Programo Ergo Sum.
 - [x] Política de privacidad y licencias: enlazadas en el pie, fuera del menú, con sus URL actuales (`/politica-privacidad/` y `/quienes-somos/licencias/`), así que no necesitan redirección.
 - [x] «Entornos compatibles» ya no se repite: queda en 1.4 y Materiales alumnado se divide por entorno (después simplificado a una sola página con títulos por entorno).
 - [x] Apartados de EchidnaML en alumnado: «Proyectos de inicio» son ejemplos sencillos que el alumnado hace solo (guía externa); «Situaciones de aprendizaje» son las actividades curriculares (REA); «Proyectos» son proyectos al estilo de la guía rápida. Las situaciones de aprendizaje se quedan en alumnado, y su parte para el docente (guía, evaluación) se enlaza desde su grupo en Recursos docentes.
