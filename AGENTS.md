@@ -17,7 +17,7 @@ Planificación e implementación de la nueva web de [echidna.es](https://echidna
 | [`modelo-contenido.md`](modelo-contenido.md) | Colecciones (`paginas`, `hardware`, `recursos`, `blog`) y sus campos |
 | [`escribir-blog.md`](escribir-blog.md) | Cómo escribir y publicar una entrada nueva del blog (rama, script `nueva-entrada`, *pull request*) |
 | [`diseno.md`](diseno.md) | Hoja de ruta para personalizar el diseño con la diseñadora (Figma, guía de estilo, panel, flujo de propuestas) |
-| [`publicaciones.md`](publicaciones.md) | Listado de trabajo de publicaciones sobre Echidna para la página 5.3 |
+| [`publicaciones.md`](publicaciones.md) | Listado de trabajo de publicaciones sobre Echidna para la página 5.2 |
 | [`redirecciones.md`](redirecciones.md) | Correspondencia entre las URL de WordPress y las nuevas |
 | [`traslado-repo.md`](traslado-repo.md) | Plan para servir la web en la raíz desde el repo `EchidnaEducacion.github.io` |
 | [`analisis-previo.md`](analisis-previo.md) | Estudio de viabilidad inicial; referencia histórica, no se actualiza |
@@ -46,7 +46,7 @@ Planificación e implementación de la nueva web de [echidna.es](https://echidna
 - Astro con Bun: `cd web && bun install && bun run dev` (<http://localhost:4321/>). Sin Bun, `npm install --no-package-lock` y `npx astro build`.
 - Los enlaces internos se escriben con el helper `url()` de `web/src/lib/url.ts`, que antepone el `base` (hoy `/`, porque la web está en la raíz).
 - Claves de sección (`section` del layout y `data-section`, que fijan el color): `ecosistema`, `alumnado`, `docentes`, `blog` y `nosotros`.
-- Menú: Ecosistema, Alumnado, Docentes y Blog son enlaces directos; solo Quiénes somos es desplegable. «Alumnado» y «Docentes» son los rótulos cortos de Materiales alumnado y Recursos docentes, que mantienen el nombre completo en el resto de la web. «Quiero una» no va en el menú.
+- Menú: Ecosistema, Alumnado, Docentes y Blog son enlaces directos; solo Sobre el proyecto es desplegable (Quiénes somos, Publicaciones y Contacta). «Alumnado» y «Docentes» son los rótulos cortos de Materiales alumnado y Recursos docentes, que mantienen el nombre completo en el resto de la web. «Quiero una» no va en el menú.
 - Los materiales del alumnado (y, en principio, los recursos docentes) son **enlaces externos**: la web solo los describe con tarjetas de la colección `recursos` (`web/src/content/recursos.yaml`). Las situaciones de aprendizaje propias están en el repo `EchidnaEducacion/situaciones-aprendizaje` (GitHub Pages).
 - Las **maquetas** (contenido escrito a mano) están en `web/src/pages/maquetas/` y se publican en `/maquetas/`. Se borran cuando la plantilla real alimentada por su colección las iguala.
 - El **contenido** va en `web/src/content/<colección>/es/`, y la ruta del fichero es la URL (`paginas/es/politica-privacidad.md` → `/politica-privacidad/`). En el Markdown, los enlaces internos se escriben desde la raíz (`/contacta/`).

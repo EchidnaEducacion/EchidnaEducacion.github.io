@@ -56,8 +56,8 @@ web/
 │   ├── assets/autores/      # fotos de los autores (cuadradas y sin EXIF)
 │   ├── content.config.ts    # colecciones y su esquema (ver modelo-contenido.md)
 │   ├── content/paginas/es/  # páginas en Markdown: la ruta del fichero es la URL
-│   ├── content/autores.yaml # autores del blog y equipo de Sobre el proyecto
-│   ├── content/publicaciones.yaml # publicaciones sobre Echidna (página 5.3)
+│   ├── content/autores.yaml # autores del blog y equipo de Quiénes somos
+│   ├── content/publicaciones.yaml # publicaciones sobre Echidna (página 5.2)
 │   ├── content/categorias.yaml # categorías del blog
 │   ├── content/recursos.yaml # materiales de alumnado (enlaces externos); miniaturas en content/recursos/
 │   ├── content/blog/es/     # entradas del blog: AAAA/MM/slug/index.md → /AAAA/MM/slug/
@@ -114,7 +114,7 @@ El contenido está en `src/content/`, validado por el esquema de `src/content.co
 
 Páginas hechas:
 
-- **Quiénes somos y pie**: Política de privacidad, Contacta, Sobre el proyecto (`quienes-somos.md`, con las fichas del equipo que salen de `src/content/autores.yaml` gracias al campo `team`) Licencias (`quienes-somos/licencias.md`) y Publicaciones (`quienes-somos/publicaciones.md`, con `publications: 3`: las tarjetas salen de `src/content/publicaciones.yaml`, agrupadas por año).
+- **Sobre el proyecto y pie**: Política de privacidad, Contacta, Quiénes somos (`quienes-somos.md`, con las fichas del equipo que salen de `src/content/autores.yaml` gracias al campo `team`) Licencias (`quienes-somos/licencias.md`) y Publicaciones (`quienes-somos/publicaciones.md`, con `publications: 3`: las tarjetas salen de `src/content/publicaciones.yaml`, agrupadas por año).
 - **Materiales alumnado** (`alumnado.md`, con `resources: alumnado`): las tarjetas salen de `src/content/recursos.yaml` (miniaturas en `src/content/recursos/`), agrupadas por entorno y grupo con `components/Recursos.astro`.
 - **Recursos docentes** (`docentes.md`, con `resources: docentes`): las mismas tarjetas de `recursos.yaml`, con un título por material; los recursos sin `url` salen «Próximamente».
 - **Ecosistema**: `ecosistema.md` y `ecosistema/echidnaml.md` son índices de sección, con una tarjeta por cada página hija que existe. Las hijas de EchidnaML están en `ecosistema/echidnaml/` (cada una con su carpeta de imágenes): Descarga (la versión va escrita en el texto y los enlaces, y se actualiza a mano con cada versión publicada en `echidnaml-releases`), Conectar EchidnaML y EchidnaBlack, Empezar con EchidnaBlocks, Empezar con LearningML e Instalar StandardFirmata (`listed: false`).

@@ -21,12 +21,12 @@ const activo = (s: string) => (s === section ? ' is-active' : '');
         <li><a class={"nav__link" + activo("blog")} href={url("blog/")}>Blog</a></li>
         <li class="nav__item--has-sub">
           <button class={"nav__link" + activo("nosotros")} type="button" aria-expanded="false" aria-controls="sub-nosotros">
-            Quiénes somos <svg class="chev" aria-hidden="true"><use href="#i-chevron"/></svg>
+            Sobre el proyecto <svg class="chev" aria-hidden="true"><use href="#i-chevron"/></svg>
           </button>
           <ul class="subnav" id="sub-nosotros">
-            <li><a href={url("quienes-somos/")}><strong>Sobre el proyecto</strong><span>Quiénes somos y qué hacemos</span></a></li>
-            <li><a href={url("contacta/")}><strong>Contacta</strong><span>Escríbenos</span></a></li>
+            <li><a href={url("quienes-somos/")}><strong>Quiénes somos</strong><span>Historia, objetivos y equipo</span></a></li>
             <li><a href={url("quienes-somos/publicaciones/")}><strong>Publicaciones</strong><span>Echidna en los medios</span></a></li>
+            <li><a href={url("contacta/")}><strong>Contacta</strong><span>Escríbenos</span></a></li>
           </ul>
         </li>
       </ul>
@@ -63,11 +63,11 @@ const activo = (s: string) => (s === section ? ' is-active' : '');
     <li><a href={url("alumnado/")}><span class="dot" style="--dot:var(--c-alumnado)"></span>Alumnado</a></li>
     <li><a href={url("docentes/")}><span class="dot" style="--dot:var(--c-docentes)"></span>Docentes</a></li>
     <li><a href={url("blog/")}><span class="dot" style="--dot:var(--c-blog)"></span>Blog</a></li>
-    <li><a href={url("quienes-somos/")}><span class="dot" style="--dot:var(--c-nosotros)"></span>Quiénes somos</a>
+    <li><a href={url("quienes-somos/")}><span class="dot" style="--dot:var(--c-nosotros)"></span>Sobre el proyecto</a>
       <ul>
-        <li><a href={url("quienes-somos/")}>Sobre el proyecto</a></li>
-        <li><a href={url("contacta/")}>Contacta</a></li>
+        <li><a href={url("quienes-somos/")}>Quiénes somos</a></li>
         <li><a href={url("quienes-somos/publicaciones/")}>Publicaciones</a></li>
+        <li><a href={url("contacta/")}>Contacta</a></li>
       </ul>
     </li>
   </ul>

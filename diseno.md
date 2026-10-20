@@ -102,7 +102,7 @@ En paralelo a las fases 0 a 2:
 
 - **Anchos**: la página tiene como máximo 1200 px y el texto, unos 72 caracteres por línea; los márgenes laterales van de 16 px en móvil a 32 px en escritorio.
 - **Móvil primero**: todo tiene que funcionar a 390 px de ancho, y el menú se pliega por debajo de 1100 px.
-- **Color por sección**: Ecosistema, Alumnado, Docentes, Blog y Quiénes somos tienen cada una su color de acento, que ayuda a saber dónde se está.
+- **Color por sección**: Ecosistema, Alumnado, Docentes, Blog y Sobre el proyecto tienen cada una su color de acento, que ayuda a saber dónde se está.
 - **Modo claro y oscuro**: cada color necesita su pareja para el modo oscuro.
 - **El contenido cambia**: los textos y las imágenes salen de ficheros Markdown, así que cambian de longitud y de proporción. Hay que diseñar pensando en títulos largos y cortos, y en tarjetas con y sin imagen.
 - **Accesibilidad**: contraste AA, texto de al menos 16 px y foco visible al navegar con teclado.

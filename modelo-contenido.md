@@ -37,7 +37,7 @@ Plantillas: Página genérica, Índice de sección, Contacto y Portada.
 | `order` | número | No (0) | Orden de la tarjeta en el índice de la sección |
 | `listed` | sí/no | No (sí) | Con `false`, la página no sale en el índice de su sección, ni como tarjeta ni en su índice lateral; se llega a ella por enlaces (p. ej. Instalar StandardFirmata, enlazada desde Conectar EchidnaML y EchidnaBlack) |
 | `toc` | sí/no | No (no) | Índice lateral «En esta página» con los apartados (`##`). Solo para páginas largas: en las cortas quita ancho al texto y no aporta. En los índices de sección añade además, arriba, los enlaces a sus páginas hijas, para que se vean sin bajar hasta las tarjetas (p. ej. Descarga en EchidnaML) |
-| `team` | lista de identificadores de la lista de autores | No | Fichas del equipo al final del texto, en ese orden (en Sobre el proyecto) |
+| `team` | lista de identificadores de la lista de autores | No | Fichas del equipo al final del texto, en ese orden (en Quiénes somos) |
 | `publications` | número del 1 al 5 | No | Lista de la colección `publicaciones` al final del texto, con esa importancia mínima, agrupada por año (en Publicaciones, `3`) |
 | `resources` | `alumnado` · `docentes` | No | Lista de la colección `recursos` de ese público al final del texto, por entorno (o material) y grupo. Con `toc`, va en la columna del texto (Materiales alumnado); sin lateral, a todo el ancho, con tres tarjetas por fila (Recursos docentes) |
 | `cards` | lista de `{ title, text, href, image?, group? }` | No | Tarjetas de enlace al final del texto. Con `image`, llevan imagen y, si la página no tiene lateral, salen a todo el ancho, tres por fila (Modelos e impresión 3D). En los índices, salen junto a las tarjetas de las hijas y `group` las pone bajo ese título (Placas anteriores en Ecosistema); en la plantilla `pagina`, las que llevan `group` salen bajo ese título, después de las de `cardsTitle` (Proyectos con IA en las diapositivas). `href` es una URL externa o una ruta interna sin `base` |
@@ -165,7 +165,7 @@ Las etiquetas forman un **vocabulario cerrado**: solo se usan las de esta lista,
 
 Dos ficheros de datos pequeños que usan las plantillas de listado para generar `/author/…/` y `/category/…/`.
 
-**Autores** (`web/src/content/autores.yaml`, colección `autores`, ya implementada). También forman el equipo de Sobre el proyecto (campo `team` de `paginas`).
+**Autores** (`web/src/content/autores.yaml`, colección `autores`, ya implementada). También forman el equipo de Quiénes somos (campo `team` de `paginas`).
 
 | Campo | Tipo | Obligatorio | Para qué |
 |---|---|---|---|
@@ -196,7 +196,7 @@ De momento están los cuatro del equipo, por orden alfabético de apellido: `jor
 
 ## Publicaciones
 
-Lista de lo publicado sobre Echidna por otros medios, centros e instituciones (`web/src/content/publicaciones.yaml`, colección `publicaciones`). La página 5.3 muestra las que tienen la importancia mínima que indica su campo `publications`, de la más reciente a la más antigua y agrupadas por año. El listado de trabajo, con la escala de importancia, las que faltan por confirmar y las descartadas, está en [`publicaciones.md`](publicaciones.md).
+Lista de lo publicado sobre Echidna por otros medios, centros e instituciones (`web/src/content/publicaciones.yaml`, colección `publicaciones`). La página 5.2 muestra las que tienen la importancia mínima que indica su campo `publications`, de la más reciente a la más antigua y agrupadas por año. El listado de trabajo, con la escala de importancia, las que faltan por confirmar y las descartadas, está en [`publicaciones.md`](publicaciones.md).
 
 | Campo | Tipo | Obligatorio | Para qué |
 |---|---|---|---|

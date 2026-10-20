@@ -50,7 +50,7 @@ const paginas = defineCollection({
     }),
 });
 
-// Autores del blog, que forman también el equipo de «Sobre el proyecto».
+// Autores del blog, que forman también el equipo de «Quiénes somos».
 // Una lista YAML: el id de cada autor es el de su URL /author/<id>/.
 const autores = defineCollection({
   loader: file('./src/content/autores.yaml'),

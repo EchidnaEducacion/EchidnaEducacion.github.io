@@ -73,10 +73,10 @@ Estructura propuesta para la nueva web de Echidna. Las **URL** y las **plantilla
 │       ├── 3.8 Cómo colaborar
 │       └── 3.9 Comprobar la placa
 ├── 4. Blog
-└── 5. Quiénes somos                        (menú desplegable)
-    ├── 5.1 Sobre el Proyecto Echidna
-    ├── 5.2 Contacto
-    └── 5.3 Publicaciones
+└── 5. Sobre el proyecto                    (menú desplegable)
+    ├── 5.1 Quiénes somos
+    ├── 5.2 Publicaciones
+    └── 5.3 Contacto
 
 Fuera del menú (enlazada desde 1.2 y el pie)
 └── Quiero una
@@ -147,10 +147,10 @@ Pie (fuera del menú, en todas las páginas)
 | 2 | Archivo por años | `/AAAA/` (p. ej. `/2024/`), enlazado desde la tarjeta «Archivo» del lateral del blog | Listado / taxonomía |
 | 2 | Talleres (categoría) | `/category/talleres/` | Listado / taxonomía |
 | 2 | RSS del blog | `/rss.xml` y copia en `/feed/` | — (generado por Astro) |
-| 1 | Quiénes somos | (menú desplegable, sin página propia) | — |
-| 2 | 5.1 Sobre el Proyecto Echidna | `/quienes-somos/` | Página genérica |
-| 2 | 5.2 Contacto | `/contacta/` | Contacto |
-| 2 | 5.3 Publicaciones | `/quienes-somos/publicaciones/` | Página genérica |
+| 1 | Sobre el proyecto | (menú desplegable, sin página propia) | — |
+| 2 | 5.1 Quiénes somos | `/quienes-somos/` | Página genérica |
+| 2 | 5.2 Publicaciones | `/quienes-somos/publicaciones/` | Página genérica |
+| 2 | 5.3 Contacto | `/contacta/` | Contacto |
 | Fuera del menú | Quiero una | `/quiero-una/` | Página genérica (dónde comprar la EchidnaBlack2, en Leal Educa, y qué hace falta para empezar) |
 | Pie | Política de privacidad | `/politica-privacidad/` | Página genérica |
 | Pie | Licencias | `/quienes-somos/licencias/` | Página genérica |
@@ -180,7 +180,7 @@ El manual y las guías de inicio **los publica su propio repositorio** con GitHu
 
 ### Criterio de navegación
 
-- **Desplegable solo si la sección no tiene página propia**: hoy solo Quiénes somos. Si una sección tiene página con contenido (Ecosistema es un resumen de todo lo que hay), un desplegable invita a saltársela; además, en pantallas táctiles tocar el elemento padre abre el submenú en vez de la página.
+- **Desplegable solo si la sección no tiene página propia**: hoy solo Sobre el proyecto. Si una sección tiene página con contenido (Ecosistema es un resumen de todo lo que hay), un desplegable invita a saltársela; además, en pantallas táctiles tocar el elemento padre abre el submenú en vez de la página.
 - **Enlace directo** para Ecosistema, Materiales alumnado, Recursos docentes y Blog: su página es la puerta de entrada, con el resumen y tarjetas a las subpáginas.
 - **Rótulos cortos**: en el menú, Materiales alumnado y Recursos docentes aparecen como «Alumnado» y «Docentes». El título de la página, las migas de pan y el pie usan el nombre completo.
 - Con 5 elementos, el menú cabe sin desplegables. En el móvil, menú de hamburguesa con lista simple.
@@ -193,7 +193,7 @@ Igual en todas las páginas. No repite el menú principal: lleva a las páginas 
 
 | Ecosistema | En el aula | Echidna |
 |---|---|---|
-| EchidnaML (descarga) — `/ecosistema/echidnaml/descarga/` | Materiales alumnado — `/alumnado/` | Sobre el proyecto — `/quienes-somos/` |
+| EchidnaML (descarga) — `/ecosistema/echidnaml/descarga/` | Materiales alumnado — `/alumnado/` | Quiénes somos — `/quienes-somos/` |
 | EchidnaBlack2 — `/ecosistema/echidnablack2/` | Recursos docentes — `/docentes/` | Publicaciones — `/quienes-somos/publicaciones/` |
 | Manual — `/manual/` | Guía de inicio EchidnaML — `/GuiaInicioEchidnaML/` | Cómo colaborar — `/docentes/colabora/` |
 | Comprobar la placa — `/docentes/comprobar-placa/` | Blog — `/blog/` | Quiero una — `/quiero-una/` · Contacta — `/contacta/` |
@@ -213,7 +213,7 @@ Igual en todas las páginas. No repite el menú principal: lleva a las páginas 
 ## Pendiente
 
 - [x] Tabla de redirecciones de las URL de WordPress a las nuevas: [`redirecciones.md`](redirecciones.md). Todas las páginas tienen destino; quedan detalles en su sección «Pendiente».
-- [x] Contenido sin sitio: componentes, páginas de apoyo y complementos cuelgan de 1.2 EchidnaBlack2; talleres pasan a categoría del blog; la página de comunidad desaparece; publicaciones pasa a 5.3.
+- [x] Contenido sin sitio: componentes, páginas de apoyo y complementos cuelgan de 1.2 EchidnaBlack2; talleres pasan a categoría del blog; la página de comunidad desaparece; publicaciones pasa a 5.2.
 - [ ] Ubicar los cursos de la comunidad (CATEDU, Programo Ergo Sum) en `/alumnado/` o `/docentes/`, según a quién vayan dirigidos. No tendrán página ni apartado propio: se enlazarán desde los materiales con los que tengan relación.
 - [x] Política de privacidad y licencias: enlazadas en el pie, fuera del menú, con sus URL actuales (`/politica-privacidad/` y `/quienes-somos/licencias/`), así que no necesitan redirección.
 - [x] «Entornos compatibles» ya no se repite: queda en 1.4 y Materiales alumnado se divide por entorno (después simplificado a una sola página con títulos por entorno).
@@ -233,13 +233,13 @@ Igual en todas las páginas. No repite el menú principal: lleva a las páginas 
   - **Certificación OSHWA**: la web actual dice que la EchidnaBlack2 tiene la certificación Open Source Hardware de OSHWA (UID ES000010). Esa certificación exige una licencia abierta que permita el uso comercial, así que choca con la restricción. Hay que decidir si se mantiene la certificación (y entonces no cabe la restricción) o se renuncia a ella. La ficha nueva de EchidnaBlack2 no la menciona.
   - **Repositorio [`recursos`](https://github.com/EchidnaEducacion/recursos)**: los diseños de la placa (`electronica/`) no tienen fichero de licencia y el README del repositorio dice que todo es CC BY-SA 4.0, que también permite el uso comercial.
   - **Ficha técnica de la Junta de Andalucía** (REA de 2026, [PDF](https://www.juntadeandalucia.es/educacion/eaprendizaje/wp-content/uploads/2026/04/L2P09-PLaca-componentes-IA.pdf)): dice «CERN Open Hardware Licence -W- V2-M», es decir, la variante W (débilmente recíproca) y no la S, con la misma restricción comercial.
-  - **Web nueva**: el apartado «Hardware» de la página de licencias dice CERN OHL-S v2 con el nombre y el logo fuera de la licencia (cualquiera puede fabricar y vender); la tabla de Sobre el proyecto y el pie dicen «CERN OHL-S». Ninguno refleja la restricción.
+  - **Web nueva**: el apartado «Hardware» de la página de licencias dice CERN OHL-S v2 con el nombre y el logo fuera de la licencia (cualquiera puede fabricar y vender); la tabla de Quiénes somos y el pie dicen «CERN OHL-S». Ninguno refleja la restricción.
 
-  Al decidirlo, corregir la página de licencias, la tabla de Sobre el proyecto, el pie y el repositorio `recursos`.
+  Al decidirlo, corregir la página de licencias, la tabla de Quiénes somos, el pie y el repositorio `recursos`.
 - [x] Generar los PDF de EchidnaBlack v1 y EchidnaShield antes de apagar WordPress. Están en `web/public/ecosistema/placas-anteriores/`.
 - [x] Materiales alumnado es una sola página (`/alumnado/`) con títulos por entorno y subtítulos por grupo, y tarjetas con miniatura. Todos sus materiales son enlaces externos (decisión de octubre de 2026): por ahora, los dos Proyectos de inicio, cuatro situaciones de aprendizaje y el manual para FP. El resto (otros proyectos, Snap!…) está por hacer.
 - [x] La plantilla «Actividad» ya no hace falta: ni alumnado ni docentes la usan. Se quita de las páginas maestras del README.
 - [x] Cada situación de aprendizaje usa el mismo `<recurso>` en `/alumnado/situaciones-aprendizaje/` y en `/docentes/situaciones-aprendizaje/`.
-- [x] Quiénes somos es un menú desplegable con 5.1, 5.2 y 5.3. 5.1 Sobre el proyecto usa `/quienes-somos/`, así que no hay índice duplicado.
-- [x] Validación de URL y plantillas: blog y taxonomías coinciden con WordPress; 1.3 sin hijas (PDF); alumnado en una página; Contacto mantiene `/contacta/`; Quiénes somos sin índice duplicado; RSS en `/rss.xml` con copia en `/feed/`.
-- [x] Menús desplegables: solo Quiénes somos, que no tiene página propia. El resto son enlaces directos a su página de sección, con migas de pan y enlaces a las páginas hermanas (ver «Criterio de navegación»).
+- [x] Sobre el proyecto es un menú desplegable con 5.1, 5.2 y 5.3. 5.1 Quiénes somos usa `/quienes-somos/`, así que no hay índice duplicado.
+- [x] Validación de URL y plantillas: blog y taxonomías coinciden con WordPress; 1.3 sin hijas (PDF); alumnado en una página; Contacto mantiene `/contacta/`; Sobre el proyecto sin índice duplicado; RSS en `/rss.xml` con copia en `/feed/`.
+- [x] Menús desplegables: solo Sobre el proyecto, que no tiene página propia. El resto son enlaces directos a su página de sección, con migas de pan y enlaces a las páginas hermanas (ver «Criterio de navegación»).

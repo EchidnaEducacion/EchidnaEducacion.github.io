@@ -1,5 +1,5 @@
-# Autores del blog y equipo de «Sobre el proyecto», por orden alfabético de apellido.
-# El equipo de «Sobre el proyecto» se elige en el campo team de quienes-somos.md (Javier no está).
+# Autores del blog y equipo de «Quiénes somos», por orden alfabético de apellido.
+# El equipo de «Quiénes somos» se elige en el campo team de quienes-somos.md (Javier no está).
 # El id es el de /author/<id>/.
 # Las fotos están en src/assets/autores/, cuadradas y sin metadatos (EXIF).
 - id: javier

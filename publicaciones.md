@@ -1,6 +1,6 @@
 # Publicaciones sobre Echidna
 
-Listado de trabajo para la página 5.3 Publicaciones (`/quienes-somos/publicaciones/`). Reúne las publicaciones que enlaza la web actual y las encontradas en una búsqueda en internet (octubre de 2026), ordenadas por fecha de publicación, de la más reciente a la más antigua. Sirve para elegir cuáles entran en la página. **La página ya está hecha**: muestra las de importancia 3 o más, y sus datos están en `web/src/content/publicaciones.yaml`, que hay que actualizar a la vez que este listado.
+Listado de trabajo para la página 5.2 Publicaciones (`/quienes-somos/publicaciones/`). Reúne las publicaciones que enlaza la web actual y las encontradas en una búsqueda en internet (octubre de 2026), ordenadas por fecha de publicación, de la más reciente a la más antigua. Sirve para elegir cuáles entran en la página. **La página ya está hecha**: muestra las de importancia 3 o más, y sus datos están en `web/src/content/publicaciones.yaml`, que hay que actualizar a la vez que este listado.
 
 ## Índice
 

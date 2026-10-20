@@ -1,5 +1,5 @@
 ---
-title: Sobre el proyecto Echidna
+title: Quiénes somos
 description: Echidna Educación es una asociación sin ánimo de lucro de docentes que promueve la programación y la robótica educativa con hardware y software libres.
 template: pagina
 team: [jorge-lobo, jose, juanda, xdesig]
