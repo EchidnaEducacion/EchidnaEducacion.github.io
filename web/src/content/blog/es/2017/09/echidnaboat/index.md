@@ -10,6 +10,6 @@ image: ./EchidnaBoat.png
 imageAlt: "El erizo de Echidna imagina una barca en el mar, con el título «EchidnaBoat»."
 ---
 
-Proyecto para convertir la placa Echidna en un barco, desarrollado por Jorge Lobo. En GitHub tienes disponibles los [STL](https://github.com/EchidnaShield/Recursos/blob/master/Dise%C3%B1os3D/PrintBoat/README.md) para descargarlos.
+Proyecto para convertir la placa Echidna en un barco, desarrollado por Jorge Lobo. En GitHub tienes disponibles los [STL](https://github.com/EchidnaEducacion/fablab/tree/main/impresion3d/printboat) para descargarlos.
 
 [EchidnaBoat](https://www.youtube.com/watch?v=2aCceHheNhY)
