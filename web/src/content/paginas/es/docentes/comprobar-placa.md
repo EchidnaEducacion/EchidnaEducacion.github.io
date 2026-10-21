@@ -8,10 +8,6 @@ cards:
     text: "La forma más sencilla: prueba cada sensor y actuador desde Chrome o Chromium, sin instalar nada. Necesita StandardFirmata en la placa."
     href: https://echidnaeducacion.github.io/echidna-firmata-test/
     image: ./comprobar-placa/test-navegador.png
-  - title: Test de sensores (Arduino IDE)
-    text: "Programa que prueba los sensores uno a uno, en modo sensores y en modo MkMk, con los valores en el monitor serie. Sustituye a StandardFirmata: después hay que volver a instalarlo."
-    href: https://github.com/EchidnaEducacion/echidna-sensor-test
-    image: ./comprobar-placa/test-sensores.svg
   - title: Test de fabricación (Arduino IDE)
     text: "Prueba completa de todos los componentes, con un informe final, pensada para revisar placas a fondo. También sustituye a StandardFirmata."
     href: https://github.com/EchidnaEducacion/echidna-fab-test
@@ -96,4 +92,4 @@ Si EchidnaML conecta con la placa pero un sensor o un actuador no funciona:
 
 ## Herramientas de comprobación
 
-Tres herramientas para probar la placa, de la más sencilla a la más técnica. Las dos que se usan con el Arduino IDE sustituyen a StandardFirmata: al terminar, [vuelve a instalarlo](/ecosistema/echidnaml/instalar-standardfirmata/) para usar la placa con EchidnaML.
+Dos herramientas para probar la placa, de la más sencilla a la más técnica. La del Arduino IDE sustituye a StandardFirmata: al terminar, [vuelve a instalarlo](/ecosistema/echidnaml/instalar-standardfirmata/) para usar la placa con EchidnaML.
