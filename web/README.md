@@ -153,3 +153,17 @@ El procedimiento está en [`escribir-blog.md`](../escribir-blog.md), en la raíz
 ## Buscador
 
 El índice lo genera Pagefind al final del *build* (`pagefind --site dist`) y lo consulta el diálogo de la cabecera (`public/assets/js/echidna.js`). Solo se indexan las páginas cuyo `<main>` lleva `data-pagefind-body`, es decir, las de los *layouts* `Pagina`, `Indice`, `Contacto`, `Ficha` y `Entrada`; quedan fuera la portada, la 404, los listados del blog y las maquetas. Los resultados se agrupan por sección (`<meta data-pagefind-meta="seccion[content]">` de `Base.astro`) y muestran como contexto las migas de pan (`data-contexto`) o, en el blog, la fecha. Las migas no entran en el texto indexado (`data-pagefind-ignore`). En el servidor de desarrollo, la integración `indiceDelBuscadorEnDev` de `astro.config.mjs` sirve el índice del último *build*.
+
+## SEO
+
+Todo sale del *build*; no hay que hacer nada a mano al publicar páginas o entradas nuevas.
+
+- **Dominio**: `site` es `https://echidna.es` en `astro.config.mjs`. De ahí salen las direcciones absolutas: `canonical`, `og:url`, el RSS, el sitemap y los datos estructurados.
+- **Etiquetas de cada página** (`src/layouts/Base.astro`): `<title>`, `description`, `canonical` y Open Graph. La imagen al compartir es `public/imagen-redes.png` (1200 × 630, la genera `bun run imagen-redes`), salvo que la página pase la suya con la propiedad `image`.
+- **Entradas del blog** (`src/layouts/Entrada.astro`): `og:type` `article`, con fecha de publicación (y de actualización si tiene `updated`), autor, primera categoría como sección y etiquetas. La imagen al compartir es su portada, a 1200 px de ancho como máximo (JPG, o PNG si el original lo es); sin portada, la común.
+- **Datos estructurados (JSON-LD)**: la propiedad `jsonLd` de `Base.astro` los pinta en un `<script type="application/ld+json">`. La portada lleva `Organization` y cada entrada `BlogPosting`, con la asociación como editora; los datos de la asociación están en `src/lib/organizacion.ts`. Si cambian las redes del pie (`Pie.astro`), hay que cambiarlas también allí. El logo es `public/apple-touch-icon.png` (180 × 180), porque Google no admite SVG.
+- **Sitemap** (`@astrojs/sitemap`, en `/sitemap-index.xml`): todas las páginas menos las maquetas, la 404 y las URL antiguas de `redirecciones.mjs`, que solo redirigen (filtro `enElSitemap` de `astro.config.mjs`).
+- **`robots.txt`** (`src/pages/robots.txt.ts`): permite todo menos `/maquetas/` y da la dirección del sitemap. Las maquetas llevan además `noindex` (propiedad `noindex` de `Base.astro`).
+- **Descripciones**: cada página y entrada lleva la suya en el *frontmatter* (`description`), de unos 50 a 160 caracteres. Los listados del blog (etiquetas, categorías, autores y años) usan una automática.
+- **Buscadores**: `echidna.es` se da de alta en Google Search Console y Bing Webmaster Tools, donde se envía el sitemap y se vigilan los errores de rastreo y las redirecciones.
+- **Comprobar los datos estructurados**: con la [prueba de resultados enriquecidos de Google](https://search.google.com/test/rich-results) o el [validador de schema.org](https://validator.schema.org/), pasando la portada y una entrada. Desde la terminal, el de schema.org responde a `curl -X POST https://validator.schema.org/validate --data-urlencode "url=https://echidna.es/"`.
