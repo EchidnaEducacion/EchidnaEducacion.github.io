@@ -3,7 +3,7 @@
 // texto Markdown y, al pie, categorías, compartir, ficha del autor y anterior/siguiente; en el lateral,
 // las categorías del blog y las entradas recientes
 import type { CollectionEntry } from 'astro:content';
-import { Image } from 'astro:assets';
+import { Image, getImage } from 'astro:assets';
 import { getEntry, getEntries } from 'astro:content';
 import Base from './Base.astro';
 import BlogLateral from '../components/BlogLateral.astro';
@@ -35,8 +35,22 @@ const compartirX = `https://x.com/intent/post?text=${encodeURIComponent(d.title)
 const compartirCorreo = `mailto:?subject=${encodeURIComponent(d.title)}&body=${encodeURIComponent(enlace)}`;
 const iniciales = autor.data.name.split(' ').map((p) => p[0]).slice(0, 2).join('');
 
+// Al compartir: la portada a 1200 px de ancho (en PNG si lo es, para no perder la transparencia) y
+// los datos de la entrada; sin portada, la imagen común
+const portada = d.image && await getImage({
+  src: d.image, width: Math.min(1200, d.image.width), format: d.image.format === 'png' ? 'png' : 'jpg',
+});
+const imagenRedes = portada && {
+  src: portada.src, width: Number(portada.attributes.width), height: Number(portada.attributes.height),
+  alt: d.imageAlt ?? d.title,
+};
+const articulo = {
+  published: d.date, modified: d.updated, author: url(`${rutaAutor(autor.id)}/`),
+  section: categorias[0].data.name, tags: d.tags,
+};
+
 ---
-<Base title={d.title} description={d.description} section="blog">
+<Base title={d.title} description={d.description} section="blog" image={imagenRedes} article={articulo}>
 <main id="contenido" data-pagefind-body>
   <article>
     <header class="page-hero">
