@@ -19,8 +19,12 @@ interface Props {
   image?: { src: string; width: number; height: number; alt: string };
   /** Entrada del blog: Open Graph de tipo `article` */
   article?: { published: Date; modified?: Date; author?: string; section?: string; tags?: string[] };
+  /** Datos estructurados (JSON-LD) de la página, sin `@context` */
+  jsonLd?: Record<string, unknown>;
 }
-const { title, description = '', section, bare = false, noindex = false, image, article } = Astro.props;
+const { title, description = '', section, bare = false, noindex = false, image, article, jsonLd } = Astro.props;
+// «<» escapado para que un texto con «</script>» no cierre la etiqueta
+const datosEstructurados = jsonLd && JSON.stringify({ '@context': 'https://schema.org', ...jsonLd }).replace(/</g, '\\u003c');
 const fullTitle = bare ? title : `${title} · Echidna Educación`;
 // Para compartir en redes (Open Graph): direcciones absolutas, con el dominio de `site`
 const canonica = new URL(Astro.url.pathname, Astro.site).href;
@@ -58,6 +62,7 @@ const goatcounter = import.meta.env.PUBLIC_GOATCOUNTER_CODE;
 {article?.author && <meta property="article:author" content={new URL(article.author, Astro.site).href}>}
 {article?.section && <meta property="article:section" content={article.section}>}
 {article?.tags?.map((t) => <meta property="article:tag" content={t}>)}
+{datosEstructurados && <script type="application/ld+json" set:html={datosEstructurados} />}
 <meta name="twitter:card" content="summary_large_image">
 {section && <meta data-pagefind-meta="seccion[content]" content={section}>}
 <link rel="icon" href={url("favicon.svg")} type="image/svg+xml">

@@ -91,9 +91,8 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 ### Puesta en marcha
 
 - [ ] **Urgente**: corregir la raíz de `rea.echidna.es` (servidor de OVH), cuyo `meta refresh` apunta a `kuku.es`, un dominio ajeno. Mientras ese servidor siga encendido.
-- [ ] **SEO al pasar `echidna.es` a GitHub Pages** (ver [Decisiones tomadas](#decisiones-tomadas)). Hoy la web ya tiene `<title>`, `description`, `canonical` y Open Graph (en `web/src/layouts/Base.astro`) con el dominio `echidna.es`, sitemap (`@astrojs/sitemap`, sin maquetas, 404 ni URL antiguas) y `robots.txt` (`web/src/pages/robots.txt.ts`), las maquetas llevan `noindex` y las entradas del blog se comparten como `article`, con su fecha, autor, etiquetas y portada (`Entrada.astro`). Falta:
+- [ ] **SEO al pasar `echidna.es` a GitHub Pages** (ver [Decisiones tomadas](#decisiones-tomadas)). Hoy la web ya tiene `<title>`, `description`, `canonical` y Open Graph (en `web/src/layouts/Base.astro`) con el dominio `echidna.es`, sitemap (`@astrojs/sitemap`, sin maquetas, 404 ni URL antiguas) y `robots.txt` (`web/src/pages/robots.txt.ts`), las maquetas llevan `noindex` y las entradas del blog se comparten como `article`, con su fecha, autor, etiquetas y portada (`Entrada.astro`), y hay datos estructurados (JSON-LD): `Organization` en la portada y `BlogPosting` en las entradas (`web/src/lib/organizacion.ts`). Falta:
   - Activar «Enforce HTTPS» en Settings → Pages cuando GitHub emita el certificado de `echidna.es` (el DNS ya apunta a GitHub Pages) y cambiar a `https://echidna.es/` las direcciones de publicación de la documentación.
-  - Datos estructurados (JSON-LD): `Organization` en la portada (nombre, URL, logo y redes del pie) y `BlogPosting` en las entradas (título, fecha, autor, imagen).
   - Revisar las páginas sin `description` o con más de unos 160 caracteres.
   - Dar de alta `echidna.es` en Google Search Console y Bing Webmaster Tools, enviar el sitemap y vigilar que las redirecciones de las URL antiguas se reconozcan.
   - Comprobar con el validador de resultados enriquecidos de Google y apuntar la decisión en este README y un apartado «SEO» en `web/README.md`.

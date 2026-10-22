@@ -9,6 +9,7 @@ import Base from './Base.astro';
 import BlogLateral from '../components/BlogLateral.astro';
 import { url } from '../lib/url';
 import { fechaLarga, rutaAutor, rutaCategoria, rutaEntrada, rutaEtiqueta } from '../lib/blog';
+import { organizacion } from '../lib/organizacion';
 
 interface Props {
   entry: CollectionEntry<'blog'>;
@@ -48,9 +49,24 @@ const articulo = {
   published: d.date, modified: d.updated, author: url(`${rutaAutor(autor.id)}/`),
   section: categorias[0].data.name, tags: d.tags,
 };
+// Datos estructurados: la entrada (BlogPosting), su autor y la asociación como editora
+const datosEntrada = {
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  url: enlace,
+  mainEntityOfPage: enlace,
+  datePublished: d.date.toISOString(),
+  ...(d.updated && { dateModified: d.updated.toISOString() }),
+  ...(imagenRedes && { image: new URL(imagenRedes.src, Astro.site).href }),
+  author: { '@type': 'Person', name: autor.data.name, url: new URL(articulo.author, Astro.site).href },
+  publisher: organizacion(Astro.site!),
+  inLanguage: 'es',
+  keywords: d.tags.join(', '),
+};
 
 ---
-<Base title={d.title} description={d.description} section="blog" image={imagenRedes} article={articulo}>
+<Base title={d.title} description={d.description} section="blog" image={imagenRedes} article={articulo} jsonLd={datosEntrada}>
 <main id="contenido" data-pagefind-body>
   <article>
     <header class="page-hero">

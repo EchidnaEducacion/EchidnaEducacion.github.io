@@ -8,6 +8,7 @@ import Base from '../layouts/Base.astro';
 import { pestana, url } from '../lib/url';
 import { entradasPublicadas, fechaLarga, rutaEntrada } from '../lib/blog';
 import { sitio } from '../lib/recursos';
+import { organizacion } from '../lib/organizacion';
 
 // La placa, con la imagen y la descripción de su ficha
 const placa = await getEntry('hardware', 'es/echidnablack2');
@@ -39,6 +40,7 @@ const ultimas = await Promise.all(
   title="Echidna Educación: programación, robótica e IA en el aula"
   description="La placa EchidnaBlack2, el entorno EchidnaML y materiales libres, creados por docentes para llevar el pensamiento computacional al aula."
   bare
+  jsonLd={organizacion(Astro.site!)}
 >
 <main id="contenido">
 
