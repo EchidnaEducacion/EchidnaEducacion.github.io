@@ -8,7 +8,7 @@ toc: true
 cards:
   - title: Proyectos de inicio con EchidnaML
     text: Proyectos con inteligencia artificial, paso a paso, que combinan LearningML con la placa.
-    href: https://echidnaeducacion.github.io/GuiaInicioEchidnaML/03-ia/
+    href: https://echidna.es/GuiaInicioEchidnaML/03-ia/
 ---
 
 **LearningML** es una herramienta educativa para aprender los conceptos básicos del aprendizaje automático (*machine learning*) de forma sencilla, visual y manipulativa. Con ella, el alumnado crea modelos que clasifican **textos**, **imágenes** o **números** y después los usa en proyectos con bloques de Scratch.

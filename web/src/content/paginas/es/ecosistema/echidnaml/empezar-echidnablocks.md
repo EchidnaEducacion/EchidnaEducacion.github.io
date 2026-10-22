@@ -8,7 +8,7 @@ toc: true
 cards:
   - title: Proyectos de inicio con EchidnaML
     text: Proyectos sencillos, paso a paso, para seguir aprendiendo a programar la placa con EchidnaBlocks.
-    href: https://echidnaeducacion.github.io/GuiaInicioEchidnaML/
+    href: https://echidna.es/GuiaInicioEchidnaML/
 ---
 
 **EchidnaBlocks** es una versión de [Scratch](https://scratch.mit.edu/) con bloques propios para controlar la placa EchidnaBlack y para usar modelos de inteligencia artificial creados con LearningML. Si aún no has conectado la placa, empieza por [Conectar EchidnaML y EchidnaBlack](/ecosistema/echidnaml/conectar-placa/).
@@ -38,7 +38,7 @@ En el menú **Archivo** encontrarás:
 
 Los proyectos se guardan en formato **.sb3**, el mismo de Scratch. Por eso puedes abrir en EchidnaBlocks cualquier proyecto hecho en Scratch y darle interactividad con los sensores de la placa.
 
-En Echidna creemos que una de las mejores formas de aprender es a partir de ejemplos. Por eso te los damos para que los pruebes, los estudies y los modifiques, que es una de las esencias del software libre. Los encontrarás explicados en el [manual](https://echidnaeducacion.github.io/manual/04-componentes-bloques/componentes-placa/).
+En Echidna creemos que una de las mejores formas de aprender es a partir de ejemplos. Por eso te los damos para que los pruebes, los estudies y los modifiques, que es una de las esencias del software libre. Los encontrarás explicados en el [manual](https://echidna.es/manual/04-componentes-bloques/componentes-placa/).
 
 ## Tu primer programa: «Hola, mundo»
 

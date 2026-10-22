@@ -9,7 +9,7 @@ image: ./arduino-ide/entorno-arduino-ide.png
 cards:
   - title: Proyectos de inicio con Arduino IDE
     text: Proyectos sencillos y guiados para dar los primeros pasos con la EchidnaBlack2 y el código de Arduino.
-    href: https://echidnaeducacion.github.io/GuiaInicioArduinoIDE/
+    href: https://echidna.es/GuiaInicioArduinoIDE/
   - title: Manual EchidnaBlack para FP
     text: Un manual extenso de Xabier Rosas para programar la placa en lenguaje C en Formación Profesional.
     href: https://github.com/EchidnaEducacion/recursos/releases/download/manual-fp-v2/Manual_EchidnaBlack_002_Es.pdf

@@ -2,7 +2,7 @@
 
 Web de **[echidna.es](https://echidna.es/)** (Echidna Educación): una web estática escrita en Markdown, generada con Astro y alojada en GitHub Pages, que sustituye a la anterior en WordPress.
 
-La web está en [`web/`](web/) y se publica en **<https://echidnaeducacion.github.io/>** con cada *push* a `main` que toque `web/`. Para verla en local:
+La web está en [`web/`](web/) y se publica en **<https://echidna.es/>** con cada *push* a `main` que toque `web/`. Para verla en local:
 
 ```sh
 cd web
@@ -91,8 +91,7 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 ### Puesta en marcha
 
 - [ ] **Urgente**: corregir la raíz de `rea.echidna.es` (servidor de OVH), cuyo `meta refresh` apunta a `kuku.es`, un dominio ajeno. Mientras ese servidor siga encendido.
-- [ ] **SEO al pasar `echidna.es` a GitHub Pages** (ver [Decisiones tomadas](#decisiones-tomadas)). Hoy la web ya tiene `<title>`, `description`, `canonical` y Open Graph (en `web/src/layouts/Base.astro`) con el dominio `echidna.es`, sitemap (`@astrojs/sitemap`, sin maquetas, 404 ni URL antiguas) y `robots.txt` (`web/src/pages/robots.txt.ts`), las maquetas llevan `noindex` y las entradas del blog se comparten como `article`, con su fecha, autor, etiquetas y portada (`Entrada.astro`), y hay datos estructurados (JSON-LD): `Organization` en la portada y `BlogPosting` en las entradas (`web/src/lib/organizacion.ts`). Las descripciones están revisadas: ninguna página de contenido está vacía ni pasa de 160 caracteres; los listados del blog llevan las automáticas, que son cortas, y se dejan así. Falta:
-  - Activar «Enforce HTTPS» en Settings → Pages cuando GitHub emita el certificado de `echidna.es` (el DNS ya apunta a GitHub Pages) y cambiar a `https://echidna.es/` las direcciones de publicación de la documentación.
+- [ ] **SEO al pasar `echidna.es` a GitHub Pages** (ver [Decisiones tomadas](#decisiones-tomadas)). Hoy la web ya tiene `<title>`, `description`, `canonical` y Open Graph (en `web/src/layouts/Base.astro`) con el dominio `echidna.es`, sitemap (`@astrojs/sitemap`, sin maquetas, 404 ni URL antiguas) y `robots.txt` (`web/src/pages/robots.txt.ts`), las maquetas llevan `noindex` y las entradas del blog se comparten como `article`, con su fecha, autor, etiquetas y portada (`Entrada.astro`), y hay datos estructurados (JSON-LD): `Organization` en la portada y `BlogPosting` en las entradas (`web/src/lib/organizacion.ts`). Las descripciones están revisadas: ninguna página de contenido está vacía ni pasa de 160 caracteres; los listados del blog llevan las automáticas, que son cortas, y se dejan así. La web se sirve por HTTPS en `echidna.es` y los enlaces a los otros sitios de la organización (guías, manual, situaciones de aprendizaje) usan ese dominio. Falta:
   - Dar de alta `echidna.es` en Google Search Console y Bing Webmaster Tools, enviar el sitemap y vigilar que las redirecciones de las URL antiguas se reconozcan.
   - Comprobar con el validador de resultados enriquecidos de Google y apuntar la decisión en este README y un apartado «SEO» en `web/README.md`.
 - [ ] **Apagar `rea.echidna.es`** al pasar `echidna.es` a GitHub Pages (ver [`redirecciones.md`](redirecciones.md#otros-dominios-y-rutas)): borrar su registro en el DNS de OVH junto con el servidor.

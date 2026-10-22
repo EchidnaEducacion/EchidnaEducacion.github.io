@@ -84,4 +84,4 @@ Ya puedes empezar a trabajar con la placa:
 
 1. Conecta la [EchidnaBlack2](/ecosistema/echidnablack2/) al ordenador y abre EchidnaML.
 2. Abre los ejemplos que trae el programa, en el menú «Archivo» › «Ejemplos», y prueba a cambiarlos.
-3. Para aprender más, consulta el [manual](https://echidnaeducacion.github.io/manual/) o los [Proyectos de inicio con EchidnaML](https://echidnaeducacion.github.io/GuiaInicioEchidnaML/).
+3. Para aprender más, consulta el [manual](https://echidna.es/manual/) o los [Proyectos de inicio con EchidnaML](https://echidna.es/GuiaInicioEchidnaML/).

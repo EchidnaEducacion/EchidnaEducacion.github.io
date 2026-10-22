@@ -8,7 +8,7 @@
   environment: EchidnaML
   group: Proyectos y Manual
   type: Guía
-  url: https://echidnaeducacion.github.io/GuiaInicioEchidnaML/
+  url: https://echidna.es/GuiaInicioEchidnaML/
   image: ./recursos/guia-inicio-echidnaml.jpg
   order: 1
 
@@ -19,7 +19,7 @@
   environment: EchidnaML
   group: Situaciones de aprendizaje
   type: Situación de aprendizaje
-  url: https://echidnaeducacion.github.io/situaciones-aprendizaje/hace-calor-aqui/
+  url: https://echidna.es/situaciones-aprendizaje/hace-calor-aqui/
   level: Primaria
   image: ./recursos/hace-calor-aqui.jpg
   order: 1
@@ -31,7 +31,7 @@
   environment: EchidnaML
   group: Situaciones de aprendizaje
   type: Situación de aprendizaje
-  url: https://echidnaeducacion.github.io/situaciones-aprendizaje/del-alba-al-anochecer/
+  url: https://echidna.es/situaciones-aprendizaje/del-alba-al-anochecer/
   level: Primaria
   image: ./recursos/del-alba-al-anochecer.jpg
   order: 2
@@ -43,7 +43,7 @@
   environment: EchidnaML
   group: Situaciones de aprendizaje
   type: Situación de aprendizaje
-  url: https://echidnaeducacion.github.io/situaciones-aprendizaje/la-tierra-se-mueve/
+  url: https://echidna.es/situaciones-aprendizaje/la-tierra-se-mueve/
   level: Primaria
   image: ./recursos/la-tierra-se-mueve.jpg
   order: 3
@@ -67,7 +67,7 @@
   environment: EchidnaML
   group: Proyectos y Manual
   type: Manual
-  url: https://echidnaeducacion.github.io/manual/
+  url: https://echidna.es/manual/
   image: ./recursos/manual-echidnaml.png
   order: 2
 
@@ -78,7 +78,7 @@
   environment: Arduino IDE
   group: Proyectos y Manual
   type: Guía
-  url: https://echidnaeducacion.github.io/GuiaInicioArduinoIDE/
+  url: https://echidna.es/GuiaInicioArduinoIDE/
   level: Secundaria
   image: ./recursos/guia-inicio-arduino-ide.jpg
   order: 1
@@ -102,7 +102,7 @@
   audience: docentes
   environment: Proyectos de inicio con EchidnaML
   type: Guía
-  url: https://echidnaeducacion.github.io/GuiaInicioEchidnaML/
+  url: https://echidna.es/GuiaInicioEchidnaML/
   image: ./recursos/guia-inicio-echidnaml.jpg
   order: 1
 
@@ -131,7 +131,7 @@
   audience: docentes
   environment: Proyectos de inicio con Arduino IDE
   type: Guía
-  url: https://echidnaeducacion.github.io/GuiaInicioArduinoIDE/
+  url: https://echidna.es/GuiaInicioArduinoIDE/
   image: ./recursos/guia-inicio-arduino-ide.jpg
   order: 1
 
@@ -141,7 +141,7 @@
   audience: docentes
   environment: Proyectos de inicio con Arduino IDE
   type: Guía docente (PDF)
-  url: https://echidnaeducacion.github.io/GuiaInicioArduinoIDE/guia-docente.pdf
+  url: https://echidna.es/GuiaInicioArduinoIDE/guia-docente.pdf
   image: ./recursos/docentes-guia-docente-arduino-ide.png
   order: 2
 
@@ -151,7 +151,7 @@
   audience: docentes
   environment: Otros recursos
   type: Manual
-  url: https://echidnaeducacion.github.io/manual/
+  url: https://echidna.es/manual/
   image: ./recursos/manual-echidnaml.png
   order: 1
 

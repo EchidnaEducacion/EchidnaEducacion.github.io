@@ -2,7 +2,7 @@
 
 Proyecto de la web de Echidna, con las **9 plantillas** (páginas maestras) de la tabla de abajo y el árbol de páginas, los menús y el pie de [`estructura.md`](../estructura.md).
 
-Es un proyecto **Astro**: un layout `Base`, las **maquetas** (una página por plantilla, publicadas en `/maquetas/`) y las primeras **páginas reales**, que salen de las colecciones de contenido (ver [Páginas reales](#páginas-reales)). Se publica automáticamente en **<https://echidnaeducacion.github.io/>** con cada *push* a `main` que toque `web/`.
+Es un proyecto **Astro**: un layout `Base`, las **maquetas** (una página por plantilla, publicadas en `/maquetas/`) y las primeras **páginas reales**, que salen de las colecciones de contenido (ver [Páginas reales](#páginas-reales)). Se publica automáticamente en **<https://echidna.es/>** con cada *push* a `main` que toque `web/`.
 
 Para verlas en local se usa [Bun](https://bun.sh) (los scripts ejecutan Astro con el *runtime* de Bun, así que no depende de la versión de Node instalada):
 

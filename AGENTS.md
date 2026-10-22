@@ -6,7 +6,7 @@ Contexto y normas de trabajo para cualquier asistente (o persona) que trabaje en
 
 Planificación e implementación de la nueva web de [echidna.es](https://echidna.es/) (Echidna Educación, asociación sin ánimo de lucro): una web estática en Markdown, generada con **Astro** y alojada en **GitHub Pages**, que sustituye a la actual en WordPress.
 
-- La web está en [`web/`](web/) y se publica en <https://echidnaeducacion.github.io/> con cada *push* a `main` que toque `web/`.
+- La web está en [`web/`](web/) y se publica en <https://echidna.es/> con cada *push* a `main` que toque `web/`.
 
 ## Mapa de documentos
 

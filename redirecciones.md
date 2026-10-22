@@ -208,9 +208,9 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 | URL antigua | URL nueva | Estado | Nota |
 |---|---|---|---|
 | `rea.echidna.es/` | `/alumnado/` | — | Sin redirección: `rea.echidna.es` sigue en el servidor de OVH hasta que `echidna.es` pase a GitHub Pages, y entonces se apaga (decisión de octubre de 2026). Mientras tanto, su `meta refresh` apunta a `kuku.es`: corregir ya |
-| `rea.echidna.es/02_SensorTemperatura/` | `echidnaeducacion.github.io/situaciones-aprendizaje/hace-calor-aqui/` | — | Copia migrada. Sin redirección (ver la fila anterior); la correspondencia la usa `herramientas/wp-import` para reescribir los enlaces |
-| `rea.echidna.es/P4LaTierraSeMueve/` | `echidnaeducacion.github.io/situaciones-aprendizaje/la-tierra-se-mueve/` | — | Ídem |
-| `rea.echidna.es/nocheydia/` | `echidnaeducacion.github.io/situaciones-aprendizaje/del-alba-al-anochecer/` | — | Ídem |
+| `rea.echidna.es/02_SensorTemperatura/` | `echidna.es/situaciones-aprendizaje/hace-calor-aqui/` | — | Copia migrada. Sin redirección (ver la fila anterior); la correspondencia la usa `herramientas/wp-import` para reescribir los enlaces |
+| `rea.echidna.es/P4LaTierraSeMueve/` | `echidna.es/situaciones-aprendizaje/la-tierra-se-mueve/` | — | Ídem |
+| `rea.echidna.es/nocheydia/` | `echidna.es/situaciones-aprendizaje/del-alba-al-anochecer/` | — | Ídem |
 | `/docentes/<material>/`, `/docentes/situaciones-aprendizaje/<recurso>/` | `/docentes/` | Redirige | Rutas intermedias sin página. Montada la de `/docentes/proyectos-inicio-echidnaml/`; las demás, cuando su material tenga recursos docentes |
 | `/guiainicioechidnaml/`, `/guiainicioarduinoide/` | `/GuiaInicioEchidnaML/`, `/GuiaInicioArduinoIDE/` | Redirige | Alias en minúsculas |
 | `/GuiaInicioEchidnaML/`, `/GuiaInicioArduinoIDE/` | Las mismas | Igual | Las publican sus repos con GitHub Pages, en la misma raíz que la web |

@@ -11,7 +11,7 @@ imageAlt: "Portada del manual de EchidnaBlack y EchidnaML, con el erizo de Echid
 
 ## ¡Tenemos buenas noticias!
 
-Acabamos de publicar el [**manual de EchidnaBlack2** y de la **nueva versión de EchidnaML**](https://echidnaeducacion.github.io/manual/), pensados para facilitar aún más el trabajo con la placa en el aula y acompañar al profesorado desde las primeras sesiones hasta proyectos más avanzados.
+Acabamos de publicar el [**manual de EchidnaBlack2** y de la **nueva versión de EchidnaML**](https://echidna.es/manual/), pensados para facilitar aún más el trabajo con la placa en el aula y acompañar al profesorado desde las primeras sesiones hasta proyectos más avanzados.
 
 ![EchidnaML con un programa que enciende y apaga un LED, junto a la placa EchidnaBlack2.](./hisparob.png)
 

@@ -6,7 +6,7 @@ toc: true
 cards:
   - title: Test de la placa en el navegador
     text: "La forma más sencilla: prueba cada sensor y actuador desde Chrome o Chromium, sin instalar nada. Necesita StandardFirmata en la placa."
-    href: https://echidnaeducacion.github.io/echidna-firmata-test/
+    href: https://echidna.es/echidna-firmata-test/
     image: ./comprobar-placa/test-navegador.png
   - title: Test de fabricación (Arduino IDE)
     text: "Prueba completa de todos los componentes, con un informe final, pensada para revisar placas a fondo. También sustituye a StandardFirmata."
@@ -62,14 +62,14 @@ Lo mejor es conectar la placa **antes** de abrir EchidnaML. Si ya estaba abierto
 
 EchidnaML se comunica con la placa gracias al programa **StandardFirmata**, que viene cargado de fábrica. Si alguien ha cargado otro programa con el Arduino IDE, EchidnaML ya no la reconoce.
 
-Para comprobarlo, abre el [test en el navegador](https://echidnaeducacion.github.io/echidna-firmata-test/) y pulsa **Conectar**: si la placa responde, tiene StandardFirmata. Si no responde, [instala StandardFirmata](/ecosistema/echidnaml/instalar-standardfirmata/) de nuevo.
+Para comprobarlo, abre el [test en el navegador](https://echidna.es/echidna-firmata-test/) y pulsa **Conectar**: si la placa responde, tiene StandardFirmata. Si no responde, [instala StandardFirmata](/ecosistema/echidnaml/instalar-standardfirmata/) de nuevo.
 
 ## Un componente no responde
 
 Si EchidnaML conecta con la placa pero un sensor o un actuador no funciona:
 
 1. **Comprueba el modo**: en modo MkMk varios sensores dejan de funcionar (ver las [comprobaciones rápidas](#comprobaciones-rápidas)).
-2. **Pruébalo aislado** con el [test en el navegador](https://echidnaeducacion.github.io/echidna-firmata-test/): así sabrás si falla el componente o el programa.
+2. **Pruébalo aislado** con el [test en el navegador](https://echidna.es/echidna-firmata-test/): así sabrás si falla el componente o el programa.
 3. **Casos conocidos**:
    - **El joystick no llega a los valores extremos**: a veces el capuchón está demasiado hundido y choca con la base. Sácalo un poco hacia arriba.
    - **Un componente externo no funciona o la placa se reinicia**: revisa el selector de [alimentación](/ecosistema/echidnablack2/alimentacion/) de las entradas y salidas y el consumo de lo que hayas conectado.
