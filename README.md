@@ -91,11 +91,8 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 ### Puesta en marcha
 
 - [ ] **Urgente**: corregir la raíz de `rea.echidna.es` (servidor de OVH), cuyo `meta refresh` apunta a `kuku.es`, un dominio ajeno. Mientras ese servidor siga encendido.
-- [ ] **SEO al pasar `echidna.es` a GitHub Pages** (ver [Decisiones tomadas](#decisiones-tomadas)). Hoy la web ya tiene `<title>`, `description`, `canonical` y Open Graph (en `web/src/layouts/Base.astro`). Falta:
-  - Cambiar `site` a `https://echidna.es` en `web/astro.config.mjs`, para que `canonical`, `og:url` y el RSS usen el dominio.
-  - Sitemap con `@astrojs/sitemap`, sin `/maquetas/` ni las URL antiguas de `web/redirecciones.mjs`.
-  - `robots.txt` (*endpoint* `web/src/pages/robots.txt.ts`) con `Disallow: /maquetas/` y la dirección del sitemap, y `noindex` en las maquetas.
-  - Quitar el `<link rel="alternate" hreflang="en" href="#">` de `Base.astro` hasta que haya versión en inglés.
+- [ ] **SEO al pasar `echidna.es` a GitHub Pages** (ver [Decisiones tomadas](#decisiones-tomadas)). Hoy la web ya tiene `<title>`, `description`, `canonical` y Open Graph (en `web/src/layouts/Base.astro`) con el dominio `echidna.es`, sitemap (`@astrojs/sitemap`, sin maquetas, 404 ni URL antiguas) y `robots.txt` (`web/src/pages/robots.txt.ts`), y las maquetas llevan `noindex`. Falta:
+  - Activar «Enforce HTTPS» en Settings → Pages cuando GitHub emita el certificado de `echidna.es` (el DNS ya apunta a GitHub Pages) y cambiar a `https://echidna.es/` las direcciones de publicación de la documentación.
   - Entradas del blog: `og:type` `article`, `article:published_time` y su portada como imagen al compartir (con `getImage`, URL absoluta), en vez de la común.
   - Datos estructurados (JSON-LD): `Organization` en la portada (nombre, URL, logo y redes del pie) y `BlogPosting` en las entradas (título, fecha, autor, imagen).
   - Revisar las páginas sin `description` o con más de unos 160 caracteres.

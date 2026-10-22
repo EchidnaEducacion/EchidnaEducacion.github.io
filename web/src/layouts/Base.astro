@@ -13,8 +13,10 @@ interface Props {
   section?: string;
   /** Usa el título tal cual, sin añadir « · Echidna Educación» */
   bare?: boolean;
+  /** Pide a los buscadores que no la indexen (maquetas) */
+  noindex?: boolean;
 }
-const { title, description = '', section, bare = false } = Astro.props;
+const { title, description = '', section, bare = false, noindex = false } = Astro.props;
 const fullTitle = bare ? title : `${title} · Echidna Educación`;
 // Para compartir en redes (Open Graph): direcciones absolutas, con el dominio de `site`
 const canonica = new URL(Astro.url.pathname, Astro.site).href;
@@ -30,6 +32,7 @@ const goatcounter = import.meta.env.PUBLIC_GOATCOUNTER_CODE;
 <title>{fullTitle}</title>
 <meta name="description" content={description}>
 <link rel="canonical" href={canonica}>
+{noindex && <meta name="robots" content="noindex">}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Echidna Educación">
 <meta property="og:locale" content="es_ES">
@@ -46,7 +49,6 @@ const goatcounter = import.meta.env.PUBLIC_GOATCOUNTER_CODE;
 <link rel="icon" href={url("favicon.svg")} type="image/svg+xml">
 <link rel="apple-touch-icon" href={url("apple-touch-icon.png")}>
 <link rel="alternate" type="application/rss+xml" title="Blog de Echidna Educación" href={url("rss.xml")}>
-<link rel="alternate" hreflang="en" href="#">
 <script is:inline>try{var t=localStorage.getItem('echidna-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
 <!-- Tipografías servidas desde la propia web (ver «tipografias» en astro.config.mjs) -->
 <Font cssVariable="--font-body" preload={[{ weight: '400', style: 'normal' }]} />

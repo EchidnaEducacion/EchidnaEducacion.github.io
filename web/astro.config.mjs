@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
 import { satteri } from '@astrojs/markdown-satteri';
+import sitemap from '@astrojs/sitemap';
 import { createReadStream, existsSync, statSync } from 'node:fs';
 import { extname, join, normalize } from 'node:path';
 import redirecciones from './redirecciones.mjs';
@@ -171,8 +172,16 @@ const tipografias = [
   { name: 'Open Sans', cssVariable: '--font-brand', weights: [400], styles: ['normal'], fallbacks: ['system-ui', 'sans-serif'] },
 ].map((t) => ({ provider: fontProviders.google(), subsets: ['latin'], ...t }));
 
+// Sitemap (/sitemap-index.xml): todas las páginas menos las maquetas, la 404 y las URL antiguas,
+// que solo redirigen (ver redirecciones.mjs)
+const fueraDelSitemap = new Set(Object.keys(redirecciones));
+const enElSitemap = (pagina) => {
+  const ruta = new URL(pagina).pathname;
+  return !ruta.startsWith('/maquetas/') && ruta !== '/404/' && !fueraDelSitemap.has(ruta);
+};
+
 export default defineConfig({
-  site: 'https://echidnaeducacion.github.io',
+  site: 'https://echidna.es',
   // URL de carpeta: /politica-privacidad/ → politica-privacidad/index.html
   build: { format: 'directory' },
   // Español en la raíz y la versión en inglés bajo /en/
@@ -181,7 +190,7 @@ export default defineConfig({
     defaultLocale: 'es',
     routing: { prefixDefaultLocale: false },
   },
-  integrations: [indiceDelBuscadorEnDev],
+  integrations: [indiceDelBuscadorEnDev, sitemap({ filter: enElSitemap })],
   fonts: tipografias,
   // URL de la web anterior (ver redirecciones.mjs y ../redirecciones.md)
   redirects: redirecciones,
