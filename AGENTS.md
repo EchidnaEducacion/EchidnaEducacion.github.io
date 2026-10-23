@@ -38,7 +38,7 @@ Planificación e implementación de la nueva web de [echidna.es](https://echidna
 - **Commits en castellano**, con un resumen en la primera línea y el detalle debajo.
 - **Commit y push solo cuando se pidan.** Antes de cada commit, comprobar el remoto.
 - **La web está en producción**: cada *push* a `main` que toque `web/` se publica al momento. Los cambios pequeños se hacen en `main`; los **cambios de infraestructura importantes** (rutas, plantillas, configuración de Astro, versión en inglés…), en una rama propia y por *pull request*, que `comprobar.yml` construye antes de fusionar.
-- **Entradas nuevas del blog**: en una rama propia y por *pull request*, nunca directamente en `main`; se crean con `bun run nueva-entrada` y el flujo está en [`escribir-blog.md`](escribir-blog.md).
+- **Entradas nuevas del blog**: en una rama propia y por *pull request*, nunca directamente en `main`, salvo las de Jose Pujol, que crea el contenido de la web y las sube directamente a `main` (en borrador hasta que estén listas); se crean con `bun run nueva-entrada` y el flujo está en [`escribir-blog.md`](escribir-blog.md).
 - **Una página cada vez**: se migra, se revisa en local (también en el servidor de desarrollo, no solo con el *build*) y se sube cuando el usuario la da por buena. El flujo completo y el patrón de las fichas de componentes están en [«Cómo migrar una página»](web/README.md#cómo-migrar-una-página).
 - **Avisar de las incoherencias** que aparezcan al migrar (pines, valores, licencias…) y apuntarlas en el documento que corresponda.
 

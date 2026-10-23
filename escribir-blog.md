@@ -1,6 +1,6 @@
 # Cómo escribir una entrada del blog
 
-Guía para quien escribe entradas nuevas del blog de Echidna. Las entradas se escriben en Markdown, en local, y llegan a la web por *pull request*. Un *push* a `main` publica al momento, así que cada entrada va en su propia rama: otra persona del equipo la revisa y, al fusionarla, se publica.
+Guía para quien escribe entradas nuevas del blog de Echidna. Las entradas se escriben en Markdown, en local, y llegan a la web por *pull request*. Un *push* a `main` publica al momento, así que cada entrada va en su propia rama: otra persona del equipo la revisa y, al fusionarla, se publica. La excepción es Jose Pujol, que crea el contenido de la web: sus entradas van directamente a `main`, con `draft: true` mientras no estén listas.
 
 ## Índice
 
