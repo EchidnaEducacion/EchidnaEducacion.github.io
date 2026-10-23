@@ -10,9 +10,8 @@ categories: [noticias]
 # Opcional, solo del vocabulario cerrado (modelo-contenido.md, «Etiquetas del blog»)
 tags: []
 # Portada, en esta misma carpeta, con su texto alternativo
-# image: ./portada.png
-# imageAlt: ""
-draft: true
+image: ./portada.png
+imageAlt: "El erizo naranja de Echidna mira una pila de tres cubos con las palabras HTTPS, HTML y CSS, coronada por un icono de web."
 ---
 
 ¡En Echidna estrenamos nuestra nueva web! No solo cambiamos a nivel visual, con un diseño más limpio, sino que redefinimos la forma en la que organizamos la información, dirigida al usuario. Además aprovechamos para estrenar nuevos recursos educativos.
