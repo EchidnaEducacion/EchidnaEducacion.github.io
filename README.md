@@ -71,6 +71,7 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 
 **Diseño y contenido**
 
+- [x] **Diseño con un modelo mixto** (octubre de 2026): la diseñadora prueba la identidad (colores, tipografías, formas) sobre la web real en un panel de estilo con editor de CSS en vivo (`/maquetas/panel/`), y usa Figma solo para maquetar disposiciones nuevas e ilustraciones. Se descartan los editores visuales de HTML, porque generan un HTML que no encaja con las plantillas de Astro. La hoja de ruta está en [`diseno.md`](diseno.md).
 - [x] **Los componentes MDX sirven para contenido** (vídeo, galería, descarga, aviso, tarjeta), **no para maquetar**: la disposición en columnas la decide el *layout*.
 - [x] **Rótulos cortos en el menú**: «Alumnado» y «Docentes» en lugar de «Materiales alumnado» y «Recursos docentes», para que el menú quepa junto al logo. Las páginas, las migas de pan y el pie mantienen el nombre completo.
 - [x] **Desplegable «Sobre el proyecto»** (octubre de 2026): agrupa Quiénes somos (`/quienes-somos/`), Publicaciones y Contacta, en ese orden. Antes el desplegable se llamaba «Quiénes somos» y su primera página «Sobre el proyecto», cruzado con la URL; además, Publicaciones y Contacta encajan mejor en «Sobre el proyecto». Las URL no cambian y la clave interna de la sección sigue siendo `nosotros`.
@@ -110,7 +111,7 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 
 ### Diseño
 
-- [ ] **Personalizar el diseño** con la diseñadora, según la hoja de ruta de [`diseno.md`](diseno.md). Lo primero, por parte del equipo: confirmar Figma, darle acceso a GitHub con la etiqueta `diseño`, y preparar la guía de estilo (`/maquetas/guia-estilo/`), las páginas en Figma y el fichero base con las variables de `echidna.css` ([fase 1](diseno.md#fase-1--material-de-partida)).
+- [ ] **Personalizar el diseño** con la diseñadora, según la hoja de ruta de [`diseno.md`](diseno.md). Lo primero, por parte del equipo: darle acceso a GitHub con la etiqueta `diseño`, y preparar la guía de estilo (`/maquetas/guia-estilo/`) y el panel de estilo (`/maquetas/panel/`) ([fase 1](diseno.md#fase-1--material-de-partida)).
 
 ### Comprobaciones con el equipo o con la placa
 
