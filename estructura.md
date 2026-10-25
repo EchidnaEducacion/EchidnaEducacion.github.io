@@ -194,9 +194,9 @@ Igual en todas las páginas. No repite el menú principal: lleva a las páginas 
 | Ecosistema | En el aula | Echidna |
 |---|---|---|
 | EchidnaML (descarga) — `/ecosistema/echidnaml/descarga/` | Materiales alumnado — `/alumnado/` | Quiénes somos — `/quienes-somos/` |
-| EchidnaBlack2 — `/ecosistema/echidnablack2/` | Recursos docentes — `/docentes/` | Publicaciones — `/quienes-somos/publicaciones/` |
-| Manual — `/manual/` | Guía de inicio EchidnaML — `/GuiaInicioEchidnaML/` | Cómo colaborar — `/docentes/colabora/` |
-| Comprobar la placa — `/docentes/comprobar-placa/` | Blog — `/blog/` | Quiero una — `/quiero-una/` · Contacta — `/contacta/` |
+| EchidnaML (empezar) — `/ecosistema/echidnaml/empezar-echidnablocks/` | Recursos docentes — `/docentes/` | Publicaciones — `/quienes-somos/publicaciones/` |
+| EchidnaBlack2 — `/ecosistema/echidnablack2/` | Guía de inicio EchidnaML — `/GuiaInicioEchidnaML/` | Cómo colaborar — `/docentes/colabora/` |
+| Manual — `/manual/` | Blog — `/blog/` | Quiero una — `/quiero-una/` · Contacta — `/contacta/` |
 
 - **Iconos**, junto a la marca y la descripción de la asociación: GitHub (`https://github.com/EchidnaEducacion`), YouTube (`https://www.youtube.com/channel/UCYmPpIWazAOc7dLs4CZEqew`), X (`https://x.com/EchidnaSTEAM`) y RSS (`/rss.xml`). Sin icono de email: el contacto va por `/contacta/`.
 - **Franja inferior**: las tres licencias (contenidos CC BY-SA, hardware no comercial, software GPL) enlazadas a `/quienes-somos/licencias/` · Política de privacidad (`/politica-privacidad/`) · © 2026 Echidna Educación.
