@@ -42,6 +42,7 @@ El diseño está montado de forma que se puede cambiar mucho tocando poco:
 Una semana, con la diseñadora y el equipo.
 
 - **Reunión inicial**: recorrido por la web publicada y por las maquetas, qué gusta y qué no. Se recogen tres o cuatro webs de referencia.
+- **[Muestrario de estilos](https://claude.ai/artifact/4gtcGkX1ThPxwnQdAQQDBC)**: las piezas reales de la web (cabecera, portada, tarjetas, ficha de hardware, avisos, blog y pie) con cuatro propuestas de aspecto: la actual, «Taller maker», «Cuaderno editorial» y «Patio lúdico». Se ven en claro y oscuro, a ancho de escritorio, a 390 px o las cuatro en paralelo, y cada propuesta se copia como bloque de variables de `echidna.css`. Sirve para que la diseñadora diga qué le gusta de cada una (tipografía, color, formas) antes de la fase 2. Es una página privada de claude.ai: hay que compartirla con ella desde su menú «Compartir».
 - **GitHub**: darle acceso a la organización `EchidnaEducacion` y crear la etiqueta **`diseño`** para los *issues*. Le basta con saber abrir un *issue*, comentar y adjuntar imágenes.
 - **Herramientas**:
   - el **panel de estilo** (fase 1), para la identidad. Mientras no esté listo, se puede empezar con las **herramientas de desarrollo de Firefox** (F12): se cambian las variables de `:root` sobre la web publicada, se prueba a 390 px con la vista adaptable y en modo oscuro, y la pestaña «Cambios» da el CSS tocado para pegarlo en el *issue*;
