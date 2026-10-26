@@ -80,6 +80,6 @@ Algunas normas: escribe en castellano, haz una propuesta por cada cambio y ten e
 |---|---|
 | [EchidnaBlack2C_StdFirm](https://github.com/EchidnaEducacion/EchidnaBlack2C_StdFirm) | El programa StandardFirmata de la EchidnaBlack2 |
 | [echidna-sensor-test](https://github.com/EchidnaEducacion/echidna-sensor-test) | Programa para probar los sensores de la placa |
-| [echidna-fab-test](https://github.com/EchidnaEducacion/echidna-fab-test) | Programa para probar las placas al fabricarlas |
+| [echidnablack2-arduino-test](https://github.com/EchidnaEducacion/echidnablack2-arduino-test) | Programa de Arduino IDE para comprobar todos los componentes de la placa |
 | [echidna-firmata-test](https://github.com/EchidnaEducacion/echidna-firmata-test) | Prueba de StandardFirmata en la placa desde Chrome |
 | [S4A-EchidnaBlack2C](https://github.com/EchidnaEducacion/S4A-EchidnaBlack2C) | Librería para programar la placa con Snap! |

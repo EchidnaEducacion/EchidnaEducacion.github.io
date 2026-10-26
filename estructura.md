@@ -140,7 +140,7 @@ Pie (fuera del menú, en todas las páginas)
 | 2 | 3.6 Manual de usuario | `/manual/` (lo publica su repo) | — (repo `manual`) |
 | 2 | 3.7 Modelos e impresión 3D | `/docentes/impresion-3d/` | Página genérica |
 | 2 | 3.8 Cómo colaborar | `/docentes/colabora/` | Página genérica (incluye resumen de repositorios) |
-| 2 | 3.9 Comprobar la placa | `/docentes/comprobar-placa/` | Página genérica (enlaces a los repos de pruebas: `echidna-firmata-test` y `echidna-fab-test`) |
+| 2 | 3.9 Comprobar la placa | `/docentes/comprobar-placa/` | Página genérica (enlaces a los repos de pruebas: `echidna-firmata-test` y `echidnablack2-arduino-test`) |
 | 1 | Blog | `/blog/` | Listado / taxonomía |
 | 2 | Entradas | `/AAAA/MM/slug/` | Entrada de blog |
 | 2 | Categorías, etiquetas y autores | `/category/…/` (con subcategorías de dos niveles, p. ej. `/category/recursos/proyectos/`), `/tag/…/`, `/author/…/` | Listado / taxonomía |

@@ -8,9 +8,9 @@ cards:
     text: "La forma más sencilla: prueba cada sensor y actuador desde Chrome o Chromium, sin instalar nada. Necesita StandardFirmata en la placa."
     href: https://echidna.es/echidna-firmata-test/
     image: ./comprobar-placa/test-navegador.png
-  - title: Test de fabricación (Arduino IDE)
-    text: "Prueba completa de todos los componentes, con un informe final, pensada para revisar placas a fondo. También sustituye a StandardFirmata."
-    href: https://github.com/EchidnaEducacion/echidna-fab-test
+  - title: Test de comprobación (Arduino IDE)
+    text: "Prueba completa de todos los componentes, con un informe final, pensada para revisar placas a fondo. Sustituye a StandardFirmata: al terminar hay que volver a instalarlo para usar EchidnaML."
+    href: https://github.com/EchidnaEducacion/echidnablack2-arduino-test
     image: ./comprobar-placa/test-fabricacion.svg
 ---
 
