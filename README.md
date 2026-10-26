@@ -94,7 +94,8 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 ### Puesta en marcha
 
 - [ ] **Dar de alta `echidna.es` en los buscadores** (lo demás del SEO está hecho; ver [Decisiones tomadas](#decisiones-tomadas)): Google Search Console ([#24](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/24)) y Bing Webmaster Tools ([#25](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/25)), enviar el sitemap y vigilar que las redirecciones de las URL antiguas se reconozcan.
-- [ ] **Borrar los ficheros de `rea.echidna.es`** del alojamiento de OVH ([#26](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/26)). El subdominio ya está apagado (ver [`redirecciones.md`](redirecciones.md#otros-dominios-y-rutas)). Antes de dar de baja el alojamiento, comprobar que no sirve nada más y no tocar los registros MX: el correo sigue en OVH.
+- [ ] **Borrar los ficheros de `rea.echidna.es`** del alojamiento de OVH ([#26](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/26)). El subdominio ya está apagado (ver [`redirecciones.md`](redirecciones.md#otros-dominios-y-rutas)). El alojamiento de OVH se mantiene, porque de él dependen el correo y algunas redirecciones. No tocar los registros MX.
+- [ ] **Documentar qué sirve el alojamiento de OVH** ([#29](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/29)): qué redirecciones, si el correo va con el alojamiento o es un MX Plan aparte, si sirve algo más y cuándo vence. Lo aclara juanda; las respuestas van aquí y en [`redirecciones.md`](redirecciones.md#otros-dominios-y-rutas).
 
 ### Contenido
 
