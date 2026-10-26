@@ -207,7 +207,7 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 
 | URL antigua | URL nueva | Estado | Nota |
 |---|---|---|---|
-| `rea.echidna.es/` | `/alumnado/` | — | Sin redirección: `rea.echidna.es` sigue en el servidor de OVH hasta que `echidna.es` pase a GitHub Pages, y entonces se apaga (decisión de octubre de 2026). Mientras tanto, su `meta refresh` apunta a `kuku.es`: corregir ya |
+| `rea.echidna.es/` | `/alumnado/` | — | Sin redirección: `rea.echidna.es` se apagó el 26 de octubre de 2026 al borrar su registro en el DNS de OVH, y sus direcciones ya no funcionan |
 | `rea.echidna.es/02_SensorTemperatura/` | `echidna.es/situaciones-aprendizaje/hace-calor-aqui/` | — | Copia migrada. Sin redirección (ver la fila anterior); la correspondencia la usa `herramientas/wp-import` para reescribir los enlaces |
 | `rea.echidna.es/P4LaTierraSeMueve/` | `echidna.es/situaciones-aprendizaje/la-tierra-se-mueve/` | — | Ídem |
 | `rea.echidna.es/nocheydia/` | `echidna.es/situaciones-aprendizaje/del-alba-al-anochecer/` | — | Ídem |
@@ -224,4 +224,4 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 - [x] Rutas de los repos con Pages (octubre de 2026): la web es el sitio de la organización (`EchidnaEducacion.github.io`), así que `/manual/`, `/GuiaInicioEchidnaML/`, `/GuiaInicioArduinoIDE/` y `/situaciones-aprendizaje/` las sirve GitHub desde sus repos en la misma raíz, también con el dominio echidna.es. No necesitan redirección, y la web no puede usar esos nombres (ver [«Criterio para los recursos externos»](estructura.md#criterio-para-los-recursos-externos)).
 - [x] Páginas no indexadas: las actividades `s01`–`s10` y `p01` van a las diapositivas de la Guía de inicio EchidnaML; las subpáginas de EchidnaScratch, a 1.1.
 - [x] Las situaciones de aprendizaje de `rea.echidna.es` no se alojan en la web nueva: se migraron a GitHub en octubre de 2026, al repo `situaciones-aprendizaje`, con carpetas nombradas por el título en minúsculas y con guiones (`hace-calor-aqui`, `del-alba-al-anochecer`, `la-tierra-se-mueve`).
-- [x] `rea.echidna.es` no se redirige (octubre de 2026): sigue en el servidor de OVH hasta que `echidna.es` pase a GitHub Pages y entonces se apaga. Se llegó a servir unas horas desde el repo `situaciones-aprendizaje`, pero se descartó.
+- [x] `rea.echidna.es` no se redirige (octubre de 2026): se apagó el 26 de octubre de 2026, al borrar su registro en el DNS de OVH, cuando `echidna.es` ya estaba en GitHub Pages. Se llegó a servir unas horas desde el repo `situaciones-aprendizaje`, pero se descartó.
