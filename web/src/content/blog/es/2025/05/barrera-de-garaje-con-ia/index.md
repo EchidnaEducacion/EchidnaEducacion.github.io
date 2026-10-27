@@ -3,7 +3,7 @@ title: "Barrera de garaje con IA"
 description: "Cómo funciona la inteligencia artificial en el parking del supermercado: un ejemplo educativo con EchidnaML"
 date: 2025-05-18
 author: jorge-lobo
-categories: [didactica, programacion, proyectos]
+categories: [didactica, programacion, proyectos, inteligencia-artificial]
 tags: ["EchidnaML", "Inteligencia Artificial"]
 image: ./BarreraIA.png
 imageAlt: "Una barrera de aparcamiento levantada y dos erizos de Echidna de colores, uno gris y otro azul, esperando para pasar."

@@ -3,6 +3,7 @@
 - { id: didactica, name: Didáctica }
 - { id: hardware, name: Hardware }
 - { id: impresion-3d, name: Impresión 3D }
+- { id: inteligencia-artificial, name: Inteligencia Artificial }
 - { id: noticias, name: Noticias }
 - { id: programacion, name: Programación }
 - { id: proyectos, name: Proyectos }

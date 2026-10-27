@@ -102,8 +102,8 @@ imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógra
 
 ## Categorías y etiquetas
 
-- **Categorías** (al menos una): `bloques-de-construccion`, `didactica`, `hardware`, `impresion-3d`, `noticias`, `programacion`, `proyectos`, `publicaciones`, `rea` y `talleres`.
-- **Etiquetas**: un vocabulario cerrado de 21 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog).
+- **Categorías** (al menos una): `bloques-de-construccion`, `didactica`, `hardware`, `impresion-3d`, `inteligencia-artificial`, `noticias`, `programacion`, `proyectos`, `publicaciones`, `rea` y `talleres`.
+- **Etiquetas**: un vocabulario cerrado de 21 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog). La categoría `inteligencia-artificial` es solo para las entradas centradas en la IA; las que solo la mencionan llevan la etiqueta Inteligencia Artificial.
 - **Una etiqueta nueva** solo si sirve para al menos dos entradas; se propone en la PR y se añade a esa lista y a `web/src/lib/etiquetas.ts`.
 
 ## Revisar una *pull request*

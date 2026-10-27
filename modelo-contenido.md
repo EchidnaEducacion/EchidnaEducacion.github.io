@@ -154,10 +154,10 @@ Las etiquetas forman un **vocabulario cerrado**: solo se usan las de esta lista,
 - **Placa por su nombre, o por la fecha si el texto es ambiguo**: EchidnaShield (2017–2021), EchidnaBlack (la v1, 2020–2022) y EchidnaBlack2 (desde 2025). Una entrada de 2025 o después que dice «EchidnaBlack» lleva EchidnaBlack2. El prototipo Echidna White no tiene etiqueta.
 - **Las entradas generales no llevan componentes**: un manual o un curso que repasa todos los componentes de la placa no se etiqueta con cada uno.
 - **Sensores externos**: los que no van en la placa (distancia SHARP, infrarrojos, CO₂…).
-- **Inteligencia Artificial**: incluye Machine Learning y LearningML.
+- **Inteligencia Artificial**: incluye Machine Learning y LearningML. Es la única etiqueta que coincide con una categoría: la etiqueta la llevan todas las entradas que usan o mencionan la IA (noticias, talleres, el manual…), y la categoría, solo las que se centran en ella (proyectos y propuestas que trabajan con modelos de IA). Una entrada de la categoría lleva siempre también la etiqueta.
 - **Makey Makey**: el modo MkMk de la placa y la conductividad.
 - **STEAM**: solo cuando la entrada une la tecnología con el arte (plástica, literatura, música, arte cinético…), no por ser un proyecto tecnológico.
-- **No repetir una categoría**: nada de «Proyectos», «Talleres» o «Lego» (para eso está la categoría Bloques de construcción). Los medios que publican sobre Echidna van en la categoría Publicaciones, no como etiqueta.
+- **No repetir una categoría** (salvo Inteligencia Artificial, ver arriba): nada de «Proyectos», «Talleres» o «Lego» (para eso está la categoría Bloques de construcción). Los medios que publican sobre Echidna van en la categoría Publicaciones, no como etiqueta.
 - **Una etiqueta nueva tiene que servir para al menos dos entradas** y se añade a esta lista y a `ETIQUETAS` en `web/src/lib/etiquetas.ts`. Por eso no hay «Acelerómetro» (solo el Helicóptero) ni nombres de proyectos o personas.
 - Una entrada puede quedarse sin etiquetas si ninguna encaja (p. ej. Echidna en el Ártico).
 
@@ -186,6 +186,7 @@ De momento están los cuatro del equipo, por orden alfabético de apellido: `jor
 | `didactica` | — |
 | `hardware` | — |
 | `impresion-3d` | — |
+| `inteligencia-artificial` | — |
 | `noticias` | — |
 | `programacion` | — |
 | `proyectos` | — |
