@@ -192,7 +192,7 @@
   environment: Comunidad
   type: Curso
   url: https://libros.catedu.es/books/echidna
-  image: ./recursos/docentes-catedu.svg
+  image: ./recursos/docentes-catedu.jpg
   order: 1
 
 - id: docentes-cp-sabi-conexion-natural
