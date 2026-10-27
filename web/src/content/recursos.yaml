@@ -194,3 +194,13 @@
   url: https://libros.catedu.es/books/echidna
   image: ./recursos/docentes-catedu.svg
   order: 1
+
+- id: docentes-cp-sabi-conexion-natural
+  title: "Conexión natural: paneles interactivos"
+  description: Situación de aprendizaje del Centro de Profesorado de Sabiñánigo para 4.º de Primaria. Se crean paneles interactivos sobre sostenibilidad con materiales conductores, la EchidnaBlack y EchidnaML.
+  audience: docentes
+  environment: Comunidad
+  type: Situación de aprendizaje
+  url: https://formacionsabi.es/recurso/conexin-natural-paneles-interactivos/
+  image: ./recursos/docentes-cp-sabi.jpg
+  order: 2
