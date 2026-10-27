@@ -10,6 +10,15 @@
   importance: 4
   summary: Libro del curso «Programa Arduino con Echidna» del Gobierno de Aragón, con la EchidnaBlack, mBlock, Echidna Scratch e inteligencia artificial.
 
+- id: cp-sabi-conexion-natural
+  title: "Conexión natural: paneles interactivos"
+  medium: CP Sabiñánigo
+  date: "2026-06-11"
+  type: Situación de aprendizaje
+  url: https://formacionsabi.es/recurso/conexin-natural-paneles-interactivos/
+  importance: 3
+  summary: Alumnado de 4.º de Primaria crea paneles interactivos sobre sostenibilidad con materiales conductores, la EchidnaBlack y EchidnaML.
+
 - id: hisparob-conociendo-echidna
   title: Conociendo Echidna
   medium: Hisparob
