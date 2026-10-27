@@ -5,6 +5,8 @@ date: 2023-05-13
 author: xdesig
 categories: [talleres]
 tags: ["Inteligencia Artificial", "esLibre"]
+image: ./portada.png
+imageAlt: "Cartel del congreso esLibre 2023, en Zaragoza el 12 y 13 de mayo, edición presencial y virtual, con un pingüino sobre fondo rojo."
 ---
 
 Estamos en **esLibre** es un encuentro con personas interesadas en la divulgación de la cultura libre y las tecnologías libres.
