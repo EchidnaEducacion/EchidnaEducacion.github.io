@@ -10,6 +10,15 @@
   importance: 4
   summary: Libro del curso «Programa Arduino con Echidna» del Gobierno de Aragón, con la EchidnaBlack, mBlock, Echidna Scratch e inteligencia artificial.
 
+- id: club-robotica-granada-taller
+  title: Taller Echidna Black 2
+  medium: Club Robótica Granada
+  date: "2026-10-11"
+  type: Taller
+  url: https://clubroboticagranada.org/taller-echidna-black-2/
+  importance: 2
+  summary: Taller práctico en el Parque de las Ciencias de Granada para programar sensores y actuadores de la EchidnaBlack2 y crear proyectos de machine learning con EchidnaML.
+
 - id: cp-sabi-conexion-natural
   title: "Conexión natural: paneles interactivos"
   medium: CP Sabiñánigo
