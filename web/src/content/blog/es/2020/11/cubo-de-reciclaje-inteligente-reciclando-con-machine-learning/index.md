@@ -3,7 +3,7 @@ title: "Cubo de Reciclaje Inteligente: Reciclando con Machine Learning"
 description: "Aunque no se haya presentado formalmente, una de las grandes novedades que Echidna Educación propone para este nuevo curso es EchidnaScratch (que podéis…"
 date: 2020-11-07
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaBlack", "EchidnaScratch", "Inteligencia Artificial"]
 image: ./Blog_IA-09-e1604778024424.png
 imageAlt: "El erizo de Echidna se pregunta en qué contenedor de reciclaje tirar un residuo, ayudado por la inteligencia artificial."

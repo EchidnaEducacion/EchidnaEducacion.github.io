@@ -84,7 +84,7 @@ title: Rotógrafo
 description: Un dispositivo para crear arte en espiral con la EchidnaBlack2 y un servomotor de rotación continua, con guía de construcción, vídeo y programa.
 date: 2026-05-30
 author: jorge-lobo
-categories: [bloques-de-construccion, didactica, recursos/proyectos]
+categories: [bloques-de-construccion, didactica, proyectos]
 tags: ["EchidnaBlack2", "Servomotor", "STEAM"]
 image: ./rotografo.png
 imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógrafo: un disco con espirales de colores sobre un servomotor, montado en una base de piezas."
@@ -102,7 +102,7 @@ imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógra
 
 ## Categorías y etiquetas
 
-- **Categorías** (al menos una): `bloques-de-construccion`, `didactica`, `hardware`, `noticias`, `programacion`, `publicaciones`, `rea`, `recursos`, `recursos/impresion-3d`, `recursos/proyectos` y `talleres`.
+- **Categorías** (al menos una): `bloques-de-construccion`, `didactica`, `hardware`, `impresion-3d`, `noticias`, `programacion`, `proyectos`, `publicaciones`, `rea` y `talleres`.
 - **Etiquetas**: un vocabulario cerrado de 21 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog).
 - **Una etiqueta nueva** solo si sirve para al menos dos entradas; se propone en la PR y se añade a esa lista y a `web/src/lib/etiquetas.ts`.
 

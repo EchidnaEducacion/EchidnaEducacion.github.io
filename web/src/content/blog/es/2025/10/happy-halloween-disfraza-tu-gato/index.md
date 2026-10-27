@@ -4,7 +4,7 @@ description: "Un proyecto para empezar con la placa en modo MkMk: el alumnado pr
 date: 2025-10-24
 updated: 2026-01-14
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaBlack2", "EchidnaML", "Makey Makey", "STEAM"]
 image: ./imagen-1.png
 imageAlt: "Ilustración «Happy Halloween» con un gato disfrazado de brujo y el erizo de Echidna con sombrero de bruja."

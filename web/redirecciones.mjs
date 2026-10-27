@@ -81,7 +81,7 @@ export default {
   '/hardware/echidna-shield/modo-sensores-modo-mkmk-shield/': '/ecosistema/#placas-anteriores',
   '/recursos/': '/docentes/',
   '/recursos/impresion-3d/': '/docentes/impresion-3d/',
-  '/recursos/proyectos/': '/category/recursos/proyectos/',
+  '/recursos/proyectos/': '/category/proyectos/',
 
   // Páginas no indexadas
   '/didactica/actividades/p01-hola-erizo/': '/docentes/proyectos-inicio-echidnaml/diapositivas/',
@@ -144,9 +144,12 @@ export default {
   '/index.php/hardware/echidna-shield/': '/ecosistema/#placas-anteriores',
   '/index.php/hardware/leds/': '/ecosistema/echidnablack2/leds/',
   '/inteligencia-artificial-con-echidna/': '/ecosistema/echidnaml/',
-  '/proyectos/': '/category/recursos/proyectos/',
+  '/proyectos/': '/category/proyectos/',
 
   // Blog y RSS
+  '/category/recursos/': '/category/proyectos/',
+  '/category/recursos/proyectos/': '/category/proyectos/',
+  '/category/recursos/impresion-3d/': '/category/impresion-3d/',
   '/tag/ia/': '/tag/inteligencia-artificial/',
   '/tag/machine-learning/': '/tag/inteligencia-artificial/',
   '/tag/machine-lerning/': '/tag/inteligencia-artificial/',
@@ -164,8 +167,8 @@ export default {
   '/tag/openledrace/': '/tag/juegos/',
   '/tag/sharp/': '/tag/sensores-externos/',
   '/tag/ctim/': '/tag/steam/',
-  '/tag/proyectos/': '/category/recursos/proyectos/',
-  '/tag/recursos/': '/category/recursos/',
+  '/tag/proyectos/': '/category/proyectos/',
+  '/tag/recursos/': '/category/proyectos/',
   '/tag/taller/': '/category/talleres/',
   '/tag/bloques-de-construccion/': '/category/bloques-de-construccion/',
   '/tag/lego/': '/category/bloques-de-construccion/',

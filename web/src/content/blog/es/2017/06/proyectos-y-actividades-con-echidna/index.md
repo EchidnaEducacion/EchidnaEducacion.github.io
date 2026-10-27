@@ -4,7 +4,7 @@ description: "Colección de proyectos y actividades realizadas con la placa Echi
 date: 2017-06-05
 updated: 2020-06-20
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaShield"]
 image: ./EchidnaProyectos.png
 imageAlt: "El erizo de Echidna con el título «EchidnaShield»."

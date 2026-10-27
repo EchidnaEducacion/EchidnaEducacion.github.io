@@ -4,7 +4,7 @@ description: "En esta entrada Jorge Lobo nos cuenta como hacer un piano con puls
 date: 2020-02-14
 updated: 2020-06-18
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaShield", "Makey Makey", "Música"]
 image: ./Blog_Piano-e1592561077322.png
 imageAlt: "El erizo de Echidna tocando un piano de cola."

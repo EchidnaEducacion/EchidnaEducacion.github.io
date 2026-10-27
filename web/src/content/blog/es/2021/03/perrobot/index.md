@@ -3,7 +3,7 @@ title: "Perrobot"
 description: "Un perro robótico que mueve la cola y ladra cuando algo se acerca, con un sensor de distancia por infrarrojos y un servomotor."
 date: 2021-03-21
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaBlack", "EchidnaScratch", "Servomotor", "Sensores externos"]
 image: ./perrete.png
 imageAlt: "Un perro corriendo hacia un sensor de distancia por infrarrojos, con el erizo de Echidna."

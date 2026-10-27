@@ -3,7 +3,7 @@ title: "El Laboratorio del Dr. Frankestein"
 description: "En el laboratorio de Frankenstein vamos a trabajar la conductividad eléctrica de una forma muy directa: probando materiales y viendo qué ocurre."
 date: 2026-05-02
 author: jorge-lobo
-categories: [didactica, recursos/proyectos]
+categories: [didactica, proyectos]
 tags: ["EchidnaBlack2", "EchidnaML", "Servomotor", "LED", "Makey Makey"]
 image: ./laboratoriofrankestein.png
 imageAlt: "Ilustración de un laboratorio con frascos, velas, un cerebro en una campana y un cuervo, con el título «El laboratorio del Dr. Frankestein» y el erizo de Echidna."

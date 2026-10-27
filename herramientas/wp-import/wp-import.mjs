@@ -420,8 +420,8 @@ const main = async () => {
   console.log('Leyendo categorías, etiquetas y autores de WordPress…');
   const [categorias, etiquetas, usuarios] = await Promise.all([todas('categories'), todas('tags'), todas('users')]);
   const catPorId = new Map(categorias.map((c) => [c.id, c]));
-  // Id de categoría como en la web: con su madre delante (recursos/proyectos)
-  const idCategoria = (c) => (c.parent ? `${catPorId.get(c.parent).slug}/${c.slug}` : c.slug);
+  // Id de categoría como en la web: el slug, sin la madre (las subcategorías de Recursos pasaron a primer nivel)
+  const idCategoria = (c) => c.slug;
   const etiquetaPorId = new Map(etiquetas.map((t) => [t.id, decodifica(t.name)]));
   const autorPorId = new Map(usuarios.map((u) => [u.id, u.slug]));
 
@@ -482,7 +482,7 @@ const main = async () => {
     } else avisa(clave, 'No tiene imagen de portada');
 
     const autor = autorWp;
-    const cats = post.categories.map((id) => catPorId.get(id)).filter((c) => c && c.slug !== 'sin-categoria').map(idCategoria);
+    const cats = post.categories.map((id) => catPorId.get(id)).filter((c) => c && !['sin-categoria', 'recursos'].includes(c.slug)).map(idCategoria);
     if (!cats.length) avisa(clave, 'No tiene categoría: asignar una');
 
     const lineas = [

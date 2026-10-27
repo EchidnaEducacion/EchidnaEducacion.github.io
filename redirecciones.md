@@ -96,7 +96,7 @@ Las 82 páginas del sitemap de páginas de echidna.es (octubre de 2026): 8 igual
 | `/hardware/echidna-shield/modo-sensores-modo-mkmk-shield/` | `/ecosistema/#placas-anteriores` | Redirige | Placa anterior (PDF) |
 | `/recursos/` | `/docentes/` | Redirige |  |
 | `/recursos/impresion-3d/` | `/docentes/impresion-3d/` | Redirige |  |
-| `/recursos/proyectos/` | `/category/recursos/proyectos/` | Redirige | Los proyectos son entradas del blog y se quedan en su categoría |
+| `/recursos/proyectos/` | `/category/proyectos/` | Redirige | Los proyectos son entradas del blog y se quedan en su categoría |
 | `/contacta/` | `/contacta/` | Igual |  |
 | `/quienes-somos/` | `/quienes-somos/` | Igual |  |
 | `/quienes-somos/licencias/` | `/quienes-somos/licencias/` | Igual |  |
@@ -176,7 +176,7 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 | `/index.php/hardware/echidna-shield/` | `/ecosistema/#placas-anteriores` | Redirige | Alias de `/hardware/echidna-shield/` |
 | `/index.php/hardware/leds/` | `/ecosistema/echidnablack2/leds/` | Redirige | Alias de `/hardware/componentes/leds/` |
 | `/inteligencia-artificial-con-echidna/` | `/ecosistema/echidnaml/` | Redirige | Alias de `/a-programar/echidnascratch/inteligencia-artificial-con-echidna/` |
-| `/proyectos/` | `/category/recursos/proyectos/` | Redirige | Alias de `/recursos/proyectos/` |
+| `/proyectos/` | `/category/proyectos/` | Redirige | Alias de `/recursos/proyectos/` |
 
 ## Blog y RSS
 
@@ -184,8 +184,10 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 |---|---|---|---|
 | `/blog/` | `/blog/` | Igual | |
 | `/AAAA/MM/slug/` | `/AAAA/MM/slug/` | Igual | 61 entradas |
-| `/category/…/`, `/tag/…/`, `/author/…/` | Igual | Igual | Se descarta `/category/sin-categoria/`. Hay subcategorías de dos niveles (`/category/recursos/proyectos/`, `/category/recursos/impresion-3d/`) que deben mantenerse. Las etiquetas se han reorganizado en un vocabulario cerrado ([`modelo-contenido.md`](modelo-contenido.md#etiquetas-del-blog)): las que desaparecen están en las filas siguientes; las que se mantienen (EchidnaBlack, Servomotor, STEAM…) conservan su URL |
+| `/category/…/`, `/tag/…/`, `/author/…/` | Igual | Igual | Se descarta `/category/sin-categoria/`. La categoría Recursos desaparece y sus subcategorías pasan a primer nivel (filas siguientes). Las etiquetas se han reorganizado en un vocabulario cerrado ([`modelo-contenido.md`](modelo-contenido.md#etiquetas-del-blog)): las que desaparecen están en las filas siguientes; las que se mantienen (EchidnaBlack, Servomotor, STEAM…) conservan su URL |
 | `/feed/` | `/feed/` (copia de `/rss.xml`) | Igual | Los lectores de RSS no siguen redirecciones HTML |
+| `/category/recursos/`, `/category/recursos/proyectos/` | `/category/proyectos/` | Redirige | Recursos desaparece; casi todas sus entradas eran proyectos |
+| `/category/recursos/impresion-3d/` | `/category/impresion-3d/` | Redirige | Subcategoría que pasa a primer nivel |
 | `/tag/ia/`, `/tag/machine-learning/`, `/tag/machine-lerning/` | `/tag/inteligencia-artificial/` | Redirige | Unificadas (y errata «Machine Lerning») |
 | `/tag/mkmk/`, `/tag/makeymakey/` | `/tag/makey-makey/` | Redirige | Unificadas |
 | `/tag/scratch/` | `/tag/echidnascratch/` | Redirige | Absorbida |
@@ -196,8 +198,8 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 | `/tag/openledrace/` | `/tag/juegos/` | Redirige | Absorbida |
 | `/tag/sharp/` | `/tag/sensores-externos/` | Redirige | Absorbida |
 | `/tag/ctim/` | `/tag/steam/` | Redirige | Su entrada ya tenía «STEAM» |
-| `/tag/proyectos/` | `/category/recursos/proyectos/` | Redirige | Repetía la categoría |
-| `/tag/recursos/` | `/category/recursos/` | Redirige | Repetía la categoría |
+| `/tag/proyectos/` | `/category/proyectos/` | Redirige | Repetía la categoría |
+| `/tag/recursos/` | `/category/proyectos/` | Redirige | Repetía la categoría Recursos, que desaparece |
 | `/tag/taller/` | `/category/talleres/` | Redirige | Repetía la categoría |
 | `/tag/bloques-de-construccion/`, `/tag/lego/` | `/category/bloques-de-construccion/` | Redirige | Repetían la categoría |
 | `/tag/arganbot/`, `/tag/juegos-robotica/`, `/tag/la-hora-maker/`, `/tag/programamos/`, `/tag/programar-facil/` | `/category/publicaciones/` | Redirige | Nombres de medios: sus entradas están en Publicaciones |

@@ -3,7 +3,7 @@ title: "Caja fuerte"
 description: "Una caja de bloques de construcción que abre un servomotor con tres programas: pulsadores, una contraseña con las entradas MkMk o reconocimiento facial."
 date: 2026-03-29
 author: jorge-lobo
-categories: [bloques-de-construccion, didactica, recursos/proyectos]
+categories: [bloques-de-construccion, didactica, proyectos]
 tags: ["EchidnaML", "Servomotor", "Makey Makey", "Inteligencia Artificial"]
 image: ./cajafuerteportada.png
 imageAlt: "El erizo de Echidna con una pieza de construcción naranja, junto a la caja fuerte hecha con piezas blancas y negras y un engranaje gris."

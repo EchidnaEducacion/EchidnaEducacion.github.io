@@ -3,7 +3,7 @@ title: "El corazón delator"
 description: "Un diorama interactivo inspirado en «El corazón delator» de Edgar Allan Poe, para unir la literatura con la programación y la robótica."
 date: 2025-07-02
 author: jorge-lobo
-categories: [didactica, recursos/proyectos]
+categories: [didactica, proyectos]
 tags: ["STEAM"]
 image: ./corazon.png
 imageAlt: "Diorama en blanco y negro de una escena de «El corazón delator», con siluetas de personajes ante una ventana y el título en letras grandes."

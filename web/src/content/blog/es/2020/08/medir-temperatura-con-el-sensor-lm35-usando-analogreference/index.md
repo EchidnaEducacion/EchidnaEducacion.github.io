@@ -3,7 +3,7 @@ title: "Medir temperatura con el sensor LM35 usando analogReference"
 description: "En esta entrada vamos a ver cómo medir la temperatura con el sensor LM35 incluído en Echidna Black usando Arduino IDE como plataforma de programación y…"
 date: 2020-08-20
 author: jose
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaBlack", "IDE Arduino", "Temperatura"]
 image: ./LM35-analogReference.png
 imageAlt: "El erizo de Echidna con el cuerpo convertido en un termómetro con escala de grados."

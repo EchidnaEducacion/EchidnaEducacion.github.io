@@ -3,7 +3,7 @@ title: "Asistente virtual: Robótica e IA"
 description: "Un asistente virtual que entiende órdenes escritas y controla la placa Echidna, gracias a un modelo de inteligencia artificial creado con LearningML."
 date: 2021-05-29
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaScratch", "Servomotor", "LED", "Inteligencia Artificial"]
 image: ./Asistente.png
 imageAlt: "El genio de LearningML pensando y el erizo de Echidna, con el título «Asistente virtual»."

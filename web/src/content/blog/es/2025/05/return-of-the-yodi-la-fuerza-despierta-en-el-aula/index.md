@@ -3,7 +3,7 @@ title: "Return of the Yodi: la Fuerza despierta en el aula"
 description: "En el proyecto Return of the Yodi, un famoso maestro jedi llega a nuestra aula desde una galaxia muy, muy lejana."
 date: 2025-05-27
 author: jorge-lobo
-categories: [didactica, recursos/proyectos]
+categories: [didactica, proyectos]
 tags: ["Servomotor", "Sensor de luz"]
 image: ./ReturnoftheYodi.jpg
 imageAlt: "El maestro Yoda hace levitar cabeza abajo a una asombrada echidna."

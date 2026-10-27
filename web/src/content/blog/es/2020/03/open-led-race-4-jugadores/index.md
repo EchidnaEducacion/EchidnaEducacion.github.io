@@ -4,7 +4,7 @@ description: "Hoy os vamos a hablar de la adaptación del proyecto Open LED race
 date: 2020-03-15
 updated: 2020-11-16
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaShield", "LED", "Makey Makey", "Juegos"]
 image: ./ConexionesORL1-e1592561337473.jpg
 imageAlt: "La EchidnaShield con cables a una manzana, una cuchara, una gominola y otros objetos, y una mano que los toca."

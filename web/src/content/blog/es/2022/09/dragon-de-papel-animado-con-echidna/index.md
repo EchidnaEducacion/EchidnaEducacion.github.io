@@ -3,7 +3,7 @@ title: "Dragón de papel animado con Echidna"
 description: "En este proyecto vamos a fabricar un dragón de papel que animaremos mediante dos servomotores mini sg90. ¡Espero que os guste!"
 date: 2022-09-29
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["Servomotor"]
 image: ./dragon.png
 imageAlt: "Ilustración de un dragón verde de papel con el título «Dragón de papel animado con Echidna» y el erizo de Echidna."

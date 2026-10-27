@@ -1,5 +1,5 @@
 ---
-// Listado de una categoría del blog: /category/<id>/ (también subcategorías, /category/recursos/proyectos/)
+// Listado de una categoría del blog: /category/<id>/ (también subcategorías, si las hay: campo parent)
 // y sus páginas siguientes. Una categoría madre incluye las entradas de sus subcategorías.
 import { getCollection } from 'astro:content';
 import ListadoBlog from '../../components/ListadoBlog.astro';

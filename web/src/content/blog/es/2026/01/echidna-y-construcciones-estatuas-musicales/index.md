@@ -4,7 +4,7 @@ description: "Este segundo proyecto con bloques de construcción continúa explo
 date: 2026-01-01
 updated: 2026-01-14
 author: jorge-lobo
-categories: [bloques-de-construccion, didactica, programacion, recursos/proyectos]
+categories: [bloques-de-construccion, didactica, programacion, proyectos]
 tags: ["EchidnaBlack2", "EchidnaML", "Micrófono", "Música", "Juegos"]
 image: ./juegoestatuasportada.png
 imageAlt: "El erizo de Echidna con una pieza de construcción naranja, junto a dos patos de piezas de construcción montados sobre un mecanismo de poleas."

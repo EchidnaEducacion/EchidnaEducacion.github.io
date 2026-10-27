@@ -4,7 +4,7 @@ description: "Para probar el micrófono de la nueva Echidna Black voy a proponer
 date: 2020-07-06
 updated: 2020-11-13
 author: jorge-lobo
-categories: [recursos/proyectos]
+categories: [proyectos]
 tags: ["EchidnaBlack", "Snap4Arduino", "Servomotor", "Micrófono", "Música", "STEAM"]
 image: ./Blog_Echidna_Marioneta.jpg
 imageAlt: "La placa EchidnaBlack y una marioneta que grita «Black is black»."

@@ -110,7 +110,7 @@ Plantillas: Entrada de blog (hecha) y Listado / taxonomía.
 | `date` | fecha | Sí | Fecha de publicación y orden del blog |
 | `updated` | fecha | No | Fecha de la última revisión importante |
 | `author` | identificador de la lista de autores | Sí | Autor; se valida contra la lista |
-| `categories` | lista de identificadores de la lista de categorías (al menos 1) | Sí | Categorías, incluidas subcategorías (`recursos/proyectos`); una errata hace fallar la publicación en vez de crear una categoría nueva |
+| `categories` | lista de identificadores de la lista de categorías (al menos 1) | Sí | Categorías; una errata hace fallar la publicación en vez de crear una categoría nueva |
 | `tags` | lista de etiquetas del vocabulario cerrado | No | Ver [Etiquetas del blog](#etiquetas-del-blog); una etiqueta fuera de la lista o con una errata hace fallar la publicación |
 | `image` | imagen | No | Imagen destacada para listados y redes; en la entrada, portada bajo el título |
 | `imageAlt` | texto | No | Texto alternativo de la imagen destacada |
@@ -131,7 +131,7 @@ title: Título de la entrada
 description: Resumen de la entrada en una o dos frases, entre 50 y 160 caracteres.
 date: 2026-05-01
 author: jose
-categories: [recursos/proyectos, bloques-de-construccion]
+categories: [proyectos, bloques-de-construccion]
 tags: [EchidnaBlack2, EchidnaML, Servomotor]
 image: ./portada.jpg
 ```
@@ -185,13 +185,12 @@ De momento están los cuatro del equipo, por orden alfabético de apellido: `jor
 | `bloques-de-construccion` | — |
 | `didactica` | — |
 | `hardware` | — |
+| `impresion-3d` | — |
 | `noticias` | — |
 | `programacion` | — |
+| `proyectos` | — |
 | `publicaciones` | — |
 | `rea` | — |
-| `recursos` | — |
-| `recursos/impresion-3d` | `recursos` |
-| `recursos/proyectos` | `recursos` |
 | `talleres` | — |
 
 ## Publicaciones

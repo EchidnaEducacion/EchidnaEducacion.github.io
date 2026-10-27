@@ -3,7 +3,7 @@ title: "Arte cinético con echidna"
 description: "El arte cinético es una forma de arte en la que el movimiento es parte esencial de la obra."
 date: 2026-03-27
 author: jorge-lobo
-categories: [didactica, recursos/proyectos]
+categories: [didactica, proyectos]
 tags: ["STEAM"]
 image: ./EsculturaCinetica.png
 imageAlt: "Ilustración de una escultura cinética blanca con forma de molinillo sobre fondo azul y verde, y el erizo de Echidna mirándola."
