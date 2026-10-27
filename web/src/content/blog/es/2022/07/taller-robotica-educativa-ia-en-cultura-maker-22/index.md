@@ -6,6 +6,8 @@ updated: 2024-10-23
 author: jorge-lobo
 categories: [talleres]
 tags: ["EchidnaScratch", "Snap4Arduino", "Inteligencia Artificial"]
+image: ./portada.png
+imageAlt: "Logotipo de los Cursos de Verano 2022: una gran V de colores con las letras CDV."
 ---
 
 ![Logotipos de los Cursos de Verano 2022 y de la Universidad de León, con el título «Cultura Maker IV Edición: Interactúa en el entorno».](./UNILEON.png)
