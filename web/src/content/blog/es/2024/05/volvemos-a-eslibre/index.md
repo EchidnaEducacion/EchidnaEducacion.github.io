@@ -5,6 +5,8 @@ date: 2024-05-25
 author: jorge-lobo
 categories: [didactica, talleres]
 tags: ["EchidnaML", "esLibre"]
+image: ./portada.png
+imageAlt: "Cartel del congreso esLibre 2024, en València el 24 y 25 de mayo, edición presencial y virtual, con un pingüino sobre fondo rojo."
 ---
 
 Un año más nos acercamos a esLibre para mostrar los avances del proyecto Echidna.
