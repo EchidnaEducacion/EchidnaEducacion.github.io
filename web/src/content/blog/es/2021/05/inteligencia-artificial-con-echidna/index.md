@@ -3,7 +3,7 @@ title: "Inteligencia artificial con Echidna"
 description: "¿Quieres incorporar Inteligencia Artificial a tus proyectos de robótica educativa con Echidna? Pues ahora es posible gracias a LearningML y EchidnaScratch."
 date: 2021-05-07
 author: juanda
-categories: [noticias, inteligencia-artificial]
+categories: [inteligencia-artificial, noticias]
 tags: ["EchidnaScratch", "Inteligencia Artificial"]
 ---
 
