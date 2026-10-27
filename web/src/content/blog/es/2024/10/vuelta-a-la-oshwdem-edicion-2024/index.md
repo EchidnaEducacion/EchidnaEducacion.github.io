@@ -4,7 +4,7 @@ description: "Volvimos a la OSHWDem de A Coruña para mostrar nuestros proyectos
 date: 2024-10-28
 updated: 2024-10-29
 author: jorge-lobo
-categories: [noticias]
+categories: [talleres]
 tags: ["EchidnaML", "OSHWDem"]
 image: ./oshwdem24-1.png
 imageAlt: "El pulpo de la OSHWDem y el erizo de Echidna, que piensa «OSHWDem 2024»."
