@@ -18,7 +18,7 @@ Una vez [descargado e instalado EchidnaML](/ecosistema/echidnaml/descarga/), ya 
 
 ## Puesta en marcha
 
-![Los tres pasos: conectar la EchidnaBlack al ordenador, abrir EchidnaML y empezar a programar.](./conectar-placa/pasos-puesta-en-marcha.png)
+![Los tres pasos: conectar la EchidnaBlack al ordenador, abrir EchidnaML y empezar a programar.](./conectar-placa/diagrama-puesta-en-marcha.png)
 
 ### 1. Conecta la placa al ordenador
 

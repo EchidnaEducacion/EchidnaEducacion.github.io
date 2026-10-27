@@ -15,7 +15,7 @@ Integra dos herramientas que trabajan juntas:
 - **EchidnaBlocks**: una versión de [Scratch](https://scratch.mit.edu/) con bloques propios para controlar los sensores y actuadores de la placa y usar modelos de inteligencia artificial.
 - **LearningML**: un módulo de aprendizaje automático (*machine learning*) para crear y entrenar modelos de inteligencia artificial sin salir de la aplicación.
 
-![EchidnaML es la suma de EchidnaBlocks y LearningML, conectados a la placa EchidnaBlack2.](./echidnaml/echidnaml-bloques-learningml.png)
+![EchidnaML es la suma de EchidnaBlocks y LearningML, conectados a la placa EchidnaBlack2.](./echidnaml/diagrama-echidnaml-echidnablocks-learningml.png)
 
 ## Ventajas
 
