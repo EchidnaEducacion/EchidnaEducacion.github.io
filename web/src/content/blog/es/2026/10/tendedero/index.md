@@ -1,7 +1,7 @@
 ---
 title: Tendedero automático
 description: Tendedero de bloques que recoge la ropa bajo un tejadillo cuando llueve, con un sensor de humedad y un servomotor controlados por la EchidnaBlack2.
-date: 2026-10-30
+date: 2026-11-09
 author: jorge-lobo
 categories: [bloques-de-construccion, didactica, proyectos]
 tags: ["EchidnaBlack2", "EchidnaML", "Servomotor", "Sensores externos", "STEAM"]
