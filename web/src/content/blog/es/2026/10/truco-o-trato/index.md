@@ -1,5 +1,5 @@
 ---
-title: ¡Truco o trato con EchidnaBlocks!
+title: ¡Truco o trato con EchidnaBricks!
 description: Calavera de bloques que, con un modelo de texto de LearningML y un servomotor en la EchidnaBlack2, decide si nos merecemos un trato o un buen susto.
 date: 2026-10-28
 author: jorge-lobo
