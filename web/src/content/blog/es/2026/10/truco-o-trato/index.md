@@ -7,7 +7,7 @@ categories: [bloques-de-construccion, didactica, proyectos, inteligencia-artific
 tags: ["EchidnaBlack2", "EchidnaML", "Inteligencia Artificial", "Servomotor", "STEAM"]
 image: ./calavera.png
 imageAlt: "El erizo de Echidna con una pieza de construcción, junto a la calavera de Halloween hecha con bloques: tiene los ojos rojos y, al lado, el servomotor que mueve el cartel de la parte superior."
-draft: true
+draft: false
 ---
 
 Se acerca Halloween y no podíamos dejar pasar la ocasión de preparar un proyecto terrorífico. Esta vez os proponemos construir esta calavera. Cuando llamamos para pedir caramelos y preguntamos «¿Truco o trato?», la calavera decide si la respuesta es amable o si, por el contrario, se merece un buen susto.
