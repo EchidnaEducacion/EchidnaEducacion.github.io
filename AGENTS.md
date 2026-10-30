@@ -17,7 +17,7 @@ Planificación e implementación de la nueva web de [echidna.es](https://echidna
 | [`modelo-contenido.md`](modelo-contenido.md) | Colecciones (`paginas`, `hardware`, `recursos`, `blog`) y sus campos |
 | [`escribir-blog.md`](escribir-blog.md) | Cómo escribir y publicar una entrada nueva del blog (rama, script `nueva-entrada`, *pull request*) |
 | [`diseno.md`](diseno.md) | Hoja de ruta para personalizar el diseño con la diseñadora (panel de estilo con CSS en vivo, guía de estilo, Figma para disposiciones nuevas, flujo de propuestas) |
-| [`categorias.md`](categorias.md) | Propuesta de revisión de las categorías del blog (inventario, criterio y qué hacer con cada una), pendiente del equipo |
+| [`categorias.md`](categorias.md) | Propuesta de revisión de las categorías y etiquetas del blog (inventario, criterio y qué hacer con cada una), pendiente del equipo |
 | [`publicaciones.md`](publicaciones.md) | Listado de trabajo de publicaciones sobre Echidna para la página 5.2 |
 | [`redirecciones.md`](redirecciones.md) | Correspondencia entre las URL de WordPress y las nuevas |
 | [`traslado-repo.md`](traslado-repo.md) | Plan para servir la web en la raíz desde el repo `EchidnaEducacion.github.io` |
