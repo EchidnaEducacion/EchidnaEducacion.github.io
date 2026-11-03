@@ -124,7 +124,7 @@ Lo que se ve:
 
 Preparada por Jose Pujol en octubre de 2026, categoría a categoría. Pendiente de revisión del equipo en [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35).
 
-Con ella, el blog queda con **6 categorías** (Proyectos, Noticias, Talleres, Publicaciones, Inteligencia Artificial y Bloques de construcción) y **23 etiquetas** (las 21 actuales más REA e Impresión 3D).
+Con ella, el blog queda con **6 categorías** (Proyectos, Noticias, Talleres, Publicaciones, Inteligencia Artificial y Bloques de construcción) y **23 etiquetas** (las 21 actuales más REA, Impresión 3D y EchidnaWhite, menos Sensores externos).
 
 | Categoría | Propuesta | Destino de sus entradas | Redirección de `/category/<id>/` |
 |---|---|---|---|
@@ -161,7 +161,7 @@ Lo que se ve:
 - **Impresión 3D** pasa a ser etiqueta, en el grupo Temas, en Concurso PrintBot Echidna y Construccionismo y STEAM I.
 - **Inteligencia Artificial** sigue siendo a la vez categoría y etiqueta; **Bloques de construcción**, solo categoría.
 
-Con eso, el vocabulario pasaría a 23 etiquetas.
+Con eso, más EchidnaWhite y quitando Sensores externos (ver [Propuesta de etiquetas](#propuesta-de-etiquetas)), el vocabulario pasaría a 23 etiquetas.
 
 ### Puntos a revisar
 
@@ -182,9 +182,11 @@ Revisados uno a uno; lo propuesto está en la tabla siguiente.
 | Impresión 3D | Nueva, en Temas (viene de la categoría) | Concurso PrintBot Echidna, Construccionismo y STEAM I |
 | Inteligencia Artificial | Se mantiene como categoría y como etiqueta, con el criterio actual: la categoría para las entradas centradas en la IA y la etiqueta para todas las que la usan o la mencionan | Ninguna |
 | OSHWDem y esLibre | Se mantienen: son eventos a los que Echidna vuelve cada año, y la etiqueta reúne sus ediciones. La categoría Talleres dice el tipo de entrada; la etiqueta, el evento | Ninguna |
-| Temperatura, Micrófono, Joystick, Sensor de luz y Sensores externos | Se mantienen: cumplen el mínimo de dos entradas, están bien aplicadas (las entradas que los nombran sin etiqueta son resúmenes de toda la placa) y cada proyecto nuevo los irá sumando | Ninguna |
+| Temperatura, Micrófono, Joystick y Sensor de luz | Se mantienen: cumplen el mínimo de dos entradas, están bien aplicadas (las entradas que los nombran sin etiqueta son resúmenes de toda la placa) y cada proyecto nuevo los irá sumando | Ninguna |
+| Sensores externos | Se elimina: no aporta nada; reúne sensores muy distintos (distancia SHARP, infrarrojos, CO₂…) y no ayuda a encontrar entradas | SmartCLASSROOM, Perrobot, Barrera automática y Tendedero automático (borrador) pierden la etiqueta |
 | STEAM, Música y Juegos | Se mantienen: tienen criterio claro y orientan a quien busca proyectos de arte, música o juego | Ninguna |
-| Entradas sin etiquetas | Aprendiendo con robots lleva REA (anuncia un REA del INTEF); ¡Estrenamos nueva web!, EchidnaBlack2 y EchidnaML (las presenta). Echidna en el Ártico (solo enlaza el repositorio) y Juegos Robótica episodio 42 (trata de Echidna White, sin etiqueta) siguen sin etiquetas | Aprendiendo con robots, ¡Estrenamos nueva web! |
+| Entradas sin etiquetas | Aprendiendo con robots lleva REA (anuncia un REA del INTEF); ¡Estrenamos nueva web!, EchidnaBlack2 y EchidnaML (las presenta); Echidna en el Ártico, EchidnaShield (enlaza el repositorio de EchidnaShield), y Juegos Robótica episodio 42, EchidnaWhite (ver la fila siguiente) | Aprendiendo con robots, ¡Estrenamos nueva web!, Echidna en el Ártico, Juegos Robótica episodio 42 |
+| EchidnaWhite | Nueva, en Placas: Juegos Robótica episodio 42 trata de ella y Echidna en la OSHWDem 2019 la presenta, así que cumple el mínimo de dos entradas | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
 | Etiquetas nuevas | Ninguna más: el nivel educativo apenas aparece (Primaria en 3 anuncios de REA, Secundaria en ninguno); Acelerómetro, OLED, zumbador y Bluetooth tienen una sola entrada, y los pulsadores están en casi todo proyecto sin ser el tema | Ninguna |
 
 ## Cómo se aplicarán
@@ -193,7 +195,7 @@ Si el equipo la aprueba, en una rama propia y por *pull request*, porque cambian
 
 - `web/src/content/categorias.yaml`: quitar o renombrar categorías.
 - Front matter de las entradas afectadas (lista en el [anexo](#anexo-categorías-y-etiquetas-de-cada-entrada)).
-- Si alguna pasa a etiqueta: `web/src/lib/etiquetas.ts` y la tabla de [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog).
+- Etiquetas nuevas (REA, Impresión 3D, EchidnaWhite) y eliminadas (Sensores externos): `web/src/lib/etiquetas.ts`, el front matter de sus entradas y la tabla de [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog).
 - Redirecciones de las categorías que desaparecen, en [`redirecciones.md`](redirecciones.md#blog-y-rss) y donde estén implementadas en `web/`.
 - Criterios en [`modelo-contenido.md`](modelo-contenido.md#listas-de-datos-autores-y-categorías), lista de [`escribir-blog.md`](escribir-blog.md#categorías-y-etiquetas) y decisión en «Decisiones tomadas» del README.
 - Comprobar con el *build* (falla si una entrada usa una categoría que no existe) y en el servidor de desarrollo: lateral del blog, `/category/<id>/` y redirecciones.
@@ -207,7 +209,7 @@ Si el equipo la aprueba, en una rama propia y por *pull request*, porque cambian
 - [x] Proponer qué hacer con REA: pasarla a etiqueta.
 - [x] Comprobar la «sección de REAs»: son las situaciones de aprendizaje del repo `situaciones-aprendizaje` (`/situaciones-aprendizaje/…`), enlazadas desde Materiales alumnado; los enlaces de las entradas funcionan.
 - [x] Repasar Bloques de construcción (mantenerla), Hardware (eliminarla) e Impresión 3D (pasarla a etiqueta).
-- [x] Revisar las etiquetas: quedan 23 (las 21 actuales más REA e Impresión 3D), sin quitar ninguna.
+- [x] Revisar las etiquetas: quedan 23 (las 21 actuales más REA, Impresión 3D y EchidnaWhite, menos Sensores externos).
 - [ ] Revisión del equipo en [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35).
 - [ ] Aplicar la propuesta aprobada y decidir si este documento se conserva o se borra.
 
