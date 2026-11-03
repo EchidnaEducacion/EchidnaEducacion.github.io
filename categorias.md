@@ -1,6 +1,6 @@
 # Categorías y etiquetas del blog
 
-Propuesta para revisar las categorías y las etiquetas del blog: qué hay, qué criterio seguir y qué hacer con cada una. **Está pendiente de que la revise el equipo** en el issue [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35); hasta entonces no se aplica nada en la web. Las etiquetas ya tienen un vocabulario cerrado desde octubre de 2026 ([«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog)); aquí se revisan primero las categorías y después las etiquetas, que dependen en parte de ellas. Cuando se apruebe y se aplique, los criterios pasarán a [`modelo-contenido.md`](modelo-contenido.md#etiquetas-del-blog) y la decisión, al README.
+Propuesta para revisar las categorías y las etiquetas del blog: qué hay, qué criterio seguir y qué hacer con cada una. **Está pendiente de que la revise el equipo** en la propuesta [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (el primer debate fue en el issue [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35)); hasta entonces no se aplica nada en la web. Las etiquetas ya tienen un vocabulario cerrado desde octubre de 2026 ([«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog)); aquí se revisan primero las categorías y después las etiquetas, que dependen en parte de ellas. Cuando se apruebe y se aplique, los criterios pasarán a [`modelo-contenido.md`](modelo-contenido.md#etiquetas-del-blog) y la decisión, al README.
 
 ## Índice
 
@@ -122,7 +122,7 @@ Lo que se ve:
 
 ## Propuesta
 
-Preparada por Jose Pujol en octubre de 2026, categoría a categoría. Pendiente de revisión del equipo en [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35).
+Preparada por Jose Pujol en octubre de 2026, categoría a categoría. Pendiente de revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
 
 Con ella, el blog queda con **6 categorías** (Proyectos, Noticias, Talleres, Publicaciones, Inteligencia Artificial y Bloques de construcción) y **23 etiquetas** (las 21 actuales más REA, Impresión 3D y EchidnaWhite, menos Sensores externos).
 
@@ -210,7 +210,7 @@ Si el equipo la aprueba, en una rama propia y por *pull request*, porque cambian
 - [x] Comprobar la «sección de REAs»: son las situaciones de aprendizaje del repo `situaciones-aprendizaje` (`/situaciones-aprendizaje/…`), enlazadas desde Materiales alumnado; los enlaces de las entradas funcionan.
 - [x] Repasar Bloques de construcción (mantenerla), Hardware (eliminarla) e Impresión 3D (pasarla a etiqueta).
 - [x] Revisar las etiquetas: quedan 23 (las 21 actuales más REA, Impresión 3D y EchidnaWhite, menos Sensores externos).
-- [ ] Revisión del equipo en [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35).
+- [ ] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
 - [ ] Aplicar la propuesta aprobada y decidir si este documento se conserva o se borra.
 
 ## Anexo: categorías y etiquetas de cada entrada
