@@ -182,7 +182,7 @@
   environment: Otros recursos
   type: Guía
   url: /docentes/comprobar-placa/
-  image: ./recursos/docentes-comprobar-placa.svg
+  image: ./recursos/docentes-comprobar-placa.png
   order: 4
 
 - id: docentes-fritzing
