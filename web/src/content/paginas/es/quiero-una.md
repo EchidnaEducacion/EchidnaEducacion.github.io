@@ -14,7 +14,7 @@ cards:
   - title: Comprar en Leal Educa
     text: La placa EchidnaBlack2 en la tienda de Leal Educa, su distribuidora.
     href: https://lealeduca.com/producto/echidna-black-placa-autonoma/
-    image: ./quiero-una/echidnablack2.png
+    image: ./quiero-una/placa-y-caja.png
   - title: ¿Tienes dudas?
     text: Escríbenos y te ayudamos a elegir y a empezar a trabajar con la placa.
     href: /contacta/
