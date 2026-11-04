@@ -35,6 +35,9 @@ const paginas = defineCollection({
       // Tarjeta lateral de resumen (como la ficha rápida de las fichas): { label, value }. Solo en
       // páginas sin `toc`, porque ocupa el mismo lateral
       summary: z.array(z.object({ label: texto(), value: texto() })).default([]),
+      // Imagen al final de la tarjeta de resumen, debajo de la lista, con su texto alternativo (la caja en Quiero una)
+      summaryImage: image().optional(),
+      summaryImageAlt: texto().optional(),
       // En los índices: título del apartado de tarjetas de las páginas hijas («Primeros pasos»)
       cardsTitle: texto().optional(),
       // Grupo de la tarjeta de esta página en el índice de su sección: las que comparten grupo salen

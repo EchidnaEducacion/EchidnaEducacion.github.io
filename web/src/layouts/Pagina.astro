@@ -3,6 +3,7 @@
 // índice lateral con los h2 (toc), fichas del equipo (team), tarjetas de enlace (cards) y la lista de
 // publicaciones (publications) al final
 import type { ImageMetadata, MarkdownHeading } from 'astro';
+import { Image } from 'astro:assets';
 import Base from './Base.astro';
 import CabeceraPagina from '../components/CabeceraPagina.astro';
 import Equipo from '../components/Equipo.astro';
@@ -35,8 +36,11 @@ interface Props {
   conIndice?: boolean;
   /** Tarjeta lateral de resumen; solo en páginas sin índice lateral */
   summary?: { label: string; value: string }[];
+  /** Imagen al final de la tarjeta de resumen, debajo de la lista */
+  summaryImage?: ImageMetadata;
+  summaryImageAlt?: string;
 }
-const { title, description, section, crumbs = [], headings, team, cards = [], cardsTitle, cardsColumns = 3, publications, resources, conIndice = false, summary = [] } = Astro.props;
+const { title, description, section, crumbs = [], headings, team, cards = [], cardsTitle, cardsColumns = 3, publications, resources, conIndice = false, summary = [], summaryImage, summaryImageAlt = '' } = Astro.props;
 // Índice: los h2 del Markdown y, si hay lista de publicaciones, sus años
 const años = publications ? (await publicacionesPorAño(publications)).map((g) => g.año) : [];
 const entornos = resources ? (await recursosPorEntorno(resources)).map((g) => g.entorno) : [];
@@ -77,6 +81,7 @@ const toc = [
           <dl>
             {summary.map((s) => <div><dt>{s.label}</dt><dd>{s.value}</dd></div>)}
           </dl>
+          {summaryImage && <Image class="factsheet__img" src={summaryImage} alt={summaryImageAlt} widths={[320, 640]} sizes="320px" />}
         </section>
       </aside>
     )}
