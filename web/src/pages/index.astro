@@ -28,9 +28,9 @@ const destacados = DESTACADOS.map((id) => {
 // Las rutas internas llevan base; las URL externas, no
 const enlace = (href: string) => (href.startsWith('/') ? url(href.slice(1)) : href);
 
-// Las tres entradas más recientes del blog
+// Las cuatro entradas más recientes del blog
 const ultimas = await Promise.all(
-  (await entradasPublicadas()).slice(0, 3).map(async (e) => ({
+  (await entradasPublicadas()).slice(0, 4).map(async (e) => ({
     entry: e,
     categorias: await getEntries(e.data.categories),
   })),
@@ -158,12 +158,12 @@ const ultimas = await Promise.all(
         </div>
         <a class="btn btn--ghost btn--sm" href={url('blog/')}>Ver todas <svg aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
       </div>
-      <ul class="img-cards grid grid--3">
+      <ul class="img-cards grid grid--4-2">
         {ultimas.map(({ entry, categorias }) => (
           <li class="card post-card">
             {entry.data.image && (
               <div class="post-thumb">
-                <Image src={entry.data.image} alt="" widths={[400, 800]} sizes="(min-width: 960px) 380px, 100vw" />
+                <Image src={entry.data.image} alt="" widths={[400, 800]} sizes="(min-width: 960px) 290px, (min-width: 600px) 50vw, 100vw" />
               </div>
             )}
             <div class="card__body">
