@@ -12,8 +12,8 @@ interface Props {
 const entornos = await recursosPorEntorno(Astro.props.publico);
 // Las rutas internas llevan base; las URL externas, no
 const enlace = (href: string) => (href.startsWith('/') ? url(href.slice(1)) : href);
-// Las situaciones de aprendizaje (alumnado) y los otros recursos (docentes) van cuatro por fila en ordenador; el resto, tres
-const cuatroPorFila = ['Situaciones de aprendizaje', 'Otros recursos'];
+// Las situaciones de aprendizaje (alumnado) van cuatro por fila en ordenador; el resto, tres
+const cuatroPorFila = ['Situaciones de aprendizaje'];
 const columnas = (entorno: string, grupo?: string) => (cuatroPorFila.includes(grupo || entorno) ? 4 : 3);
 ---
 {entornos.map(({ entorno, grupos }) => (

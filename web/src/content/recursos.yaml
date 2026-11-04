@@ -185,6 +185,16 @@
   image: ./recursos/docentes-comprobar-placa.svg
   order: 4
 
+- id: docentes-fritzing
+  title: Piezas de Fritzing
+  description: Piezas de las placas de Echidna para Fritzing, listas para importar y dibujar montajes, esquemas y PCB.
+  audience: docentes
+  environment: Otros recursos
+  type: Piezas de Fritzing
+  url: https://github.com/EchidnaEducacion/Rgraficos/tree/main/hardware/fritzing
+  image: ./recursos/docentes-fritzing.png
+  order: 5
+
 - id: docentes-catedu-libro-echidna
   title: Curso de CATEDU
   description: Libro del curso «Programa Arduino con Echidna» del Gobierno de Aragón, con la EchidnaBlack, mBlock, Echidna Scratch e inteligencia artificial.
