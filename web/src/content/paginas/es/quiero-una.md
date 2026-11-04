@@ -1,6 +1,6 @@
 ---
 title: Quiero una
-description: Dónde comprar la placa EchidnaBlack2 y qué necesitas para empezar a usarla en el aula con EchidnaML y los materiales de Echidna.
+description: Dónde comprar la EchidnaBlack2, cómo es la placa, qué incluye la caja y qué necesitas para empezar a usarla en el aula.
 template: pagina
 summary:
   - { label: "Placa", value: "EchidnaBlack2" }
