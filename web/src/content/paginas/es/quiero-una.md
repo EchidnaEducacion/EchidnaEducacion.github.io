@@ -37,7 +37,7 @@ Todo sobre la placa está en su [ficha](/ecosistema/echidnablack2/) y en sus [ca
 - Placa EchidnaBlack2 programada con el firmware **StandardFirmata**, lista para usar con EchidnaML.
 - Cable USB tipo A a C, de 1 metro de longitud.
 - Caja de cartón blanco de 1,4 mm de grosor, de 130 × 94 × 45 mm, con impresión a color.
-- Guía de inicio rápido (*Quick starting guide*) dentro de la caja: formato A4 plegado a A7, impresa a color por ambas caras.
+- [Guía de inicio rápido](/quiero-una/guia-inicio-rapido.pdf) dentro de la caja: formato A4 plegado a A7, impresa a color por ambas caras.
 
 ![La caja de la EchidnaBlack2, de cartón blanco con impresión a color: en la tapa, el equidna, el nombre de la placa y www.echidna.es; en el frente, el logo de Echidna.](./quiero-una/caja.png)
 
