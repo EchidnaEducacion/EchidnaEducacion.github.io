@@ -39,6 +39,8 @@ Todo sobre la placa está en su [ficha](/ecosistema/echidnablack2/) y en sus [ca
 - Caja de cartón blanco de 1,4 mm de grosor, de 130 × 94 × 45 mm, con impresión a color.
 - Hoja de instrucciones dentro de la caja: formato A4 plegado a A7, impresa a color por ambas caras.
 
+![La caja de la EchidnaBlack2, de cartón blanco con impresión a color: en la tapa, el equidna, el nombre de la placa y www.echidna.es; en el frente, el logo de Echidna.](./quiero-una/caja.png)
+
 ## Qué necesitas para empezar
 
 - Un ordenador con [EchidnaML](/ecosistema/echidnaml/descarga/), el programa para programarla, que es gratuito.
