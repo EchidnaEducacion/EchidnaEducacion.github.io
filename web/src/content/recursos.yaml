@@ -186,11 +186,11 @@
   order: 4
 
 - id: docentes-fritzing
-  title: Piezas de Fritzing
-  description: Piezas de las placas de Echidna para Fritzing, listas para importar y dibujar montajes, esquemas y PCB.
+  title: Componentes de Fritzing
+  description: Componentes de las placas de Echidna para Fritzing, listos para importar y crear montajes, esquemas y PCB.
   audience: docentes
   environment: Otros recursos
-  type: Piezas de Fritzing
+  type: Componentes de Fritzing
   url: https://github.com/EchidnaEducacion/Rgraficos/tree/main/hardware/fritzing
   image: ./recursos/docentes-fritzing.png
   order: 5
