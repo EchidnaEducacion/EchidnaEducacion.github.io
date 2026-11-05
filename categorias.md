@@ -14,8 +14,10 @@ Propuesta para revisar las categorías y las etiquetas del blog. **Está pendien
    - [Etiquetas propuestas](#etiquetas-propuestas)
    - [Alternativas descartadas](#alternativas-descartadas)
    - [Cómo se aplicaría](#cómo-se-aplicaría)
-3. [Pendiente](#pendiente)
-4. [Anexo: categorías y etiquetas de cada entrada](#anexo-categorías-y-etiquetas-de-cada-entrada)
+3. [Dudas](#dudas)
+   - [Categoría y entradas de Publicaciones](#categoría-y-entradas-de-publicaciones)
+4. [Pendiente](#pendiente)
+5. [Anexo: categorías y etiquetas de cada entrada](#anexo-categorías-y-etiquetas-de-cada-entrada)
 
 ---
 
@@ -152,9 +154,40 @@ Si el equipo la aprueba, en una rama propia y por *pull request*, porque cambian
 - Criterios en [`modelo-contenido.md`](modelo-contenido.md#listas-de-datos-autores-y-categorías), lista de [`escribir-blog.md`](escribir-blog.md#categorías-y-etiquetas) y decisión en «Decisiones tomadas» del README.
 - Comprobar con el *build* y en el servidor de desarrollo: lateral del blog, `/category/<id>/` y redirecciones.
 
+## Dudas
+
+Cuestiones que han surgido después de preparar la propuesta. No están en sus tablas: se incorporarán cuando el equipo decida.
+
+### Categoría y entradas de Publicaciones
+
+Planteada por Jose Pujol en noviembre de 2026: ¿tiene sentido que el blog, que es contenido propio, tenga entradas sobre lo que publican otros?
+
+Lo que se ve:
+
+- **Las 6 entradas no tienen contenido propio**: son una línea y un enlace al medio. La de Arganbot, por ejemplo, dice solo que «prueban el primer prototipo de Echidna, y nos escriben el siguiente artículo».
+- **Ya están en la página [5.2 Publicaciones](estructura.md)** (`/quienes-somos/publicaciones/`, datos en `web/src/content/publicaciones.yaml`), que reúne unas 27 con fecha, tipo e importancia (ver [`publicaciones.md`](publicaciones.md)).
+- **La categoría no se usa desde 2020**: lo publicado después (Educación 3.0, Hisparob, CATEDU, Junta de Andalucía, los TFM de la Universidad Miguel Hernández…) no ha pasado por el blog, y la página hace ese papel.
+- **No encaja en el [criterio](#criterio)**: la categoría dice qué tipo de entrada es, y una publicación de otro medio no es una entrada del blog, sino un enlace externo, como los materiales del alumnado.
+
+Propuesta (opción A):
+
+- **Borrar las 6 entradas y la categoría.** Sus URL y `/category/publicaciones/` redirigen a `/quienes-somos/publicaciones/`. El blog queda con 5 categorías.
+- **Si sale algo importante** (como el artículo de Educación 3.0), se escribe una entrada propia en Noticias, con comentario nuestro, y se añade a la página 5.2.
+
+Alternativa (opción B): conservar las entradas en Noticias como registro histórico. Se quita la categoría, pero las entradas siguen sin contenido.
+
+Si se aprueba la A, cambia también:
+
+- La tabla de [categorías propuestas](#categorías-propuestas), la de [qué pasa con las categorías actuales](#qué-pasa-con-las-categorías-actuales) y el recuento del inicio de la [propuesta](#propuesta) (6 → 5 categorías).
+- La etiqueta **EchidnaWhite** se queda con una sola entrada (Echidna en la OSHWDem 2019), por debajo del mínimo, porque la otra es Juegos Robótica episodio 42. Habría que decidir si se crea igualmente.
+- La fila «Entradas sin etiquetas» de las [etiquetas propuestas](#etiquetas-propuestas) pierde Juegos Robótica episodio 42.
+- Las 6 URL van a [`redirecciones.md`](redirecciones.md#blog-y-rss).
+- Antes de borrar, comprobar que la página 5.2 recoge todo lo de esas entradas (el pódcast de Programar Fácil que citaba la web antigua ya consta como no localizado).
+
 ## Pendiente
 
 - [ ] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (cambios de noviembre en [este comentario](https://github.com/EchidnaEducacion/gobernanza/issues/59#issuecomment-6663302957)).
+- [ ] Decidir con el equipo la duda sobre la [categoría y las entradas de Publicaciones](#categoría-y-entradas-de-publicaciones).
 - [ ] Aplicar la propuesta aprobada y decidir si este documento se conserva o se borra.
 - [ ] Añadir la etiqueta App Inventor cuando haya una segunda entrada que la use.
 
