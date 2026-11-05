@@ -244,6 +244,7 @@ Revisados uno a uno; lo propuesto está en la tabla siguiente.
 | Entradas sin etiquetas | Aprendiendo con robots lleva REA (anuncia un REA del INTEF); ¡Estrenamos nueva web!, EchidnaBlack2 y EchidnaML (las presenta); Echidna en el Ártico, EchidnaShield (enlaza el repositorio de EchidnaShield), y Juegos Robótica episodio 42, EchidnaWhite (ver la fila siguiente) | Aprendiendo con robots, ¡Estrenamos nueva web!, Echidna en el Ártico, Juegos Robótica episodio 42 |
 | EchidnaWhite | Nueva, en Placas: Juegos Robótica episodio 42 trata de ella y Echidna en la OSHWDem 2019 la presenta, así que cumple el mínimo de dos entradas | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
 | Etiquetas nuevas | Ninguna más: el nivel educativo apenas aparece (Primaria en 3 anuncios de REA, Secundaria en ninguno); Acelerómetro, OLED, zumbador y Bluetooth tienen una sola entrada, y los pulsadores están en casi todo proyecto sin ser el tema | Ninguna |
+| App Inventor (candidata) | No se crea todavía: iría en Entornos de programación, pero solo la usa una entrada. Se añadirá cuando se publique una segunda | Encendiendo un LED con App Inventor vía Bluetooth, cuando la haya |
 
 ## Cómo se aplicarán
 
@@ -270,7 +271,8 @@ Si el equipo la aprueba, en una rama propia y por *pull request*, porque cambian
 - [x] Revisar las etiquetas: quedan 23 (las 21 actuales más REA, Impresión 3D y EchidnaWhite, menos Sensores externos).
 - [x] Proponer cómo distinguir los proyectos según el montaje: tres subcategorías de Proyectos, una por proyecto; Bloques de construcción pasa a ser una de ellas.
 - [x] Repartir los proyectos en las subcategorías (en el anexo): Proyectos y Actividades con Echidna pasa a Noticias y EchidnaBoat va a Manualidades.
-- [ ] Llevar las subcategorías a la revisión en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
+- [ ] Añadir la etiqueta App Inventor (Entornos de programación) cuando haya una segunda entrada que la use.
+- [x] Llevar las subcategorías a la revisión en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) ([comentario del 5 de noviembre de 2026](https://github.com/EchidnaEducacion/gobernanza/issues/59#issuecomment-6663302957)).
 - [ ] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
 - [ ] Aplicar la propuesta aprobada y decidir si este documento se conserva o se borra.
 
