@@ -4,7 +4,7 @@ description: "Echidna es una placa diseñada para trabajar con entornos gráfico
 date: 2020-04-12
 updated: 2020-06-26
 author: jose
-categories: [noticias]
+categories: [didactica]
 tags: ["IDE Arduino"]
 image: ./Imagen_blog_Echidna_2-01-e1592561484199.jpg
 imageAlt: "Un ordenador con código de Arduino en la pantalla y una mano que sostiene la EchidnaShield."

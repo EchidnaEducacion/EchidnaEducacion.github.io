@@ -110,7 +110,7 @@ La categoría propuesta para cada entrada, con la subcategoría de cada proyecto
 | Proyectos | Se mantiene, con tres subcategorías | Cada proyecto lleva su subcategoría. Proyectos y Actividades con Echidna pasa a Noticias (es un vídeo que recopila varios proyectos). Llegan Pantalla OLED (de Hardware) y Encendiendo un LED con App Inventor (de Didáctica) | — |
 | Noticias, Talleres y Publicaciones | Se mantienen | Sin cambios | — |
 | Inteligencia Artificial | Se mantiene | Sin cambios | — |
-| Didáctica | Se elimina: con una sola entrada no llega al mínimo (ver [Dudas](#entradas-sin-categoría-propia-didáctica-y-tutoriales)) | Sus entradas se quedan con sus otras categorías; las que solo la tenían: ¡La Tierra se mueve! y Andalucía, del alba al anochecer pasan a Noticias, y Encendiendo un LED con App Inventor, a Proyectos. Programar Echidna con el IDE de Arduino ya está en Noticias (noviembre de 2026) | `/category/noticias/` |
+| Didáctica | Se elimina: con una sola entrada no llega al mínimo (ver [Dudas](#entradas-sin-categoría-propia-didáctica-y-tutoriales)) | Sus entradas se quedan con sus otras categorías; las que solo la tenían: Programar Echidna con el IDE de Arduino, ¡La Tierra se mueve! y Andalucía, del alba al anochecer pasan a Noticias, y Encendiendo un LED con App Inventor, a Proyectos. | `/category/noticias/` |
 | Bloques de construcción | Pasa a subcategoría de Proyectos | Los ocho proyectos siguen en ella; Construccionismo y STEAM I pasa a Noticias | — (no cambia de URL) |
 | Programación | Se elimina | Se quedan con sus otras categorías. Las dos que solo la tenían: Posta en marcha e proxectos con EchidnaBlack pasa a Talleres y EchidnaML: calling for B tester, a Noticias | `/category/proyectos/` |
 | Hardware | Se elimina | Echidna Black: Echidna se hace mayor… pasa a Noticias; Pantalla OLED en Echidna Shield y Black, a Proyectos; el Manual se queda en Noticias | `/ecosistema/` |
@@ -232,7 +232,7 @@ Categorías y etiquetas actuales, antes de aplicar la propuesta. La última colu
 | 2020/02 Pulsadores gigantes con MkMk | Proyectos | EchidnaShield, Makey Makey, Música | Proyectos › Manualidades |
 | 2020/02 Selector de colores RGB | Proyectos | Snap4Arduino, LED | Proyectos › Placa y componentes |
 | 2020/03 Open LED race para 4 jugadores | Proyectos | EchidnaShield, LED, Makey Makey, Juegos | Proyectos › Placa y componentes |
-| 2020/04 Programar Echidna con el IDE de Arduino | Noticias (antes Didáctica) | IDE Arduino | Noticias |
+| 2020/04 Programar Echidna con el IDE de Arduino | Didáctica | IDE Arduino | Noticias |
 | 2020/06 Echidna Black: Echidna se hace mayor… | Hardware | EchidnaBlack | Noticias |
 | 2020/06 El proyecto Echidna crece | Noticias | EchidnaBlack, EchidnaScratch | Noticias |
 | 2020/07 Construccionismo y STEAM I | Bloques de construcción, Impresión 3D | EchidnaBlack, EchidnaScratch, Makey Makey, STEAM | Noticias |
