@@ -4,7 +4,7 @@ description: Tendedero de bloques que recoge la ropa bajo un tejadillo cuando ll
 date: 2026-11-10
 author: jorge-lobo
 categories: [bloques-de-construccion, didactica, proyectos]
-tags: ["EchidnaBlack2", "EchidnaML", "Servomotor", "Sensores externos", "STEAM"]
+tags: ["EchidnaBlack2", "EchidnaML", "Servomotor", "Sensores externos"]
 image: ./tendedero.png
 imageAlt: "El erizo de Echidna con una pieza de construcción, junto al tendedero automático: un tejadillo rojo sobre una base de piezas, con el servomotor que mueve el tendedero."
 draft: true
@@ -12,7 +12,7 @@ draft: true
 
 En este proyecto os proponemos construir un tendedero automático que recoge la ropa cuando empieza a llover. Es una adaptación de una idea que se ha visto en numerosas publicaciones en redes, aunque no hemos logrado descubrir cuál fue el proyecto original.
 
-El funcionamiento es sencillo: un [sensor de humedad](/ecosistema/echidnablack2/complementos/sensor-humedad/) conectado a la entrada A2 de la EchidnaBlack2 detecta el agua. Cuando su lectura baja de 685, el [servomotor](/ecosistema/echidnablack2/complementos/servomotor-posicion/) conectado a D7 gira a 90º y mete el tendedero bajo el tejadillo. Cuando la lectura vuelve a superar 715, el servomotor gira a 150º y saca de nuevo la ropa. Para usar la entrada A2, el selector de la placa tiene que estar en [modo sensores](/ecosistema/echidnablack2/modo-sensores-mkmk/).
+El funcionamiento es sencillo: un [sensor de humedad](/ecosistema/echidnablack2/complementos/sensor-humedad/) conectado a la entrada A2 de la EchidnaBlack2 detecta el agua. Cuando su lectura baja de 685, el [servomotor](/ecosistema/echidnablack2/complementos/servomotor-posicion/) conectado a D7 gira a 90° y mete el tendedero bajo el tejadillo. Cuando la lectura vuelve a superar 715, el servomotor gira a 150° y saca de nuevo la ropa. Para usar la entrada A2, el selector de la placa tiene que estar en [modo sensores](/ecosistema/echidnablack2/modo-sensores-mkmk/).
 
 ¿Por qué usamos dos valores distintos? Si usáramos solo uno, cuando la lectura estuviera justo en el límite el tendedero entraría y saldría sin parar. Dejando un pequeño margen entre ambos, el tendedero solo se mueve cuando realmente ha empezado o ha dejado de llover.
 
