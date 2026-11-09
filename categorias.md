@@ -95,7 +95,7 @@ Preparada por Jose Pujol en octubre de 2026 y ampliada en noviembre de 2026 con 
 | Proyectos | Montajes con la placa explicados paso a paso: qué se hace, cómo se conecta o se construye y el programa. Lleva siempre una de sus tres subcategorías | 30 | — |
 | ↳ Placa y componentes | Proyectos que no construyen ningún objeto: usan lo que lleva la placa (LED RGB, sensores, acelerómetro, joystick, pulsadores…) y, si acaso, le conectan algo (servomotor, tira de LED, pantalla, módulo Bluetooth…) | 5 | Selector de colores RGB, Pantalla OLED en Echidna Shield y Black |
 | ↳ Manualidades | Proyectos que construyen un objeto con papel, cartón, materiales reutilizados o conductores, o con piezas impresas en 3D | 17 | Dragón de papel, Perrobot, El Laboratorio del Dr. Frankestein |
-| ↳ Bloques de construcción | Proyectos que construyen un objeto con piezas de construcción (tipo LEGO) | 8, más el Tendedero en borrador | Construye un gallo que canta al amanecer, Barrera automática, Rotógrafo |
+| ↳ Bloques de construcción | Proyectos que construyen un objeto con piezas de construcción (tipo LEGO) | 9 | Construye un gallo que canta al amanecer, Barrera automática, Rotógrafo |
 | Noticias | Novedades del proyecto: placas, entornos de programación, manuales, REA nuevos, la web, el canal de YouTube… y, mientras no tengan categoría propia, los artículos sobre didáctica y los tutoriales de configuración. No van las crónicas de eventos (Talleres) | 19 | A programar con Echidna ML, Manual de EchidnaBlack2 y EchidnaML |
 | Talleres | Eventos en los que participa Echidna: ferias, congresos y talleres, antes o después de celebrarse | 8 | Echidna en la OSHWDem 2019, ¡Volvemos a esLibre! |
 | Publicaciones | Artículos, entrevistas y pódcast de otros medios sobre Echidna | 6 | Juegos Robótica episodio 42, Programar fácil: «EchidnaShield el Arduino Shield…» |
@@ -124,7 +124,7 @@ La categoría propuesta para cada entrada, con la subcategoría de cada proyecto
 | REA | Nueva, en Temas (viene de la categoría) | Nace la sección de REAs, ¡La Tierra se mueve!, Aprendiendo con robots, Andalucía, del alba al anochecer |
 | Impresión 3D | Nueva, en Temas (viene de la categoría). La llevan también los proyectos que ofrecen piezas para imprimir, para saber cuáles pasarían a una futura subcategoría Impresión 3D | Concurso PrintBot Echidna, Construccionismo y STEAM I, EchidnaBoat, IA: Alimento de perros y gatos |
 | EchidnaWhite | Creada en noviembre de 2026, en Placas, con la entrada sobre las placas en el IDE de Arduino. Falta ponérsela a Juegos Robótica episodio 42, que trata de ella, y a Echidna en la OSHWDem 2019, que la presenta | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
-| Sensores externos | Se elimina: lo que pretendía lo dicen ahora las subcategorías de Proyectos | SmartCLASSROOM, Perrobot, Barrera automática y Tendedero automático (borrador) |
+| Sensores externos | Se elimina: lo que pretendía lo dicen ahora las subcategorías de Proyectos | SmartCLASSROOM, Perrobot, Barrera automática y Tendedero automático |
 | Entradas sin etiquetas | Aprendiendo con robots lleva REA; ¡Estrenamos nueva web!, EchidnaBlack2 y EchidnaML (las presenta); Echidna en el Ártico, EchidnaShield (enlaza su repositorio), y Juegos Robótica episodio 42, EchidnaWhite | Aprendiendo con robots, ¡Estrenamos nueva web!, Echidna en el Ártico, Juegos Robótica episodio 42 |
 | Inteligencia Artificial | Se mantiene como categoría y como etiqueta: la categoría para las entradas centradas en la IA y la etiqueta para todas las que la usan o la mencionan | Ninguna |
 | OSHWDem y esLibre | Se mantienen: son eventos a los que Echidna vuelve cada año. La categoría Talleres dice el tipo de entrada; la etiqueta, el evento | Ninguna |
@@ -280,5 +280,5 @@ Categorías y etiquetas actuales, antes de aplicar la propuesta. La última colu
 | 2026/05 El Laboratorio del Dr. Frankestein | Didáctica, Proyectos | EchidnaBlack2, EchidnaML, Servomotor, LED, Makey Makey | Proyectos › Manualidades |
 | 2026/05 Rotógrafo | Bloques de construcción, Didáctica, Proyectos | EchidnaBlack2, Servomotor, STEAM | Proyectos › Bloques de construcción |
 | 2026/10 ¡Estrenamos nueva web! | Noticias | — | Noticias |
-| 2026/10 Tendedero automático (borrador) | Bloques de construcción, Didáctica, Proyectos | EchidnaBlack2, EchidnaML, Servomotor, Sensores externos, STEAM | Proyectos › Bloques de construcción |
+| 2026/11 Tendedero automático | Bloques de construcción, Didáctica, Proyectos | EchidnaBlack2, EchidnaML, Servomotor, Sensores externos | Proyectos › Bloques de construcción |
 | 2026/10 ¡Truco o trato con EchidnaBricks! | Bloques de construcción, Didáctica, Proyectos, Inteligencia Artificial | EchidnaBlack2, EchidnaML, Inteligencia Artificial, Servomotor, STEAM | Proyectos › Bloques de construcción + Inteligencia Artificial |
