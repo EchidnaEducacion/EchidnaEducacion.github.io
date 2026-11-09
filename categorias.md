@@ -75,7 +75,7 @@ Lo que se ve:
 
 ## Propuesta
 
-Preparada por Jose Pujol en octubre de 2026 y ampliada en noviembre de 2026 con las subcategorías de Proyectos y la eliminación de Didáctica. Con ella, el blog queda con **5 categorías** (Proyectos, Noticias, Talleres, Publicaciones e Inteligencia Artificial), **3 subcategorías de Proyectos** (Placa y componentes, Manualidades y Bloques de construcción) y **23 etiquetas** (las 21 actuales más REA, Impresión 3D y EchidnaWhite, menos Sensores externos).
+Preparada por Jose Pujol en octubre de 2026 y ampliada en noviembre de 2026 con las subcategorías de Proyectos y la eliminación de Didáctica. Con ella, el blog queda con **5 categorías** (Proyectos, Noticias, Talleres, Publicaciones e Inteligencia Artificial), **3 subcategorías de Proyectos** (Placa y componentes, Manualidades y Bloques de construcción) y **23 etiquetas** (las 22 actuales más REA e Impresión 3D, menos Sensores externos).
 
 ### Criterio
 
@@ -123,7 +123,7 @@ La categoría propuesta para cada entrada, con la subcategoría de cada proyecto
 |---|---|---|
 | REA | Nueva, en Temas (viene de la categoría) | Nace la sección de REAs, ¡La Tierra se mueve!, Aprendiendo con robots, Andalucía, del alba al anochecer |
 | Impresión 3D | Nueva, en Temas (viene de la categoría). La llevan también los proyectos que ofrecen piezas para imprimir, para saber cuáles pasarían a una futura subcategoría Impresión 3D | Concurso PrintBot Echidna, Construccionismo y STEAM I, EchidnaBoat, IA: Alimento de perros y gatos |
-| EchidnaWhite | Nueva, en Placas: Juegos Robótica episodio 42 trata de ella y Echidna en la OSHWDem 2019 la presenta | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
+| EchidnaWhite | Creada en noviembre de 2026, en Placas, con la entrada sobre las placas en el IDE de Arduino. Falta ponérsela a Juegos Robótica episodio 42, que trata de ella, y a Echidna en la OSHWDem 2019, que la presenta | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
 | Sensores externos | Se elimina: lo que pretendía lo dicen ahora las subcategorías de Proyectos | SmartCLASSROOM, Perrobot, Barrera automática y Tendedero automático (borrador) |
 | Entradas sin etiquetas | Aprendiendo con robots lleva REA; ¡Estrenamos nueva web!, EchidnaBlack2 y EchidnaML (las presenta); Echidna en el Ártico, EchidnaShield (enlaza su repositorio), y Juegos Robótica episodio 42, EchidnaWhite | Aprendiendo con robots, ¡Estrenamos nueva web!, Echidna en el Ártico, Juegos Robótica episodio 42 |
 | Inteligencia Artificial | Se mantiene como categoría y como etiqueta: la categoría para las entradas centradas en la IA y la etiqueta para todas las que la usan o la mencionan | Ninguna |
@@ -179,7 +179,7 @@ Alternativa (opción B): conservar las entradas en Noticias como registro histó
 Si se aprueba la A, cambia también:
 
 - La tabla de [categorías propuestas](#categorías-propuestas), la de [qué pasa con las categorías actuales](#qué-pasa-con-las-categorías-actuales) y el recuento del inicio de la [propuesta](#propuesta) (5 → 4 categorías).
-- La etiqueta **EchidnaWhite** se queda con una sola entrada (Echidna en la OSHWDem 2019), por debajo del mínimo, porque la otra es Juegos Robótica episodio 42. Habría que decidir si se crea igualmente.
+- La etiqueta **EchidnaWhite** pierde Juegos Robótica episodio 42, pero sigue en el mínimo con Echidna en la OSHWDem 2019 y la entrada sobre las placas en el IDE de Arduino.
 - La fila «Entradas sin etiquetas» de las [etiquetas propuestas](#etiquetas-propuestas) pierde Juegos Robótica episodio 42.
 - Las 6 URL van a [`redirecciones.md`](redirecciones.md#blog-y-rss).
 - Antes de borrar, comprobar que la página 5.2 recoge todo lo de esas entradas (el pódcast de Programar Fácil que citaba la web antigua ya consta como no localizado).
@@ -202,7 +202,7 @@ Propuesta:
 - **De momento, las dos van a Noticias.** La entrada en preparación va ya en Noticias, con las etiquetas IDE Arduino, EchidnaShield, EchidnaBlack y EchidnaBlack2, para no tener que moverla al aplicar la propuesta.
 - **Cuando uno de los dos tipos llegue a unas cinco entradas**, se crea su categoría (Didáctica, Tutoriales o Guías) y se pasan a ella.
 
-Afecta también a la etiqueta **EchidnaWhite**: la entrada en preparación sería la tercera que la usa, y la segunda si se aprueba la opción A de [Publicaciones](#categoría-y-entradas-de-publicaciones), con lo que seguiría cumpliendo el mínimo.
+La entrada en preparación es también la primera con la etiqueta **EchidnaWhite**, creada en noviembre de 2026 (ver [etiquetas propuestas](#etiquetas-propuestas)).
 
 ## Pendiente
 

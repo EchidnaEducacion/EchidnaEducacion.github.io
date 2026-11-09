@@ -95,7 +95,7 @@ imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógra
 
 - **Imágenes**: en la carpeta de la entrada, con nombres descriptivos y sin metadatos (`convert -strip foto.jpg foto.jpg`). Se insertan con ruta relativa y texto alternativo: `![Qué se ve en la imagen.](./programa-rotografo.png)`.
 - **Portada**: en `image`, con su `imageAlt`. Es también la miniatura del listado y la imagen al compartir en redes. Medida recomendada: **1200 × 600 px (proporción 2:1)**, con lo importante en el centro. En la entrada sale entera, pero la miniatura del listado se recorta a 2:1 desde el centro, y la de la entrada destacada de la portada, en pantallas anchas, todavía más.
-- **Estilo de la portada: ilustración, no fotografía.** El estilo de la web es ilustrado, así que las portadas no usan fotos reales, tampoco del montaje: esas van dentro de la entrada. Suele aparecer el erizo de Echidna junto al tema de la entrada, pero no es obligatorio. Las entradas sobre un material con portada propia (un manual, una situación de aprendizaje) o sobre un evento o una entidad externos pueden usar esa portada, su cartel o su logotipo.
+- **Estilo de la portada: ilustración o render 3D, no fotografía.** El estilo de la web es ilustrado, así que las portadas son ilustraciones o renders 3D (de las placas, por ejemplo) y no usan fotos reales, tampoco del montaje: esas van dentro de la entrada. Suele aparecer el erizo de Echidna junto al tema de la entrada, pero no es obligatorio. Las entradas sobre un material con portada propia (un manual, una situación de aprendizaje) o sobre un evento o una entidad externos pueden usar esa portada, su cartel o su logotipo.
 - **Texto alternativo**: describe lo que se ve y lo que aporta, no «imagen de…». Toda imagen lo lleva.
 - **GIF animados**: van en `web/public/AAAA/MM/<slug>/` y se enlazan con la ruta completa (`![Animación del montaje.](/AAAA/MM/<slug>/montaje.gif)`), porque el procesado de imágenes de Astro no los conserva animados.
 - **Vídeos de YouTube**: un enlace en su propio párrafo, `[Título del vídeo](https://www.youtube.com/watch?v=…)`.
@@ -104,7 +104,7 @@ imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógra
 ## Categorías y etiquetas
 
 - **Categorías** (al menos una): `bloques-de-construccion`, `didactica`, `hardware`, `impresion-3d`, `inteligencia-artificial`, `noticias`, `programacion`, `proyectos`, `publicaciones`, `rea` y `talleres`.
-- **Etiquetas**: un vocabulario cerrado de 21 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog). La categoría `inteligencia-artificial` es solo para las entradas centradas en la IA; las que solo la mencionan llevan la etiqueta Inteligencia Artificial.
+- **Etiquetas**: un vocabulario cerrado de 22 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog). La categoría `inteligencia-artificial` es solo para las entradas centradas en la IA; las que solo la mencionan llevan la etiqueta Inteligencia Artificial.
 - **Una etiqueta nueva** solo si sirve para al menos dos entradas; se propone en la PR y se añade a esa lista y a `web/src/lib/etiquetas.ts`.
 
 ## Revisar una *pull request*
@@ -113,7 +113,7 @@ Quien revisa comprueba:
 
 - que **«Comprobar la web»** está en verde;
 - el texto (erratas, tono, enlaces que funcionan) y la `description`;
-- que todas las imágenes tienen texto alternativo y la portada se ve bien y sigue el [estilo](#imágenes-y-vídeos) (ilustración, no foto);
+- que todas las imágenes tienen texto alternativo y la portada se ve bien y sigue el [estilo](#imágenes-y-vídeos) (ilustración o render 3D, no foto);
 - que las categorías y etiquetas siguen los criterios;
 - que ya no lleva `draft: true`.
 

@@ -3,7 +3,7 @@
 // Va aparte de content.config.ts, sin dependencias de Astro, para que la use también scripts/nueva-entrada.ts
 export const ETIQUETAS = [
   // Placas
-  'EchidnaShield', 'EchidnaBlack', 'EchidnaBlack2',
+  'EchidnaShield', 'EchidnaWhite', 'EchidnaBlack', 'EchidnaBlack2',
   // Entornos de programación
   'EchidnaML', 'EchidnaScratch', 'Snap4Arduino', 'IDE Arduino',
   // Componentes
