@@ -206,7 +206,7 @@ La entrada en preparación es también la primera con la etiqueta **EchidnaWhite
 
 ## Pendiente
 
-- [ ] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (cambios de noviembre en [este comentario](https://github.com/EchidnaEducacion/gobernanza/issues/59#issuecomment-6663302957) y en [este otro](https://github.com/EchidnaEducacion/gobernanza/issues/59#issuecomment-6719540652), con las dudas).
+- [ ] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
 - [ ] Decidir con el equipo la duda sobre la [categoría y las entradas de Publicaciones](#categoría-y-entradas-de-publicaciones).
 - [ ] Revisar con el equipo las [entradas sin categoría propia](#entradas-sin-categoría-propia-didáctica-y-tutoriales) y crear su categoría cuando lleguen al mínimo.
 - [ ] Aplicar la propuesta aprobada y decidir si este documento se conserva o se borra.
