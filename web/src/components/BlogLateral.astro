@@ -16,9 +16,18 @@ interface Props {
 }
 const { todas, actual } = Astro.props;
 
-const cuenta = (id: string) => todas.filter((t) => t.data.categories.some((c) => c.id === id)).length;
-const destacadas = new Set(actual?.data.categories.map((c) => c.id) ?? []);
 const categorias = await getCollection('categorias');
+// Una categoría madre cuenta (y se destaca con) las entradas de sus subcategorías
+const familia = (id: string) => new Set([id, ...categorias.filter((c) => c.data.parent === id).map((c) => c.id)]);
+const cuenta = (id: string) => {
+  const ids = familia(id);
+  return todas.filter((t) => t.data.categories.some((c) => ids.has(c.id))).length;
+};
+const delActualCat = actual?.data.categories.map((c) => c.id) ?? [];
+const destacadas = new Set([
+  ...delActualCat,
+  ...delActualCat.map((id) => categorias.find((c) => c.id === id)?.data.parent).filter((p): p is string => !!p),
+]);
 const lista = categorias
   .filter((c) => !c.data.parent)
   .sort((a, b) => a.data.name.localeCompare(b.data.name, 'es'))

@@ -1,6 +1,6 @@
 # Categorías y etiquetas del blog
 
-Propuesta para revisar las categorías y las etiquetas del blog. **Está pendiente de que la revise el equipo** en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (el primer debate fue en el issue [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35)); hasta entonces no se aplica nada en la web. Cuando se apruebe y se aplique, los criterios pasarán a [`modelo-contenido.md`](modelo-contenido.md#etiquetas-del-blog) y la decisión, al README.
+Propuesta para revisar las categorías y las etiquetas del blog. **Está pendiente de que la revise el equipo** en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (el primer debate fue en el issue [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35)); está aplicada en la rama `categorias-etiquetas`, cuyo *pull request* se fusiona cuando el equipo la apruebe. Los criterios ya están en [`modelo-contenido.md`](modelo-contenido.md#listas-de-datos-autores-y-categorías) y la decisión, en el README.
 
 ## Índice
 
@@ -92,7 +92,7 @@ Preparada por Jose Pujol en octubre de 2026 y ampliada en noviembre de 2026 con 
 
 | Categoría | Qué va dentro | Entradas | Ejemplos |
 |---|---|---|---|
-| Proyectos | Montajes con la placa explicados paso a paso: qué se hace, cómo se conecta o se construye y el programa. Lleva siempre una de sus tres subcategorías | 30 | — |
+| Proyectos | Montajes con la placa explicados paso a paso: qué se hace, cómo se conecta o se construye y el programa. Lleva siempre una de sus tres subcategorías | 31 | — |
 | ↳ Placa y componentes | Proyectos que no construyen ningún objeto: usan lo que lleva la placa (LED RGB, sensores, acelerómetro, joystick, pulsadores…) y, si acaso, le conectan algo (servomotor, tira de LED, pantalla, módulo Bluetooth…) | 5 | Selector de colores RGB, Pantalla OLED en Echidna Shield y Black |
 | ↳ Manualidades | Proyectos que construyen un objeto con papel, cartón, materiales reutilizados o conductores, o con piezas impresas en 3D | 17 | Dragón de papel, Perrobot, El Laboratorio del Dr. Frankestein |
 | ↳ Bloques de construcción | Proyectos que construyen un objeto con piezas de construcción (tipo LEGO) | 9 | Construye un gallo que canta al amanecer, Barrera automática, Rotógrafo |
@@ -209,7 +209,8 @@ La entrada en preparación es también la primera con la etiqueta **EchidnaWhite
 - [ ] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
 - [ ] Decidir con el equipo la duda sobre la [categoría y las entradas de Publicaciones](#categoría-y-entradas-de-publicaciones).
 - [ ] Revisar con el equipo las [entradas sin categoría propia](#entradas-sin-categoría-propia-didáctica-y-tutoriales) y crear su categoría cuando lleguen al mínimo.
-- [ ] Aplicar la propuesta aprobada y decidir si este documento se conserva o se borra.
+- [x] Aplicar la propuesta (rama `categorias-etiquetas`, pendiente de fusionar).
+- [ ] Decidir si este documento se conserva o se borra una vez fusionado.
 - [ ] Añadir la etiqueta App Inventor cuando haya una segunda entrada que la use.
 
 ## Anexo: categorías y etiquetas de cada entrada

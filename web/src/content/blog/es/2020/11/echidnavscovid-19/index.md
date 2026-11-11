@@ -4,8 +4,8 @@ description: "Una propuesta para trabajar el esquema percepción, procesamiento 
 date: 2020-11-05
 updated: 2020-11-07
 author: javier
-categories: [proyectos]
-tags: ["EchidnaBlack", "EchidnaScratch", "Servomotor", "Sensores externos"]
+categories: [manualidades]
+tags: ["EchidnaBlack", "EchidnaScratch", "Servomotor"]
 image: ./Captura-de-pantalla-2020-11-07-a-las-20.54.07.png
 imageAlt: "Portada «Smart Classroom. Echidna & LEGO vs COVID-19: ventilación automática de un aula por control con sensor de CO2», con el erizo de Echidna y el gato de Scratch en un aula."
 ---

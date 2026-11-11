@@ -3,7 +3,8 @@ title: "Aprendiendo con robots: cómo funcionan tus sentidos… y los de las má
 description: "Un recurso del INTEF para 5.º y 6.º de Primaria que compara los sentidos humanos con los sensores de los robots mediante retos de programación."
 date: 2025-09-15
 author: jorge-lobo
-categories: [didactica, noticias]
+categories: [noticias]
+tags: ["REA"]
 image: ./reaaprendiendoconrobots.png
 imageAlt: "El erizo de Echidna imagina una mano humana que toca una mano robótica, con el texto «REA Aprendiendo con robots»."
 ---

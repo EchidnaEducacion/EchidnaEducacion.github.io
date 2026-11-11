@@ -4,8 +4,8 @@ description: "Proyecto para convertir la placa Echidna en un barco, desarrollado
 date: 2017-09-14
 updated: 2020-06-20
 author: jorge-lobo
-categories: [proyectos]
-tags: ["EchidnaShield"]
+categories: [manualidades]
+tags: ["EchidnaShield", "Impresión 3D"]
 image: ./EchidnaBoat.png
 imageAlt: "El erizo de Echidna imagina una barca en el mar, con el título «EchidnaBoat»."
 ---

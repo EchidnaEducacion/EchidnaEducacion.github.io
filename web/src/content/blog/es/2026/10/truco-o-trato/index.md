@@ -3,7 +3,7 @@ title: ¡Truco o trato con EchidnaBricks!
 description: Calavera de bloques que, con un modelo de texto de LearningML y un servomotor en la EchidnaBlack2, decide si nos merecemos un trato o un buen susto.
 date: 2026-10-28
 author: jorge-lobo
-categories: [bloques-de-construccion, didactica, proyectos, inteligencia-artificial]
+categories: [bloques-de-construccion, inteligencia-artificial]
 tags: ["EchidnaBlack2", "EchidnaML", "Inteligencia Artificial", "Servomotor", "STEAM"]
 image: ./calavera.png
 imageAlt: "El erizo de Echidna con una pieza de construcción, junto a la calavera de Halloween hecha con bloques: tiene los ojos rojos y, al lado, el servomotor que mueve el cartel de la parte superior."

@@ -84,7 +84,7 @@ title: Rotógrafo
 description: Un dispositivo para crear arte en espiral con la EchidnaBlack2 y un servomotor de rotación continua, con guía de construcción, vídeo y programa.
 date: 2026-05-30
 author: jorge-lobo
-categories: [bloques-de-construccion, didactica, proyectos]
+categories: [bloques-de-construccion]
 tags: ["EchidnaBlack2", "Servomotor", "STEAM"]
 image: ./rotografo.png
 imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógrafo: un disco con espirales de colores sobre un servomotor, montado en una base de piezas."
@@ -103,8 +103,8 @@ imageAlt: "El erizo de Echidna con una pieza de construcción, junto al rotógra
 
 ## Categorías y etiquetas
 
-- **Categorías** (al menos una): `bloques-de-construccion`, `didactica`, `hardware`, `impresion-3d`, `inteligencia-artificial`, `noticias`, `programacion`, `proyectos`, `publicaciones`, `rea` y `talleres`.
-- **Etiquetas**: un vocabulario cerrado de 22 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog). La categoría `inteligencia-artificial` es solo para las entradas centradas en la IA; las que solo la mencionan llevan la etiqueta Inteligencia Artificial.
+- **Categorías**: una sola, la del tipo de entrada: `noticias`, `talleres`, `publicaciones` o, si es un proyecto, la subcategoría de su montaje (`placa-y-componentes`, `manualidades` o `bloques-de-construccion`; no `proyectos`, que ya las incluye). Las entradas centradas en la IA suman `inteligencia-artificial`. Los criterios están en [«Listas de datos: autores y categorías»](modelo-contenido.md#listas-de-datos-autores-y-categorías).
+- **Etiquetas**: un vocabulario cerrado de 23 (placas, entornos, componentes, temas y eventos). Se escriben exactamente como en la lista; una etiqueta que no esté en ella impide publicar. La lista y los criterios para asignarlas (solo lo que la entrada dice, la placa por su nombre, STEAM solo cuando hay arte…) están en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog). La categoría `inteligencia-artificial` es solo para las entradas centradas en la IA; las que solo la mencionan llevan la etiqueta Inteligencia Artificial.
 - **Una etiqueta nueva** solo si sirve para al menos dos entradas; se propone en la PR y se añade a esa lista y a `web/src/lib/etiquetas.ts`.
 
 ## Revisar una *pull request*

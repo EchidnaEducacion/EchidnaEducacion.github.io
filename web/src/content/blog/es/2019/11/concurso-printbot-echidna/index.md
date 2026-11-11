@@ -4,8 +4,8 @@ description: "Si quieres colaborar en el proyecto Echidna y participar en el con
 date: 2019-11-30
 updated: 2020-06-16
 author: jorge-lobo
-categories: [impresion-3d]
-tags: ["EchidnaShield", "Servomotor"]
+categories: [noticias]
+tags: ["EchidnaShield", "Servomotor", "Impresión 3D"]
 image: ./PrintBot-Echidna-e1592560566665.png
 imageAlt: "El erizo de Echidna con ruedas, como un robot."
 ---

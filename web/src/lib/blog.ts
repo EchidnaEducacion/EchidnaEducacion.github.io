@@ -5,10 +5,29 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 export const rutaEntrada = (entry: CollectionEntry<'blog'>) => entry.id.replace(/^es\//, '').replace(/\/index$/, '');
 
 // Entradas publicadas en español, de la más reciente a la más antigua
-export const entradasPublicadas = async () =>
-  (await getCollection('blog', (e) => e.id.startsWith('es/') && !e.data.draft)).sort(
+export const entradasPublicadas = async () => {
+  await comprobarSubcategorias();
+  return (await getCollection('blog', (e) => e.id.startsWith('es/') && !e.data.draft)).sort(
     (a, b) => b.data.date.getTime() - a.data.date.getTime(),
   );
+};
+
+// Una categoría con subcategorías (Proyectos) no se pone directamente: cada entrada lleva una, y solo
+// una, de sus subcategorías (el montaje del proyecto). Si no se cumple, falla la publicación.
+const comprobarSubcategorias = async () => {
+  const categorias = await getCollection('categorias');
+  const madres = new Set(categorias.map((c) => c.data.parent).filter(Boolean));
+  const errores = (await getCollection('blog')).flatMap((e) => {
+    const ids = e.data.categories.map((c) => c.id);
+    return [
+      ...ids.filter((id) => madres.has(id)).map((id) => `${e.id}: lleva «${id}»; pon solo una de sus subcategorías`),
+      ...[...madres]
+        .filter((m) => ids.filter((id) => categorias.find((c) => c.id === id)?.data.parent === m).length > 1)
+        .map((m) => `${e.id}: lleva más de una subcategoría de «${m}»`),
+    ];
+  });
+  if (errores.length) throw new Error(`Categorías mal puestas:\n${errores.join('\n')}`);
+};
 
 // Fecha larga: 30 de mayo de 2026
 export const fechaLarga = (fecha: Date) =>

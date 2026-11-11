@@ -3,8 +3,8 @@ title: "Nace la sección de REAs en Echidna"
 description: "¡Estrenamos la sección de Recursos Educativos Abiertos (REA) en la web de Echidna!"
 date: 2025-09-05
 author: jorge-lobo
-categories: [didactica, noticias]
-tags: ["EchidnaScratch", "Temperatura"]
+categories: [noticias]
+tags: ["EchidnaScratch", "Temperatura", "REA"]
 image: ./portadaEchidna.png
 imageAlt: "Portada de la situación de aprendizaje «¿Hace calor aquí?», con el erizo de Echidna, bloques de programación y personajes de los sensores."
 ---

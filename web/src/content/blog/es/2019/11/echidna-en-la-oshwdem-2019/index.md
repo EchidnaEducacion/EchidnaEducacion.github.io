@@ -5,7 +5,7 @@ date: 2019-11-14
 updated: 2020-06-20
 author: xdesig
 categories: [talleres]
-tags: ["EchidnaShield", "OSHWDem"]
+tags: ["EchidnaShield", "OSHWDem", "EchidnaWhite"]
 image: ./LogoOSHWDem.jpeg
 imageAlt: "El pulpo de la OSHWDem."
 ---

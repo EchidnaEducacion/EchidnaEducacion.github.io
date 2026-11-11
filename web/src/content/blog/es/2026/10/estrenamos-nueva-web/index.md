@@ -8,7 +8,7 @@ author: jose
 # Al menos una de: bloques-de-construccion, didactica, hardware, noticias, programacion, publicaciones, rea, recursos, recursos/impresion-3d, recursos/proyectos, talleres
 categories: [noticias]
 # Opcional, solo del vocabulario cerrado (modelo-contenido.md, «Etiquetas del blog»)
-tags: []
+tags: ["EchidnaBlack2", "EchidnaML"]
 # Portada, en esta misma carpeta, con su texto alternativo
 image: ./portada.png
 imageAlt: "El erizo naranja de Echidna mira una pila de tres cubos con las palabras HTTPS, HTML y CSS, coronada por un icono de web."

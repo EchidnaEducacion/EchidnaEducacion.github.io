@@ -131,21 +131,21 @@ title: Título de la entrada
 description: Resumen de la entrada en una o dos frases, entre 50 y 160 caracteres.
 date: 2026-05-01
 author: jose
-categories: [proyectos, bloques-de-construccion]
+categories: [bloques-de-construccion]
 tags: [EchidnaBlack2, EchidnaML, Servomotor]
 image: ./portada.jpg
 ```
 
 ### Etiquetas del blog
 
-Las etiquetas forman un **vocabulario cerrado**: solo se usan las de esta lista, escritas exactamente así (la URL sale del nombre: «Sensor de luz» → `/tag/sensor-de-luz/`). La lista está también en `web/src/lib/etiquetas.ts` (`ETIQUETAS`), y una etiqueta que no esté en ella hace fallar la publicación con un error que indica la entrada. Se revisaron en octubre de 2026 a partir de las heredadas de WordPress, y EchidnaWhite se añadió en noviembre; las que desaparecieron, y adónde redirigen, están en [`redirecciones.md`](redirecciones.md#blog-y-rss).
+Las etiquetas forman un **vocabulario cerrado**: solo se usan las de esta lista, escritas exactamente así (la URL sale del nombre: «Sensor de luz» → `/tag/sensor-de-luz/`). La lista está también en `web/src/lib/etiquetas.ts` (`ETIQUETAS`), y una etiqueta que no esté en ella hace fallar la publicación con un error que indica la entrada. Se revisaron en octubre de 2026 a partir de las heredadas de WordPress, en noviembre se añadieron EchidnaWhite, REA e Impresión 3D y se quitó Sensores externos (revisión de [`categorias.md`](categorias.md)); las que desaparecieron, y adónde redirigen, están en [`redirecciones.md`](redirecciones.md#blog-y-rss).
 
 | Grupo | Etiquetas |
 |---|---|
 | Placas | EchidnaShield · EchidnaWhite · EchidnaBlack · EchidnaBlack2 |
 | Entornos de programación | EchidnaML · EchidnaScratch · Snap4Arduino · IDE Arduino |
-| Componentes | Servomotor · LED · Sensor de luz · Temperatura · Micrófono · Joystick · Sensores externos |
-| Temas | Inteligencia Artificial · STEAM · Makey Makey · Música · Juegos |
+| Componentes | Servomotor · LED · Sensor de luz · Temperatura · Micrófono · Joystick |
+| Temas | Inteligencia Artificial · STEAM · Makey Makey · Música · Juegos · REA · Impresión 3D |
 | Eventos | OSHWDem · esLibre |
 
 **Criterios para asignarlas:**
@@ -153,11 +153,12 @@ Las etiquetas forman un **vocabulario cerrado**: solo se usan las de esta lista,
 - **Solo lo que la entrada dice**: una placa, un entorno o un componente se etiqueta si la entrada lo nombra o lo usa de forma visible, no si se supone. Un proyecto que solo ofrece un `.sb3` sin decir el entorno no lleva EchidnaML.
 - **Placa por su nombre, o por la fecha si el texto es ambiguo**: EchidnaShield (2017–2021), EchidnaBlack (la v1, 2020–2022) y EchidnaBlack2 (desde 2025). Una entrada de 2025 o después que dice «EchidnaBlack» lleva EchidnaBlack2. EchidnaWhite, el prototipo de 2019, solo cuando la entrada la nombra.
 - **Las entradas generales no llevan componentes**: un manual o un curso que repasa todos los componentes de la placa no se etiqueta con cada uno.
-- **Sensores externos**: los que no van en la placa (distancia SHARP, infrarrojos, CO₂…).
+- **REA**: las entradas que anuncian o presentan un recurso educativo abierto.
+- **Impresión 3D**: las entradas sobre impresión 3D y los proyectos que ofrecen piezas para imprimir.
 - **Inteligencia Artificial**: incluye Machine Learning y LearningML. Es la única etiqueta que coincide con una categoría: la etiqueta la llevan todas las entradas que usan o mencionan la IA (noticias, talleres, el manual…), y la categoría, solo las que se centran en ella (proyectos y propuestas que trabajan con modelos de IA). Una entrada de la categoría lleva siempre también la etiqueta.
 - **Makey Makey**: el modo MkMk de la placa y la conductividad.
 - **STEAM**: solo cuando la entrada une la tecnología con el arte (plástica, literatura, música, arte cinético…), no por ser un proyecto tecnológico.
-- **No repetir una categoría** (salvo Inteligencia Artificial, ver arriba): nada de «Proyectos», «Talleres» o «Lego» (para eso está la categoría Bloques de construcción). Los medios que publican sobre Echidna van en la categoría Publicaciones, no como etiqueta.
+- **No repetir una categoría** (salvo Inteligencia Artificial, ver arriba): nada de «Proyectos», «Talleres» o «Lego» (para eso está la subcategoría Bloques de construcción). Los medios que publican sobre Echidna van en la categoría Publicaciones, no como etiqueta.
 - **Una etiqueta nueva tiene que servir para al menos dos entradas** y se añade a esta lista y a `ETIQUETAS` en `web/src/lib/etiquetas.ts`. Por eso no hay «Acelerómetro» (solo el Helicóptero) ni nombres de proyectos o personas.
 - Una entrada puede quedarse sin etiquetas si ninguna encaja (p. ej. Echidna en el Ártico).
 
@@ -180,19 +181,23 @@ De momento están los cuatro del equipo, por orden alfabético de apellido: `jor
 
 **Categorías** (`web/src/content/categorias.yaml`, colección `categorias`, ya implementada; campos `id`, `name` y `parent`):
 
-| `id` | `parent` |
-|---|---|
-| `bloques-de-construccion` | — |
-| `didactica` | — |
-| `hardware` | — |
-| `impresion-3d` | — |
-| `inteligencia-artificial` | — |
-| `noticias` | — |
-| `programacion` | — |
-| `proyectos` | — |
-| `publicaciones` | — |
-| `rea` | — |
-| `talleres` | — |
+| `id` | `parent` | Qué va dentro |
+|---|---|---|
+| `proyectos` | — | Montajes con la placa explicados paso a paso. No se pone directamente: cada proyecto lleva una de sus subcategorías |
+| `placa-y-componentes` | `proyectos` | Proyectos que no construyen ningún objeto: usan lo que lleva la placa y, si acaso, le conectan algo (servomotor, tira de LED, pantalla, Bluetooth…) |
+| `manualidades` | `proyectos` | Proyectos que construyen un objeto con papel, cartón, materiales reutilizados o conductores, o con piezas impresas en 3D |
+| `bloques-de-construccion` | `proyectos` | Proyectos que construyen un objeto con piezas de construcción (tipo LEGO) |
+| `noticias` | — | Novedades del proyecto: placas, entornos, manuales, REA nuevos, la web… y, mientras no tengan categoría propia, los artículos sobre didáctica y los tutoriales de configuración |
+| `talleres` | — | Eventos en los que participa Echidna (ferias, congresos, talleres), antes o después de celebrarse |
+| `publicaciones` | — | Artículos, entrevistas y pódcast de otros medios sobre Echidna |
+| `inteligencia-artificial` | — | Se suma a la de tipo en las entradas centradas en la IA |
+
+**Criterios para asignarlas** (revisados en noviembre de 2026; la propuesta y el reparto de cada entrada están en [`categorias.md`](categorias.md)):
+
+- **La categoría dice qué tipo de entrada es**; de qué trata lo dicen las [etiquetas](#etiquetas-del-blog).
+- **Una categoría por entrada**, salvo Inteligencia Artificial, que se suma a la de tipo en las entradas centradas en la IA.
+- **Cada proyecto lleva una subcategoría de montaje, y solo una**, la de su montaje más exigente: un objeto construido va a Manualidades o a Bloques de construcción aunque lleve servomotores o sensores, y si mezcla bloques y manualidad, a la que predomine. Se asigna leyendo la entrada y sus vídeos o presentaciones, no solo la descripción. La subcategoría implica Proyectos: la entrada sale también en su listado. Si un proyecto lleva `proyectos` o más de una subcategoría, falla la publicación (`web/src/lib/blog.ts`).
+- **Una categoría nueva necesita unas cinco entradas**; hasta entonces, esas entradas van a Noticias.
 
 ## Publicaciones
 

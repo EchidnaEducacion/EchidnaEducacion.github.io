@@ -3,8 +3,8 @@ title: "¡La Tierra se mueve!, un nuevo REA en la sección"
 description: "Nueva situación de aprendizaje para 4.º de Primaria: los movimientos de la Tierra, con una maqueta que simula la rotación gracias a un servomotor."
 date: 2025-09-26
 author: jorge-lobo
-categories: [didactica]
-tags: ["Servomotor"]
+categories: [noticias]
+tags: ["Servomotor", "REA"]
 image: ./latierrasemueve.png
 imageAlt: "La Tierra vista desde el espacio y el erizo de Echidna mirándola, con el título «¡La Tierra se mueve!»."
 ---
