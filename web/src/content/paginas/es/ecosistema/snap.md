@@ -51,6 +51,7 @@ Además de los bloques genéricos, Echidna tiene su propia biblioteca, con bloqu
 1. Descarga el fichero [`S4A-EchidnaBlack2C.xml`](https://github.com/EchidnaEducacion/S4A-EchidnaBlack2C/blob/main/S4A-EchidnaBlack2C.xml) desde su repositorio de GitHub (con el botón de descarga).
 2. En Snap!, en el menú **Archivo**, elige **Abrir…** y luego **Computadora**.
 3. Busca el fichero en tu ordenador y ábrelo.
+4. En la categoría Conector S4A, pulsa **Conecta**, elige el puerto de la placa en el cuadro que abre el navegador y comprueba la conexión con el bloque **¿placa conectada?**.
 
 Los bloques de Echidna aparecen en la categoría Conector S4A, debajo de **Conecta** y **Desconecta**.
 
