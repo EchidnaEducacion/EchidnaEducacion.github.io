@@ -43,6 +43,16 @@ Con la terminal: abre una terminal en la carpeta donde está el archivo y escrib
 chmod +x EchidnaML-1.6.2.AppImage
 ```
 
+### Dar permiso para usar la placa
+
+En GNU/Linux, tu usuario necesita permiso para usar el puerto serie al que se conecta la placa. Hay que darlo una sola vez, con el .deb o con el AppImage. Abre una terminal y escribe:
+
+```sh
+sudo usermod -a -G dialout $USER
+```
+
+Después cierra la sesión y vuelve a entrar para que el permiso tenga efecto.
+
 ## Windows
 
 EchidnaML funciona en Windows 10 y Windows 11 de 64 bits.

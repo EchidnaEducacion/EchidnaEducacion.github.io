@@ -45,7 +45,7 @@ Si no aparece:
 En **GNU/Linux**, tu usuario necesita permiso para usar el puerto serie. Si el puerto aparece pero EchidnaML no conecta, ejecuta en una terminal:
 
 ```
-sudo usermod -a -G dialout tu_usuario
+sudo usermod -a -G dialout $USER
 ```
 
 Después cierra la sesión y vuelve a entrar. En Windows y macOS el permiso ya está dado.
@@ -80,7 +80,7 @@ Si EchidnaML conecta con la placa pero un sensor o un actuador no funciona:
 |---|---|---|
 | El LED ON no se enciende | El cable o el puerto | Otro cable de datos y otro puerto |
 | El ordenador no ve la placa | Falta el controlador CH341 | [Instalar el controlador](/ecosistema/echidnaml/descarga/#controlador-de-la-placa) |
-| La ve, pero EchidnaML no conecta (GNU/Linux) | Sin permiso para el puerto | `sudo usermod -a -G dialout tu_usuario` |
+| La ve, pero EchidnaML no conecta (GNU/Linux) | Sin permiso para el puerto | `sudo usermod -a -G dialout $USER` |
 | EchidnaML no conecta | Otro programa usa la placa | Cerrar el Arduino IDE y otras ventanas |
 | EchidnaML no conecta | La placa no tiene StandardFirmata | [Instalar StandardFirmata](/ecosistema/echidnaml/instalar-standardfirmata/) |
 | Varios sensores no responden | La placa está en modo MkMk | Poner el conmutador en modo sensores |

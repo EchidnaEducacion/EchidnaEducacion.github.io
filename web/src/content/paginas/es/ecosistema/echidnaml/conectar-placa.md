@@ -56,9 +56,10 @@ Si abriste el programa sin la placa, puedes conectarla después: conéctala al U
 
 ## Si la placa no se detecta
 
-Si EchidnaML no detecta la placa, revisa primero estos dos motivos, que son los más habituales:
+Si EchidnaML no detecta la placa, revisa primero estos motivos, que son los más habituales:
 
-- **Falta el driver CH341 (en Windows)**: Windows necesita este controlador para reconocer el puerto serie de la placa. Sin él, el ordenador no la ve aunque esté conectada.
-- **La placa no tiene StandardFirmata**: si has cargado otro programa en la placa, EchidnaML no podrá comunicarse con ella hasta que vuelvas a instalar StandardFirmata.
+- **Falta el driver CH341 (en Windows)**: Windows necesita este controlador para reconocer el puerto serie de la placa. Sin él, el ordenador no la ve aunque esté conectada. Se instala como se explica en [Descarga › Controlador de la placa](/ecosistema/echidnaml/descarga/#controlador-de-la-placa).
+- **Falta el permiso del puerto (en GNU/Linux)**: tu usuario necesita permiso para usar el puerto serie. Se da una sola vez, como se explica en [Descarga › Dar permiso para usar la placa](/ecosistema/echidnaml/descarga/#dar-permiso-para-usar-la-placa).
+- **La placa no tiene StandardFirmata**: si has cargado otro programa en la placa, EchidnaML no podrá comunicarse con ella hasta que vuelvas a [instalar StandardFirmata](/ecosistema/echidnaml/instalar-standardfirmata/).
 
-Si no es ninguno de los dos, sigue el proceso completo de [Comprobar la placa](/docentes/comprobar-placa/), con las demás causas y herramientas para probar cada componente.
+Si no es ninguno de ellos, sigue el proceso completo de [Comprobar la placa](/docentes/comprobar-placa/), con las demás causas y herramientas para probar cada componente.
