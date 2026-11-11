@@ -103,7 +103,7 @@ Las alternativas valoradas y los motivos de la elección están en [`analisis-pr
 
 - [ ] **Recursos docentes** (`/docentes/`), material a material: terminar las diapositivas (PDF) y la programación didáctica de Proyectos de inicio con EchidnaML (hoy «Próximamente»; al terminarlas, poner su `url` en `recursos.yaml`) y añadir los demás materiales: situaciones de aprendizaje, Snap! y Otros recursos. Al añadirlos, montar las rutas intermedias de `/docentes/` que faltan en las redirecciones ([pendiente](redirecciones.md#pendiente)).
 - [ ] **Materiales alumnado por hacer**: por ahora solo hay 8 materiales; faltan otros proyectos, Snap!, etc.
-- [ ] **Snap!** (1.4.2): la página está hecha con la descripción del entorno; faltan la librería de bloques para la EchidnaBlack2 (repo `S4A-EchidnaBlack2C`) y una guía para el aula.
+- [ ] **Snap!** (1.4.2): la página explica cómo empezar, el Conector S4A y la Biblioteca Echidna (en pruebas). Faltan terminar de probar la biblioteca (repo `S4A-EchidnaBlack2C`; su README pide el firmware SA5 Firmata, pero funciona con StandardFirmata, como dice la web: corregirlo allí) y una guía para el aula.
 - [ ] **Imágenes de las tarjetas**: buscar una imagen para las tarjetas que hoy salen sin ella (las de EchidnaML ya la tienen). Se pone en el campo `image` de cada página.
 - [ ] **Modelos e impresión 3D**: Soportes 90º no tiene README en el repo `recursos`.
 - [ ] **Enlace roto en ¿Hace calor aquí?**: en «Créditos», la descarga «Ficha XY-Grid» apunta a `Alhambra2.sb3`, que no existe; hay que conseguir el fichero o quitar el enlace en el `.elp` y volver a exportar.
