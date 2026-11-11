@@ -187,7 +187,11 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 | `/category/…/`, `/tag/…/`, `/author/…/` | Igual | Igual | Se descarta `/category/sin-categoria/`. La categoría Recursos desaparece y sus subcategorías pasan a primer nivel (filas siguientes). Las etiquetas se han reorganizado en un vocabulario cerrado ([`modelo-contenido.md`](modelo-contenido.md#etiquetas-del-blog)): las que desaparecen están en las filas siguientes; las que se mantienen (EchidnaBlack, Servomotor, STEAM…) conservan su URL |
 | `/feed/` | `/feed/` (copia de `/rss.xml`) | Igual | Los lectores de RSS no siguen redirecciones HTML |
 | `/category/recursos/`, `/category/recursos/proyectos/` | `/category/proyectos/` | Redirige | Recursos desaparece; casi todas sus entradas eran proyectos |
-| `/category/recursos/impresion-3d/` | `/category/impresion-3d/` | Redirige | Subcategoría que pasa a primer nivel |
+| `/category/recursos/impresion-3d/` | `/tag/impresion-3d/` | Redirige | La categoría Impresión 3D pasa a etiqueta (ver fila de abajo) |
+| `/category/didactica/` (y su `page/2/`) | `/category/noticias/` | Redirige | Revisión de categorías de noviembre de 2026 ([`categorias.md`](categorias.md)): Didáctica desaparece |
+| `/category/programacion/` | `/category/proyectos/` | Redirige | Programación desaparece; el entorno lo dicen las etiquetas |
+| `/category/hardware/` | `/ecosistema/` | Redirige | Hardware desaparece |
+| `/category/rea/`, `/category/impresion-3d/` | `/tag/rea/`, `/tag/impresion-3d/` | Redirige | Pasan a etiqueta |
 | `/tag/ia/`, `/tag/machine-learning/`, `/tag/machine-lerning/` | `/tag/inteligencia-artificial/` | Redirige | Unificadas (y errata «Machine Lerning») |
 | `/tag/mkmk/`, `/tag/makeymakey/` | `/tag/makey-makey/` | Redirige | Unificadas |
 | `/tag/scratch/` | `/tag/echidnascratch/` | Redirige | Absorbida |
@@ -196,7 +200,7 @@ WordPress acepta otras URL para algunas páginas (rutas antiguas, sin la categor
 | `/tag/analogreference/`, `/tag/oled/`, `/tag/appinventor/`, `/tag/bluetooth/` | `/tag/ide-arduino/` | Redirige | Absorbidas: solo estaban en entradas de este entorno |
 | `/tag/sonido/` | `/tag/musica/` | Redirige | Absorbida |
 | `/tag/openledrace/` | `/tag/juegos/` | Redirige | Absorbida |
-| `/tag/sharp/` | `/tag/sensores-externos/` | Redirige | Absorbida |
+| `/tag/sharp/`, `/tag/sensores-externos/` | `/category/proyectos/` | Redirige | Sensores externos desaparece en noviembre de 2026: el montaje lo dicen las subcategorías de Proyectos |
 | `/tag/ctim/` | `/tag/steam/` | Redirige | Su entrada ya tenía «STEAM» |
 | `/tag/proyectos/` | `/category/proyectos/` | Redirige | Repetía la categoría |
 | `/tag/recursos/` | `/category/proyectos/` | Redirige | Repetía la categoría Recursos, que desaparece |

@@ -3,8 +3,8 @@ title: "IA: Alimento de perros y gatos"
 description: "Un perro y un gato robóticos que mueven la cola al ver su comida favorita, con un modelo de inteligencia artificial creado en EchidnaML."
 date: 2025-03-07
 author: jorge-lobo
-categories: [didactica, programacion, proyectos, inteligencia-artificial]
-tags: ["EchidnaML", "Servomotor", "Inteligencia Artificial", "STEAM"]
+categories: [manualidades, inteligencia-artificial]
+tags: ["EchidnaML", "Servomotor", "Inteligencia Artificial", "STEAM", "Impresión 3D"]
 image: ./IA_Pero_Gato.jpg
 imageAlt: "Ilustración «IA: Alimentos de perros y gatos» con el erizo de Echidna sobre un taburete, un perro, un gato y dos botes de comida."
 ---

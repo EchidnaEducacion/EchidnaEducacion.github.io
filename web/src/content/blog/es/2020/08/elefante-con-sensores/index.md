@@ -4,7 +4,7 @@ description: "Muchas veces hemos hablado @jcarolinares y yo de las implicaciones
 date: 2020-08-03
 updated: 2020-10-13
 author: jorge-lobo
-categories: [proyectos]
+categories: [manualidades]
 tags: ["EchidnaBlack", "EchidnaScratch", "Servomotor", "STEAM"]
 image: ./elefante.png
 imageAlt: "Un elefante y el erizo de Echidna en un prado bajo el sol."

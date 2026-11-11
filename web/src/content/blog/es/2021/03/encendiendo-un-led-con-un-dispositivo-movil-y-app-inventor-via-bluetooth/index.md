@@ -4,7 +4,7 @@ description: "En esta entrada vamos a ver como conectar Echidna con nuestro disp
 date: 2021-03-07
 updated: 2021-03-10
 author: jose
-categories: [didactica]
+categories: [placa-y-componentes]
 tags: ["EchidnaShield", "IDE Arduino", "LED"]
 image: ./Blog_Echidna_Appinventor.png
 imageAlt: "Un móvil con App Inventor, el erizo de Echidna con un módulo Bluetooth y la placa EchidnaBlack, con símbolos de Bluetooth."

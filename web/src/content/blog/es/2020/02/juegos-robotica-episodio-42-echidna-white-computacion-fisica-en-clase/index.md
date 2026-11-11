@@ -5,6 +5,7 @@ date: 2020-02-14
 updated: 2020-06-20
 author: jose
 categories: [publicaciones]
+tags: ["EchidnaWhite"]
 image: ./JuegosRobotica_tw2-e1592561135673.jpg
 imageAlt: "Logotipo de Juegos Robótica, «Aprender a programar jugando»."
 ---

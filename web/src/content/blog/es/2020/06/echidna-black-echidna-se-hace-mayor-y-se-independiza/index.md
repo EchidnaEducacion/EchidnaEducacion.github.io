@@ -4,7 +4,7 @@ description: "Tenía que pasar, Echidna se nos ha hecho mayor y se independiza d
 date: 2020-06-29
 updated: 2020-07-17
 author: xdesig
-categories: [hardware]
+categories: [noticias]
 tags: ["EchidnaBlack"]
 image: ./Blog_Echidna_Independiza-e1593416871789.png
 imageAlt: "El erizo de Echidna se va de casa con un hatillo, pensando en la nueva placa EchidnaBlack."

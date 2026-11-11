@@ -4,8 +4,8 @@ description: "Desde LEGO TC Logo, del MIT, hasta EchidnaBlack: la relación entr
 date: 2020-07-20
 updated: 2026-01-14
 author: javier
-categories: [bloques-de-construccion, impresion-3d]
-tags: ["EchidnaBlack", "EchidnaScratch", "Makey Makey", "STEAM"]
+categories: [noticias]
+tags: ["EchidnaBlack", "EchidnaScratch", "Makey Makey", "STEAM", "Impresión 3D"]
 image: ./IMG_8235-2-e1604777847611.jpg
 imageAlt: "El erizo de Echidna subiendo una escalera de piezas de LEGO de colores."
 ---

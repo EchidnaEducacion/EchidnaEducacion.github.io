@@ -3,7 +3,7 @@ title: "Manual de EchidnaBlack2 y EchidnaML"
 description: "Publicamos el manual de la EchidnaBlack2 y la nueva versión de EchidnaML, para facilitar el trabajo con la placa en el aula desde las primeras sesiones."
 date: 2026-01-17
 author: jorge-lobo
-categories: [didactica, hardware, noticias, programacion]
+categories: [noticias]
 tags: ["EchidnaBlack2", "EchidnaML", "Inteligencia Artificial"]
 image: ./Portada.png
 imageAlt: "Portada del manual de EchidnaBlack y EchidnaML, con el erizo de Echidna, bloques de programación y personajes de los sensores."

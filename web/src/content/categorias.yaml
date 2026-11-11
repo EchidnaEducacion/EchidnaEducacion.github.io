@@ -1,12 +1,12 @@
 # Categorías del blog. El id es el tramo de la URL /category/<id>/.
-- { id: bloques-de-construccion, name: Bloques de construcción }
-- { id: didactica, name: Didáctica }
-- { id: hardware, name: Hardware }
-- { id: impresion-3d, name: Impresión 3D }
-- { id: inteligencia-artificial, name: Inteligencia Artificial }
-- { id: noticias, name: Noticias }
-- { id: programacion, name: Programación }
+# La categoría dice el tipo de entrada (una por entrada); Inteligencia Artificial se suma en las centradas en la IA.
+# Las subcategorías (parent) son el montaje de cada proyecto: todo proyecto lleva una, y solo una,
+# en vez de la categoría Proyectos (ver modelo-contenido.md).
 - { id: proyectos, name: Proyectos }
-- { id: publicaciones, name: Publicaciones }
-- { id: rea, name: REA }
+- { id: placa-y-componentes, name: Placa y componentes, parent: proyectos }
+- { id: manualidades, name: Manualidades, parent: proyectos }
+- { id: bloques-de-construccion, name: Bloques de construcción, parent: proyectos }
+- { id: noticias, name: Noticias }
 - { id: talleres, name: Talleres }
+- { id: publicaciones, name: Publicaciones }
+- { id: inteligencia-artificial, name: Inteligencia Artificial }

@@ -147,9 +147,16 @@ export default {
   '/proyectos/': '/category/proyectos/',
 
   // Blog y RSS
+  // Categorías que desaparecen en la revisión de categorías.md
+  '/category/didactica/': '/category/noticias/',
+  '/category/didactica/page/2/': '/category/noticias/',
+  '/category/programacion/': '/category/proyectos/',
+  '/category/hardware/': '/ecosistema/',
+  '/category/rea/': '/tag/rea/',
+  '/category/impresion-3d/': '/tag/impresion-3d/',
   '/category/recursos/': '/category/proyectos/',
   '/category/recursos/proyectos/': '/category/proyectos/',
-  '/category/recursos/impresion-3d/': '/category/impresion-3d/',
+  '/category/recursos/impresion-3d/': '/tag/impresion-3d/',
   '/tag/ia/': '/tag/inteligencia-artificial/',
   '/tag/machine-learning/': '/tag/inteligencia-artificial/',
   '/tag/machine-lerning/': '/tag/inteligencia-artificial/',
@@ -165,7 +172,8 @@ export default {
   '/tag/bluetooth/': '/tag/ide-arduino/',
   '/tag/sonido/': '/tag/musica/',
   '/tag/openledrace/': '/tag/juegos/',
-  '/tag/sharp/': '/tag/sensores-externos/',
+  '/tag/sharp/': '/category/proyectos/',
+  '/tag/sensores-externos/': '/category/proyectos/',
   '/tag/ctim/': '/tag/steam/',
   '/tag/proyectos/': '/category/proyectos/',
   '/tag/recursos/': '/category/proyectos/',

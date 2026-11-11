@@ -4,7 +4,7 @@ description: "Publicamos o manual de posta en marcha de EchidnaBlack en galego, 
 date: 2022-09-30
 updated: 2024-10-23
 author: xdesig
-categories: [programacion]
+categories: [talleres]
 tags: ["EchidnaBlack"]
 ---
 

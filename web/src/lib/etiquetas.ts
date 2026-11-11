@@ -7,9 +7,9 @@ export const ETIQUETAS = [
   // Entornos de programación
   'EchidnaML', 'EchidnaScratch', 'Snap4Arduino', 'IDE Arduino',
   // Componentes
-  'Servomotor', 'LED', 'Sensor de luz', 'Temperatura', 'Micrófono', 'Joystick', 'Sensores externos',
+  'Servomotor', 'LED', 'Sensor de luz', 'Temperatura', 'Micrófono', 'Joystick',
   // Temas
-  'Inteligencia Artificial', 'STEAM', 'Makey Makey', 'Música', 'Juegos',
+  'Inteligencia Artificial', 'STEAM', 'Makey Makey', 'Música', 'Juegos', 'REA', 'Impresión 3D',
   // Eventos
   'OSHWDem', 'esLibre',
 ] as const;

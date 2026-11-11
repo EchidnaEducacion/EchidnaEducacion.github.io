@@ -14,7 +14,10 @@ const contenido = join(web, 'src/content');
 const ids = (fichero: string) =>
   [...readFileSync(join(contenido, fichero), 'utf8').matchAll(/^- \{?\s*id: ([^,\s}]+)/gm)].map((m) => m[1]);
 const autores = ids('autores.yaml');
-const categorias = ids('categorias.yaml');
+// Sin las categorías madre (las que tienen subcategorías): un proyecto lleva la subcategoría de su montaje
+const yamlCategorias = readFileSync(join(contenido, 'categorias.yaml'), 'utf8');
+const madres = new Set([...yamlCategorias.matchAll(/parent: ([^,\s}]+)/g)].map((m) => m[1]));
+const categorias = ids('categorias.yaml').filter((id) => !madres.has(id));
 
 const [titulo, autor = ''] = process.argv.slice(2);
 if (!titulo?.trim()) {
@@ -56,7 +59,7 @@ description: ""
 date: ${anio}-${mes}-${dia}
 # Uno de: ${autores.join(', ')}
 author: ${autor}
-# Al menos una de: ${categorias.join(', ')}
+# Una, la del tipo de entrada (más inteligencia-artificial si se centra en la IA): ${categorias.join(', ')}
 categories: []
 # Opcional, solo del vocabulario cerrado (modelo-contenido.md, «Etiquetas del blog»)
 tags: []

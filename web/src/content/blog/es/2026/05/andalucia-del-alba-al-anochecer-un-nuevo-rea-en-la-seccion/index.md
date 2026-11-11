@@ -3,8 +3,8 @@ title: "Andalucía, del alba al anochecer, un nuevo REA en la sección"
 description: "¡Ampliamos la sección de Recursos Educativos Abiertos (REA) en la web!"
 date: 2026-05-15
 author: jorge-lobo
-categories: [didactica, rea]
-tags: ["EchidnaBlack2", "EchidnaML", "Sensor de luz"]
+categories: [noticias]
+tags: ["EchidnaBlack2", "EchidnaML", "Sensor de luz", "REA"]
 image: ./portadaandalucia.jpg
 imageAlt: "Portada de la situación de aprendizaje «Andalucía, del alba al anochecer», de 5.º de Primaria, con el erizo de Echidna y bloques de programación."
 ---

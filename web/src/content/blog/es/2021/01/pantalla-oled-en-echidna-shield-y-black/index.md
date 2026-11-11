@@ -4,7 +4,7 @@ description: "Cómo conectar y programar una pantalla OLED SSD1306 de 0,96 pulga
 date: 2021-01-03
 updated: 2021-03-15
 author: xdesig
-categories: [hardware]
+categories: [placa-y-componentes]
 tags: ["EchidnaShield", "EchidnaBlack", "IDE Arduino", "Joystick"]
 image: ./OLED-Echidna.jpg
 imageAlt: "Pantalla OLED que muestra el erizo de Echidna dibujado en píxeles blancos."
