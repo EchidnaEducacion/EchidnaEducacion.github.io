@@ -3,6 +3,7 @@ title: Modo sensores / Modo MkMk
 description: Los dos modos de funcionamiento de la EchidnaBlack2, cómo se elige cada uno con el conmutador y qué componentes funcionan en cada modo.
 template: pagina
 order: 2
+toc: true
 image: ./modo-sensores-mkmk/lupa-selector-modo.png
 ---
 
