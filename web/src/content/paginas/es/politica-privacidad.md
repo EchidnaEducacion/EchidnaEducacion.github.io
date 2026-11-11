@@ -2,6 +2,7 @@
 title: Política de privacidad
 description: Qué datos trata la web de Echidna Educación, para qué y con qué servicios, y cómo ejercer tus derechos sobre ellos.
 template: pagina
+toc: true
 ---
 
 Esta web es de Echidna Educación, una asociación sin ánimo de lucro. La hemos hecho para que puedas leerla sin dejar datos personales: no tiene registro de usuarios, ni comentarios, ni *cookies* de publicidad o de seguimiento.
