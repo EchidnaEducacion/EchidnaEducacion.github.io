@@ -4,6 +4,7 @@ description: "Snap!, el entorno por bloques de la Universidad de Berkeley, con l
 template: pagina
 group: Entornos de programación compatibles
 order: 20
+toc: true
 image: ./snap/snap-echidna.png
 ---
 
@@ -31,7 +32,7 @@ Para conectar Snap! con la placa necesitas:
 2. **La placa con StandardFirmata**, el programa que trae de fábrica, y conectada al ordenador con el cable USB. Si has cargado otro programa con el Arduino IDE, [vuelve a instalar StandardFirmata](/ecosistema/echidnaml/instalar-standardfirmata/).
 3. **Que el navegador detecte el puerto USB** de la placa.
 
-### Conector S4A
+## Conector S4A
 
 La conexión con la placa la hace la biblioteca **Conector S4A**, que viene con Snap!:
 
@@ -44,7 +45,7 @@ La conexión con la placa la hace la biblioteca **Conector S4A**, que viene con 
 
 Con el Conector S4A se programa la placa con bloques genéricos de Arduino, indicando el número de pin.
 
-### Biblioteca Echidna
+## Biblioteca Echidna
 
 Además de los bloques genéricos, Echidna tiene su propia biblioteca, con bloques adaptados a las entradas y salidas de la **EchidnaBlack2**: los LED, el LED RGB, el zumbador, los servos, los pulsadores, las entradas MkMk, el acelerómetro, el joystick y los sensores de luz, temperatura y sonido. **Está en modo pruebas**.
 
