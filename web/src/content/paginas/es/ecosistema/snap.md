@@ -23,7 +23,7 @@ En el ecosistema Echidna, Snap! es la herramienta ideal para el alumnado de **Se
 
 ## Cómo empezar
 
-Snap! funciona en el navegador: entra en [snap.berkeley.edu](https://snap.berkeley.edu/) y pulsa **Run Snap! Now**, que abre el editor. Si creas una cuenta, puedes guardar tus proyectos en línea.
+Snap! funciona en el navegador: entra en [snap.berkeley.edu](https://snap.berkeley.edu/) y pulsa **Run Snap! Now**, que abre el editor (también puedes ir directamente a [snap.berkeley.edu/snap/snap.html](https://snap.berkeley.edu/snap/snap.html)). Si creas una cuenta, puedes guardar tus proyectos en línea.
 
 Para conectar Snap! con la placa necesitas:
 
