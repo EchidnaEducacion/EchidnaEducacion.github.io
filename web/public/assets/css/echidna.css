@@ -58,6 +58,9 @@
   --wrap-text: 72ch;
   --gutter: clamp(16px, 4vw, 32px);
   --header-h: 68px;
+
+  /* Nariz del erizo: del color del texto sobre fondo claro; naranja sobre fondo oscuro, como en el manual de estilo */
+  --logo-nariz: currentColor;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,6 +76,7 @@
     --c-nosotros: #9775fa;  --c-nosotros-ink: #b197fc;  --c-nosotros-soft: #261c45;
     --info: #74c0fc; --info-soft: #132b40; --tip: #69db7c; --tip-soft: #16301c; --warn: #ffc078; --warn-soft: #3a2a12;
     --shadow-1: 0 1px 2px rgb(0 0 0 / .4); --shadow-2: 0 8px 28px rgb(0 0 0 / .45);
+    --logo-nariz: #fe6d04;
   }
 }
 :root[data-theme="dark"] {
@@ -87,6 +91,7 @@
   --c-nosotros: #9775fa;  --c-nosotros-ink: #b197fc;  --c-nosotros-soft: #261c45;
   --info: #74c0fc; --info-soft: #132b40; --tip: #69db7c; --tip-soft: #16301c; --warn: #ffc078; --warn-soft: #3a2a12;
   --shadow-1: 0 1px 2px rgb(0 0 0 / .4); --shadow-2: 0 8px 28px rgb(0 0 0 / .45);
+  --logo-nariz: #fe6d04;
 }
 
 /* Color de acento según la sección de la página (body[data-section]) */
@@ -226,7 +231,7 @@ a.chip:hover { border-color: currentColor; color: var(--accent-ink); }
 .site-header__inner { display: flex; align-items: center; gap: 1rem; min-height: var(--header-h); }
 .brand { display: inline-flex; align-items: center; gap: .6rem; text-decoration: none; color: var(--ink); margin-right: auto; }
 .brand:hover { color: var(--ink); }
-/* Logo: erizo (nariz en el color del texto) y «EchidnaEducación» en Open Sans, como el logo original */
+/* Logo: erizo (nariz en --logo-nariz) y «EchidnaEducación» en Open Sans, como el logo original */
 .brand__mark { width: 57px; height: 32px; flex: none; }
 .brand__name { font-family: var(--font-brand); font-weight: 400; font-size: 1.25rem; letter-spacing: -.01em; line-height: 1; white-space: nowrap; }
 .brand__echidna { color: #fe6d04; }
@@ -339,7 +344,7 @@ body.menu-open { overflow: hidden; }
 .search-dialog .results .search-status { margin: .2rem 0; color: var(--muted); }
 
 /* Pie */
-.site-footer { margin-top: auto; background: #1b1814; color: #e9e3da; padding-top: 3.5rem; }
+.site-footer { margin-top: auto; background: #1b1814; color: #e9e3da; padding-top: 3.5rem; --logo-nariz: #fe6d04; }
 .site-footer a { color: #f3eee7; text-decoration: none; }
 .site-footer a:hover { color: #ffa155; text-decoration: underline; }
 .footer-grid { display: grid; gap: 2rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 190px), 1fr)); padding-bottom: 2.5rem; }
