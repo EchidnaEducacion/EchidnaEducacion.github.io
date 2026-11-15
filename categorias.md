@@ -1,32 +1,140 @@
 # Categorías y etiquetas del blog
 
-Revisión de las categorías y las etiquetas del blog. **La aprobó el equipo** en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (el primer debate fue en el issue [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35)) y **se aplicó en noviembre de 2026** con el *pull request* [#38](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/pull/38). Este documento se conserva como referencia del análisis, el criterio y el reparto de cada entrada; lo vigente está en [`modelo-contenido.md`](modelo-contenido.md#listas-de-datos-autores-y-categorías) (criterios), en [`escribir-blog.md`](escribir-blog.md#categorías-y-etiquetas) (para quien escribe) y en «Decisiones tomadas» del README.
+Cómo están organizadas las categorías y las etiquetas del blog y cómo se llegó a esa organización. Empieza por la [organización actual](#organización-actual), sigue con las [dudas](#dudas) abiertas y lo [pendiente](#pendiente), y deja al final, como referencia, la [historia de la revisión](#historia-de-la-revisión) (lo que había antes, la propuesta y cómo se aplicó) y el [reparto de cada entrada](#anexo-categorías-y-etiquetas-de-cada-entrada).
+
+La revisión **la aprobó el equipo** en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59) (el primer debate fue en el issue [#35](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/issues/35)) y **se aplicó en noviembre de 2026** con el *pull request* [#38](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/pull/38). Lo que hay que seguir al escribir está en [`modelo-contenido.md`](modelo-contenido.md#listas-de-datos-autores-y-categorías) (criterios) y en [`escribir-blog.md`](escribir-blog.md#categorías-y-etiquetas) (para quien escribe); aquí se resume.
 
 ## Índice
 
-1. [Análisis](#análisis)
+1. [Organización actual](#organización-actual)
+   - [Criterio](#criterio)
    - [Categorías](#categorías)
    - [Etiquetas](#etiquetas)
-2. [Propuesta](#propuesta)
-   - [Criterio](#criterio)
-   - [Categorías propuestas](#categorías-propuestas)
-   - [Qué pasa con las categorías actuales](#qué-pasa-con-las-categorías-actuales)
-   - [Etiquetas propuestas](#etiquetas-propuestas)
-   - [Alternativas descartadas](#alternativas-descartadas)
-   - [Cómo se aplicó](#cómo-se-aplicó)
-3. [Dudas](#dudas)
+2. [Dudas](#dudas)
    - [Categoría y entradas de Publicaciones](#categoría-y-entradas-de-publicaciones)
    - [Entradas sin categoría propia: didáctica y tutoriales](#entradas-sin-categoría-propia-didáctica-y-tutoriales)
-4. [Pendiente](#pendiente)
+3. [Pendiente](#pendiente)
+4. [Historia de la revisión](#historia-de-la-revisión)
+   - [Antes de la revisión](#antes-de-la-revisión)
+   - [La propuesta](#la-propuesta)
+   - [Qué pasó con las categorías anteriores](#qué-pasó-con-las-categorías-anteriores)
+   - [Cambios en las etiquetas](#cambios-en-las-etiquetas)
+   - [Alternativas descartadas](#alternativas-descartadas)
+   - [Cómo se aplicó](#cómo-se-aplicó)
 5. [Anexo: categorías y etiquetas de cada entrada](#anexo-categorías-y-etiquetas-de-cada-entrada)
 
 ---
 
-## Análisis
+## Organización actual
+
+Datos de noviembre de 2026: 65 entradas publicadas. El blog tiene **5 categorías** (Proyectos, Noticias, Talleres, Publicaciones e Inteligencia Artificial), **3 subcategorías de Proyectos** (Placa y componentes, Manualidades y Bloques de construcción) y **23 etiquetas**. Las categorías están en `web/src/content/categorias.yaml` y las etiquetas, en `web/src/lib/etiquetas.ts`.
+
+### Criterio
+
+- **La categoría dice qué tipo de entrada es**: un proyecto, una noticia, un taller o una publicación de otro medio. Es lo que busca quien entra al blog desde el lateral. Los tipos que aún tienen muy pocas entradas (artículos sobre didáctica, tutoriales de configuración) van a Noticias hasta que lleguen al mínimo (ver [Dudas](#entradas-sin-categoría-propia-didáctica-y-tutoriales)).
+- **La etiqueta dice de qué trata**: placa, entorno de programación, componentes y temas, con el vocabulario cerrado.
+- **Una categoría por entrada.** La única excepción es Inteligencia Artificial, categoría de tema porque es el eje del proyecto (ver [Decisiones tomadas](README.md#decisiones-tomadas)): se suma a la de tipo en las entradas centradas en la IA.
+- **Cada proyecto lleva una subcategoría de montaje, y solo una**, la de su montaje más exigente:
+  - **Construir manda**: un objeto construido va a Manualidades o a Bloques de construcción aunque lleve servomotores o sensores. Si mezcla bloques y manualidad, va a la que predomine.
+  - **Se asigna leyendo la entrada y sus vídeos o presentaciones**, no solo la descripción. Perrobot, por la descripción (sensor de distancia y servomotor), parecería de Placa y componentes, pero el perro se construye con materiales comunes: es Manualidades.
+  - **La subcategoría implica Proyectos**: la entrada sale también en el listado de Proyectos.
+- **Mínimos**: una categoría con menos de unas cinco entradas no aguanta sola en el lateral; una etiqueta nueva tiene que servir para al menos dos entradas.
+
+### Categorías
+
+| Categoría | Qué va dentro | Entradas | Ejemplos |
+|---|---|---|---|
+| Proyectos | Montajes con la placa explicados paso a paso: qué se hace, cómo se conecta o se construye y el programa. Lleva siempre una de sus tres subcategorías | 31 | — |
+| ↳ Placa y componentes | Proyectos que no construyen ningún objeto: usan lo que lleva la placa (LED RGB, sensores, acelerómetro, joystick, pulsadores…) y, si acaso, le conectan algo (servomotor, tira de LED, pantalla, módulo Bluetooth…) | 5 | Selector de colores RGB, Pantalla OLED en Echidna Shield y Black |
+| ↳ Manualidades | Proyectos que construyen un objeto con papel, cartón, materiales reutilizados o conductores, o con piezas impresas en 3D | 17 | Dragón de papel, Perrobot, El Laboratorio del Dr. Frankestein |
+| ↳ Bloques de construcción | Proyectos que construyen un objeto con piezas de construcción (tipo LEGO) | 9 | Construye un gallo que canta al amanecer, Barrera automática, Rotógrafo |
+| Noticias | Novedades del proyecto: placas, entornos de programación, manuales, REA nuevos, la web, el canal de YouTube… y, mientras no tengan categoría propia, los artículos sobre didáctica y los tutoriales de configuración. No van las crónicas de eventos (Talleres) | 20 | A programar con Echidna ML, Manual de EchidnaBlack2 y EchidnaML |
+| Talleres | Eventos en los que participa Echidna: ferias, congresos y talleres, antes o después de celebrarse | 8 | Echidna en la OSHWDem 2019, ¡Volvemos a esLibre! |
+| Publicaciones | Artículos, entrevistas y pódcast de otros medios sobre Echidna | 6 | Juegos Robótica episodio 42, Programar fácil: «EchidnaShield el Arduino Shield…» |
+| Inteligencia Artificial | Además de su categoría de tipo, las entradas centradas en la IA (proyectos y propuestas que trabajan con modelos de IA). Las que solo la usan o la mencionan llevan la etiqueta, no la categoría | 7 | Cubo de Reciclaje Inteligente, Caja fuerte |
+
+La categoría que se asignó a cada entrada al aplicar la revisión, con la subcategoría de cada proyecto, está en el [anexo](#anexo-categorías-y-etiquetas-de-cada-entrada).
+
+### Etiquetas
+
+Vocabulario cerrado de 23 etiquetas en cinco grupos. Qué significa cada una y cuándo se pone está en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog).
+
+| Grupo | Etiquetas (entradas) |
+|---|---|
+| Placas | EchidnaShield (16) · EchidnaBlack (15) · EchidnaBlack2 (14) · EchidnaWhite (3) |
+| Entornos de programación | EchidnaML (19) · EchidnaScratch (13) · IDE Arduino (5) · Snap4Arduino (4) |
+| Componentes | Servomotor (20) · LED (7) · Sensor de luz (3) · Temperatura (2) · Micrófono (2) · Joystick (2) |
+| Temas | Inteligencia Artificial (15) · STEAM (10) · Makey Makey (6) · REA (4) · Impresión 3D (4) · Música (3) · Juegos (3) |
+| Eventos | OSHWDem (3) · esLibre (2) |
+
+## Dudas
+
+Cuestiones que surgieron al preparar la revisión y que siguen abiertas o a la espera de más entradas.
+
+### Categoría y entradas de Publicaciones
+
+Planteada por Jose Pujol en noviembre de 2026: ¿tiene sentido que el blog, que es contenido propio, tenga entradas sobre lo que publican otros? **No se decidió en la revisión**: la categoría Publicaciones y sus 6 entradas se mantienen, y la propuesta de borrarlas se debate aparte en [gobernanza#63](https://github.com/EchidnaEducacion/gobernanza/issues/63). Si se aprueba, los cambios de abajo se aplican en la web y en este documento.
+
+Lo que se ve:
+
+- **Las 6 entradas no tienen contenido propio**: son una línea y un enlace al medio. La de Arganbot, por ejemplo, dice solo que «prueban el primer prototipo de Echidna, y nos escriben el siguiente artículo».
+- **Ya están en la página [5.2 Publicaciones](estructura.md)** (`/quienes-somos/publicaciones/`, datos en `web/src/content/publicaciones.yaml`), que reúne unas 27 con fecha, tipo e importancia (ver [`publicaciones.md`](publicaciones.md)).
+- **La categoría no se usa desde 2020**: lo publicado después (Educación 3.0, Hisparob, CATEDU, Junta de Andalucía, los TFM de la Universidad Miguel Hernández…) no ha pasado por el blog, y la página hace ese papel.
+- **No encaja en el [criterio](#criterio)**: la categoría dice qué tipo de entrada es, y una publicación de otro medio no es una entrada del blog, sino un enlace externo, como los materiales del alumnado.
+
+Propuesta (opción A):
+
+- **Borrar las 6 entradas y la categoría.** Sus URL y `/category/publicaciones/` redirigen a `/quienes-somos/publicaciones/`. El blog queda con 4 categorías.
+- **Si sale algo importante** (como el artículo de Educación 3.0), se escribe una entrada propia en Noticias, con comentario nuestro, y se añade a la página 5.2.
+
+Alternativa (opción B): conservar las entradas en Noticias como registro histórico. Se quita la categoría, pero las entradas siguen sin contenido.
+
+Si se aprueba la A, cambia también:
+
+- La tabla de [categorías](#categorías) y el recuento de la [organización actual](#organización-actual) (5 → 4 categorías).
+- La etiqueta **EchidnaWhite** pierde Juegos Robótica episodio 42, pero sigue en el mínimo con Echidna en la OSHWDem 2019 y «Añadir las placas Echidna al IDE de Arduino».
+- La fila «Entradas sin etiquetas» de los [cambios en las etiquetas](#cambios-en-las-etiquetas) pierde Juegos Robótica episodio 42.
+- Las 6 URL van a [`redirecciones.md`](redirecciones.md#blog-y-rss).
+- Antes de borrar, comprobar que la página 5.2 recoge todo lo de esas entradas (el pódcast de Programar Fácil que citaba la web antigua ya consta como no localizado).
+
+### Entradas sin categoría propia: didáctica y tutoriales
+
+Surgida en noviembre de 2026. Con el mínimo de unas cinco entradas por categoría, dos tipos de entrada se quedan sin categoría propia y, de momento, van a Noticias. Se aplicó con la revisión: Didáctica se eliminó.
+
+- **Artículos sobre didáctica** (teoría, metodología, historia de la robótica educativa): solo hay uno, Construccionismo y STEAM I. La propuesta mantenía Didáctica para dar sitio a los que se escribieran (el «I» anunciaba más), pero es el mismo caso que los tutoriales y se le aplica el mismo mínimo.
+- **Tutoriales de configuración** de entornos de programación y de hardware (instalar un entorno, dar de alta una placa, actualizar el firmware…): Programar Echidna con el IDE de Arduino (2020) y Añadir las placas Echidna al IDE de Arduino (noviembre de 2026). No son proyectos (no hay montaje), ni artículos de didáctica, ni eventos. Antes de la revisión habrían ido en Programación, que se eliminó.
+
+Los problemas:
+
+- **Noticias pasa a ser «lo que no es proyecto, taller ni publicación»**, y un artículo de reflexión o un tutorial no son noticias. Con tan pocas entradas es asumible.
+- **Quien busque un tutorial no lo encuentra desde el lateral**: solo lo orientan las etiquetas (IDE Arduino y la placa).
+- **[Mantener Programación para tutoriales](#alternativas-descartadas) no lo resolvía**: Programación es un tema, no un tipo de entrada.
+
+Lo aplicado:
+
+- **De momento, las dos van a Noticias.** «Añadir las placas Echidna al IDE de Arduino» se publicó ya en Noticias, con las etiquetas IDE Arduino y las de las cuatro placas.
+- **Cuando uno de los dos tipos llegue a unas cinco entradas**, se crea su categoría (Didáctica, Tutoriales o Guías) y se pasan a ella.
+
+Esa entrada es también la primera con la etiqueta **EchidnaWhite**, creada en noviembre de 2026 (ver [cambios en las etiquetas](#cambios-en-las-etiquetas)).
+
+## Pendiente
+
+- [x] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
+- [x] Aplicar la propuesta ([#38](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/pull/38), noviembre de 2026).
+- [x] Decidir si este documento se conserva: se conserva como referencia.
+- [ ] Decidir si se borran la [categoría y las entradas de Publicaciones](#categoría-y-entradas-de-publicaciones), en [gobernanza#63](https://github.com/EchidnaEducacion/gobernanza/issues/63).
+- [ ] Crear la categoría de las [entradas sin categoría propia](#entradas-sin-categoría-propia-didáctica-y-tutoriales) (didáctica o tutoriales) cuando una de las dos llegue a unas cinco entradas.
+- [ ] Añadir la etiqueta App Inventor cuando haya una segunda entrada que la use.
+
+## Historia de la revisión
+
+Cómo se llegó a la organización actual. Se conserva como referencia: los datos y las tablas son los de cuando se preparó y aplicó la revisión.
+
+### Antes de la revisión
 
 Lo que había en el blog antes de la revisión. Datos de octubre de 2026: 63 entradas publicadas y 1 en borrador (Tendedero automático, que no se cuenta).
 
-### Categorías
+#### Categorías anteriores
 
 Las 11 categorías (`web/src/content/categorias.yaml`) vienen de WordPress, sin criterios escritos para asignarlas. Una entrada puede tener varias.
 
@@ -54,7 +162,7 @@ Lo que se ve:
 - **Las entradas recientes llevan tres o cuatro categorías** (p. ej. Barrera automática: Bloques de construcción, Didáctica, Programación y Proyectos), lo que diluye el lateral.
 - **Proyectos mezcla montajes muy distintos**: unos pocos solo programan la placa o le conectan algún componente; la mayoría exige construir algo con papel, cartón, materiales reutilizados o bloques. Desde el lateral no se distinguen, y es lo primero que necesita saber un docente para preparar la sesión.
 
-### Etiquetas
+#### Etiquetas anteriores
 
 Vocabulario cerrado de 21 etiquetas en cinco grupos desde octubre de 2026 (`web/src/lib/etiquetas.ts`), con sus criterios en [«Etiquetas del blog»](modelo-contenido.md#etiquetas-del-blog). Uso en las 63 entradas publicadas:
 
@@ -73,39 +181,13 @@ Lo que se ve:
 - **Siete etiquetas están en el mínimo** de dos o tres entradas.
 - **Sensores externos reúne sensores muy distintos** (distancia SHARP, infrarrojos, CO₂…) y no ayuda a encontrar entradas.
 
-## Propuesta
+### La propuesta
 
-Preparada por Jose Pujol en octubre de 2026 y ampliada en noviembre de 2026 con las subcategorías de Proyectos y la eliminación de Didáctica. Con ella, el blog queda con **5 categorías** (Proyectos, Noticias, Talleres, Publicaciones e Inteligencia Artificial), **3 subcategorías de Proyectos** (Placa y componentes, Manualidades y Bloques de construcción) y **23 etiquetas** (las 22 actuales más REA e Impresión 3D, menos Sensores externos).
+Preparada por Jose Pujol en octubre de 2026 y ampliada en noviembre de 2026 con las subcategorías de Proyectos y la eliminación de Didáctica. Con ella, el blog pasó a tener **5 categorías** (Proyectos, Noticias, Talleres, Publicaciones e Inteligencia Artificial), **3 subcategorías de Proyectos** (Placa y componentes, Manualidades y Bloques de construcción) y **23 etiquetas** (las 22 de entonces más REA e Impresión 3D, menos Sensores externos). El criterio y las categorías que resultaron están en la [organización actual](#organización-actual).
 
-### Criterio
+### Qué pasó con las categorías anteriores
 
-- **La categoría dice qué tipo de entrada es**: un proyecto, una noticia, un taller o una publicación de otro medio. Es lo que busca quien entra al blog desde el lateral. Los tipos que aún tienen muy pocas entradas (artículos sobre didáctica, tutoriales de configuración) van a Noticias hasta que lleguen al mínimo (ver [Dudas](#entradas-sin-categoría-propia-didáctica-y-tutoriales)).
-- **La etiqueta dice de qué trata**: placa, entorno de programación, componentes y temas, con el vocabulario cerrado.
-- **Una categoría por entrada.** La única excepción es Inteligencia Artificial, categoría de tema porque es el eje del proyecto (ver [Decisiones tomadas](README.md#decisiones-tomadas)): se suma a la de tipo en las entradas centradas en la IA.
-- **Cada proyecto lleva una subcategoría de montaje, y solo una**, la de su montaje más exigente:
-  - **Construir manda**: un objeto construido va a Manualidades o a Bloques de construcción aunque lleve servomotores o sensores. Si mezcla bloques y manualidad, va a la que predomine.
-  - **Se asigna leyendo la entrada y sus vídeos o presentaciones**, no solo la descripción. Perrobot, por la descripción (sensor de distancia y servomotor), parecería de Placa y componentes, pero el perro se construye con materiales comunes: es Manualidades.
-  - **La subcategoría implica Proyectos**: la entrada sale también en el listado de Proyectos.
-- **Mínimos**: una categoría con menos de unas cinco entradas no aguanta sola en el lateral; una etiqueta nueva tiene que servir para al menos dos entradas.
-
-### Categorías propuestas
-
-| Categoría | Qué va dentro | Entradas | Ejemplos |
-|---|---|---|---|
-| Proyectos | Montajes con la placa explicados paso a paso: qué se hace, cómo se conecta o se construye y el programa. Lleva siempre una de sus tres subcategorías | 31 | — |
-| ↳ Placa y componentes | Proyectos que no construyen ningún objeto: usan lo que lleva la placa (LED RGB, sensores, acelerómetro, joystick, pulsadores…) y, si acaso, le conectan algo (servomotor, tira de LED, pantalla, módulo Bluetooth…) | 5 | Selector de colores RGB, Pantalla OLED en Echidna Shield y Black |
-| ↳ Manualidades | Proyectos que construyen un objeto con papel, cartón, materiales reutilizados o conductores, o con piezas impresas en 3D | 17 | Dragón de papel, Perrobot, El Laboratorio del Dr. Frankestein |
-| ↳ Bloques de construcción | Proyectos que construyen un objeto con piezas de construcción (tipo LEGO) | 9 | Construye un gallo que canta al amanecer, Barrera automática, Rotógrafo |
-| Noticias | Novedades del proyecto: placas, entornos de programación, manuales, REA nuevos, la web, el canal de YouTube… y, mientras no tengan categoría propia, los artículos sobre didáctica y los tutoriales de configuración. No van las crónicas de eventos (Talleres) | 19 | A programar con Echidna ML, Manual de EchidnaBlack2 y EchidnaML |
-| Talleres | Eventos en los que participa Echidna: ferias, congresos y talleres, antes o después de celebrarse | 8 | Echidna en la OSHWDem 2019, ¡Volvemos a esLibre! |
-| Publicaciones | Artículos, entrevistas y pódcast de otros medios sobre Echidna | 6 | Juegos Robótica episodio 42, Programar fácil: «EchidnaShield el Arduino Shield…» |
-| Inteligencia Artificial | Además de su categoría de tipo, las entradas centradas en la IA (proyectos y propuestas que trabajan con modelos de IA). Las que solo la usan o la mencionan llevan la etiqueta, no la categoría | 7 | Cubo de Reciclaje Inteligente, Caja fuerte |
-
-La categoría propuesta para cada entrada, con la subcategoría de cada proyecto, está en el [anexo](#anexo-categorías-y-etiquetas-de-cada-entrada).
-
-### Qué pasa con las categorías actuales
-
-| Categoría actual | Qué se hace | Adónde van sus entradas | Redirección de `/category/<id>/` |
+| Categoría anterior | Qué se hace | Adónde van sus entradas | Redirección de `/category/<id>/` |
 |---|---|---|---|
 | Proyectos | Se mantiene, con tres subcategorías | Cada proyecto lleva su subcategoría. Proyectos y Actividades con Echidna pasa a Noticias (es un vídeo que recopila varios proyectos). Llegan Pantalla OLED (de Hardware) y Encendiendo un LED con App Inventor (de Didáctica) | — |
 | Noticias, Talleres y Publicaciones | Se mantienen | Sin cambios | — |
@@ -117,13 +199,13 @@ La categoría propuesta para cada entrada, con la subcategoría de cada proyecto
 | REA | Pasa a etiqueta | Las cuatro entradas que anuncian un REA llevan la etiqueta REA y la categoría Noticias | `/tag/rea/` |
 | Impresión 3D | Pasa a etiqueta | Concurso PrintBot Echidna pasa a Noticias; Construccionismo y STEAM I, también | `/tag/impresion-3d/` |
 
-### Etiquetas propuestas
+### Cambios en las etiquetas
 
 | Etiqueta | Qué se hace | Entradas afectadas |
 |---|---|---|
 | REA | Nueva, en Temas (viene de la categoría) | Nace la sección de REAs, ¡La Tierra se mueve!, Aprendiendo con robots, Andalucía, del alba al anochecer |
 | Impresión 3D | Nueva, en Temas (viene de la categoría). La llevan también los proyectos que ofrecen piezas para imprimir, para saber cuáles pasarían a una futura subcategoría Impresión 3D | Concurso PrintBot Echidna, Construccionismo y STEAM I, EchidnaBoat, IA: Alimento de perros y gatos |
-| EchidnaWhite | Creada en noviembre de 2026, en Placas, con la entrada sobre las placas en el IDE de Arduino. Se puso también a Juegos Robótica episodio 42, que trata de ella, y a Echidna en la OSHWDem 2019, que la presenta | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
+| EchidnaWhite | Creada en noviembre de 2026, en Placas, para la entrada «Añadir las placas Echidna al IDE de Arduino». Se puso también a Juegos Robótica episodio 42, que trata de ella, y a Echidna en la OSHWDem 2019, que la presenta | Juegos Robótica episodio 42, Echidna en la OSHWDem 2019 |
 | Sensores externos | Se elimina: lo que pretendía lo dicen ahora las subcategorías de Proyectos | SmartCLASSROOM, Perrobot, Barrera automática y Tendedero automático |
 | Entradas sin etiquetas | Aprendiendo con robots lleva REA; ¡Estrenamos nueva web!, EchidnaBlack2 y EchidnaML (las presenta); Echidna en el Ártico, EchidnaShield (enlaza su repositorio), y Juegos Robótica episodio 42, EchidnaWhite | Aprendiendo con robots, ¡Estrenamos nueva web!, Echidna en el Ártico, Juegos Robótica episodio 42 |
 | Inteligencia Artificial | Se mantiene como categoría y como etiqueta: la categoría para las entradas centradas en la IA y la etiqueta para todas las que la usan o la mencionan | Ninguna |
@@ -153,65 +235,6 @@ En la rama `categorias-etiquetas` y por *pull request* ([#38](https://github.com
 - Redirecciones de las categorías que desaparecen, en [`redirecciones.md`](redirecciones.md#blog-y-rss) y donde estén implementadas en `web/`.
 - Criterios en [`modelo-contenido.md`](modelo-contenido.md#listas-de-datos-autores-y-categorías), lista de [`escribir-blog.md`](escribir-blog.md#categorías-y-etiquetas) y decisión en «Decisiones tomadas» del README.
 - Comprobar con el *build* y en el servidor de desarrollo: lateral del blog, `/category/<id>/` y redirecciones.
-
-## Dudas
-
-Cuestiones que surgieron después de preparar la propuesta.
-
-### Categoría y entradas de Publicaciones
-
-Planteada por Jose Pujol en noviembre de 2026: ¿tiene sentido que el blog, que es contenido propio, tenga entradas sobre lo que publican otros? **No se decidió en la revisión**: la categoría Publicaciones y sus 6 entradas se mantienen, y la propuesta de borrarlas se debate aparte en [gobernanza#63](https://github.com/EchidnaEducacion/gobernanza/issues/63). Si se aprueba, los cambios de abajo se aplican en la web y en este documento.
-
-Lo que se ve:
-
-- **Las 6 entradas no tienen contenido propio**: son una línea y un enlace al medio. La de Arganbot, por ejemplo, dice solo que «prueban el primer prototipo de Echidna, y nos escriben el siguiente artículo».
-- **Ya están en la página [5.2 Publicaciones](estructura.md)** (`/quienes-somos/publicaciones/`, datos en `web/src/content/publicaciones.yaml`), que reúne unas 27 con fecha, tipo e importancia (ver [`publicaciones.md`](publicaciones.md)).
-- **La categoría no se usa desde 2020**: lo publicado después (Educación 3.0, Hisparob, CATEDU, Junta de Andalucía, los TFM de la Universidad Miguel Hernández…) no ha pasado por el blog, y la página hace ese papel.
-- **No encaja en el [criterio](#criterio)**: la categoría dice qué tipo de entrada es, y una publicación de otro medio no es una entrada del blog, sino un enlace externo, como los materiales del alumnado.
-
-Propuesta (opción A):
-
-- **Borrar las 6 entradas y la categoría.** Sus URL y `/category/publicaciones/` redirigen a `/quienes-somos/publicaciones/`. El blog queda con 4 categorías.
-- **Si sale algo importante** (como el artículo de Educación 3.0), se escribe una entrada propia en Noticias, con comentario nuestro, y se añade a la página 5.2.
-
-Alternativa (opción B): conservar las entradas en Noticias como registro histórico. Se quita la categoría, pero las entradas siguen sin contenido.
-
-Si se aprueba la A, cambia también:
-
-- La tabla de [categorías propuestas](#categorías-propuestas), la de [qué pasa con las categorías actuales](#qué-pasa-con-las-categorías-actuales) y el recuento del inicio de la [propuesta](#propuesta) (5 → 4 categorías).
-- La etiqueta **EchidnaWhite** pierde Juegos Robótica episodio 42, pero sigue en el mínimo con Echidna en la OSHWDem 2019 y la entrada sobre las placas en el IDE de Arduino.
-- La fila «Entradas sin etiquetas» de las [etiquetas propuestas](#etiquetas-propuestas) pierde Juegos Robótica episodio 42.
-- Las 6 URL van a [`redirecciones.md`](redirecciones.md#blog-y-rss).
-- Antes de borrar, comprobar que la página 5.2 recoge todo lo de esas entradas (el pódcast de Programar Fácil que citaba la web antigua ya consta como no localizado).
-
-### Entradas sin categoría propia: didáctica y tutoriales
-
-Surgida en noviembre de 2026. Con el mínimo de unas cinco entradas por categoría, dos tipos de entrada se quedan sin categoría propia y, de momento, van a Noticias. Se aplicó con la revisión: Didáctica se eliminó.
-
-- **Artículos sobre didáctica** (teoría, metodología, historia de la robótica educativa): solo hay uno, Construccionismo y STEAM I. La propuesta mantenía Didáctica para dar sitio a los que se escribieran (el «I» anunciaba más), pero es el mismo caso que los tutoriales y se le aplica el mismo mínimo.
-- **Tutoriales de configuración** de entornos de programación y de hardware (instalar un entorno, dar de alta una placa, actualizar el firmware…): Programar Echidna con el IDE de Arduino (2020) y una entrada en preparación sobre instalar las placas Echidna (EchidnaShield, EchidnaWhite y EchidnaBlack/2) como placas reconocidas formalmente en el IDE de Arduino. No son proyectos (no hay montaje), ni artículos de didáctica, ni eventos. Con las categorías actuales irían en Programación, que la propuesta elimina.
-
-Los problemas:
-
-- **Noticias pasa a ser «lo que no es proyecto, taller ni publicación»**, y un artículo de reflexión o un tutorial no son noticias. Con tan pocas entradas es asumible.
-- **Quien busque un tutorial no lo encuentra desde el lateral**: solo lo orientan las etiquetas (IDE Arduino y la placa).
-- **[Mantener Programación para tutoriales](#alternativas-descartadas) no lo resolvía**: Programación es un tema, no un tipo de entrada.
-
-Lo aplicado:
-
-- **De momento, las dos van a Noticias.** La entrada en preparación va ya en Noticias, con las etiquetas IDE Arduino, EchidnaShield, EchidnaBlack y EchidnaBlack2, para no tener que moverla al aplicar la revisión.
-- **Cuando uno de los dos tipos llegue a unas cinco entradas**, se crea su categoría (Didáctica, Tutoriales o Guías) y se pasan a ella.
-
-La entrada en preparación es también la primera con la etiqueta **EchidnaWhite**, creada en noviembre de 2026 (ver [etiquetas propuestas](#etiquetas-propuestas)).
-
-## Pendiente
-
-- [x] Revisión del equipo en [gobernanza#59](https://github.com/EchidnaEducacion/gobernanza/issues/59).
-- [x] Aplicar la propuesta ([#38](https://github.com/EchidnaEducacion/EchidnaEducacion.github.io/pull/38), noviembre de 2026).
-- [x] Decidir si este documento se conserva: se conserva como referencia.
-- [ ] Decidir si se borran la [categoría y las entradas de Publicaciones](#categoría-y-entradas-de-publicaciones), en [gobernanza#63](https://github.com/EchidnaEducacion/gobernanza/issues/63).
-- [ ] Crear la categoría de las [entradas sin categoría propia](#entradas-sin-categoría-propia-didáctica-y-tutoriales) (didáctica o tutoriales) cuando una de las dos llegue a unas cinco entradas.
-- [ ] Añadir la etiqueta App Inventor cuando haya una segunda entrada que la use.
 
 ## Anexo: categorías y etiquetas de cada entrada
 

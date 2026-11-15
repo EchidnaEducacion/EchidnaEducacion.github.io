@@ -29,7 +29,7 @@ Cómo está organizado el proyecto, cómo migrar una página y cómo funciona el
 | [`modelo-contenido.md`](modelo-contenido.md) | Colecciones de contenido y sus campos (`paginas`, `hardware`, `recursos`, `blog`) |
 | [`escribir-blog.md`](escribir-blog.md) | Cómo escribir y publicar una entrada nueva del blog |
 | [`diseno.md`](diseno.md) | Hoja de ruta para personalizar el diseño de la web y cómo proponer cambios de diseño |
-| [`categorias.md`](categorias.md) | Revisión de las categorías y etiquetas del blog: análisis, propuesta y reparto de cada entrada |
+| [`categorias.md`](categorias.md) | Organización actual de las categorías y etiquetas del blog e historia de su revisión: análisis, propuesta y reparto de cada entrada |
 | [`publicaciones.md`](publicaciones.md) | Listado de trabajo de publicaciones sobre Echidna (página Publicaciones) |
 | [`redirecciones.md`](redirecciones.md) | Correspondencia entre las URL de WordPress y las de la nueva web |
 | [`web/README.md`](web/README.md) | Proyecto Astro: cómo ejecutarlo, cómo está organizado y cómo migrar una página |
