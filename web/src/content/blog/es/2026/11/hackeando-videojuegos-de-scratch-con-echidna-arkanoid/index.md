@@ -1,7 +1,7 @@
 ---
 title: "Hackeando videojuegos de Scratch con Echidna: Arkanoid"
 description: Cómo convertir la EchidnaBlack2 en el mando de un juego de Scratch, con el ejemplo del Arkanoid controlado inclinando la placa gracias a su acelerómetro.
-date: 2026-11-17
+date: 2026-11-24
 author: jose
 categories: [placa-y-componentes]
 tags: ["EchidnaBlack2", "EchidnaML", "Juegos"]
@@ -59,6 +59,8 @@ Como se explica en su ficha, en el eje X el acelerómetro da valores en torno a 
 ### 4. ¡Resultado!
 
 Al inclinar la placa hacia la izquierda o hacia la derecha, la nave del Arkanoid se desplaza siguiendo nuestros movimientos en tiempo real.
+
+Puedes [descargar el proyecto terminado](/2026/11/hackeando-videojuegos-de-scratch-con-echidna-arkanoid/arkanoid-echidna.sb3) (`arkanoid-echidna.sb3`) y abrirlo en EchidnaML con *Archivo → Cargar desde tu ordenador*.
 
 <!-- Pendiente: GIF animado del juego en marcha, en web/public/2026/11/hackeando-videojuegos-de-scratch-con-echidna-arkanoid/ -->
 
