@@ -1,13 +1,12 @@
 ---
 title: "Hackeando videojuegos de Scratch con Echidna: Arkanoid"
 description: Cómo convertir la EchidnaBlack2 en el mando de un juego de Scratch, con el ejemplo del Arkanoid controlado inclinando la placa gracias a su acelerómetro.
-date: 2026-11-24
+date: 2026-11-23
 author: jose
 categories: [placa-y-componentes]
 tags: ["EchidnaBlack2", "EchidnaML", "Juegos"]
 image: ./portada.png
 imageAlt: "La placa EchidnaBlack2, inclinada, junto a una escena de Arkanoid dibujada: filas de ladrillos de colores, la bola y la nave sobre fondo azul oscuro."
-draft: true
 ---
 
 Uno de los grandes potenciales de la placa **EchidnaBlack2** y del entorno **[EchidnaML](/ecosistema/echidnaml/)** es que nos permite reutilizar cualquier proyecto ya creado en Scratch y enriquecerlo con interactividad física, usando los sensores y las entradas de la placa. Echidna nos permite relacionar el mundo digital de los ordenadores con el mundo físico real.
