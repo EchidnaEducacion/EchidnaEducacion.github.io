@@ -29,7 +29,7 @@ bun run dev      # http://localhost:4321/
 | 3 | Índice de sección (agrupado por títulos) | `src/pages/maquetas/alumnado.astro`, `src/pages/maquetas/docentes.astro` | `/alumnado/`, `/docentes/` |
 | 4 | Ficha de hardware | `src/layouts/Ficha.astro` (plantilla real; maqueta borrada) | `/ecosistema/echidnablack2/`, `/ecosistema/echidnablack2/leds/` |
 | 5 | Página genérica | `src/layouts/Pagina.astro` (plantilla real; maqueta borrada) | `/quienes-somos/` |
-| 6 | Contacto | `src/pages/maquetas/contacto.astro` | `/contacta/` |
+| 6 | Contacto | `src/layouts/Contacto.astro` (plantilla real; maqueta borrada) | `/contacta/` |
 | 7 | Entrada de blog | `src/layouts/Entrada.astro` (plantilla real; maqueta borrada) | `/AAAA/MM/slug/` |
 | 8 | Listado / taxonomía | `src/components/ListadoBlog.astro` (plantilla real; maqueta borrada) | `/blog/`, categorías, etiquetas, autores, años |
 | 9 | Error 404 | `src/pages/404.astro` (plantilla real; no usa colección) | cualquier URL que no exista |
