@@ -36,7 +36,7 @@ Arduino IDE es el programa en el que se escribe el código y desde el que se car
 
 ![Arduino IDE con el ejemplo Blink abierto: el editor de código, los botones Verificar y Subir arriba a la izquierda y la placa Arduino Nano elegida.](./arduino-ide/entorno-arduino-ide.png)
 
-La placa se comunica con el ordenador mediante el chip **CH340**. En GNU/Linux no hace falta instalar nada; en Windows y macOS hay que instalar su controlador, el [driver CH341](/ecosistema/echidnaml/descarga/#controlador-de-la-placa).
+La placa se comunica con el ordenador mediante el chip **CH340**. En GNU/Linux y macOS no hace falta instalar nada, porque el sistema ya trae su controlador; en Windows hay que instalarlo: es el [driver CH341](/ecosistema/echidnaml/descarga/#controlador-de-la-placa).
 
 En GNU/Linux, si Arduino IDE no puede acceder al puerto de la placa, da permiso a tu usuario desde una terminal con `sudo usermod -a -G dialout $USER` y vuelve a iniciar la sesión.
 

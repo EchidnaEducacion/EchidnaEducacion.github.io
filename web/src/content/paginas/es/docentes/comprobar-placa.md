@@ -37,7 +37,7 @@ Con la placa conectada, mira si el sistema la reconoce como un puerto serie:
 
 Si no aparece:
 
-- **Falta el controlador**: la placa usa el chip CH340, cuyo controlador se llama **CH341**. Instálalo como se explica en [Descarga › Controlador de la placa](/ecosistema/echidnaml/descarga/#controlador-de-la-placa). En GNU/Linux no suele hacer falta.
+- **Falta el controlador**: la placa usa el chip CH340, cuyo controlador se llama **CH341**. En Windows, instálalo como se explica en [Descarga › Controlador de la placa](/ecosistema/echidnaml/descarga/#controlador-de-la-placa). En GNU/Linux y macOS no suele hacer falta, porque el sistema ya lo trae.
 - **Si sigue sin aparecer**, vuelve a las [comprobaciones rápidas](#comprobaciones-rápidas): otro cable y otro puerto.
 
 ### 2. ¿Tienes permiso para usar el puerto?
