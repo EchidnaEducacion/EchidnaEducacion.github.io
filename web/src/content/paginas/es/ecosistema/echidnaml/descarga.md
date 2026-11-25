@@ -74,11 +74,12 @@ En Windows hay que instalar también el controlador [CH341](http://www.wch-ic.co
 
 ## macOS
 
-EchidnaML funciona en macOS 14 o posterior, en ordenadores con procesador Apple Silicon (M1, M2, M3 y posteriores). La versión para procesadores Intel se publicará más adelante.
+EchidnaML funciona en macOS 14 o posterior. Hay un instalador para cada tipo de procesador: elige el de Apple Silicon (M1, M2, M3 y posteriores) o el de Intel. Para saber cuál tiene tu Mac, abre el menú Apple › «Acerca de este Mac» y mira la línea «Chip» o «Procesador».
 
-### Descarga
+### Descargas
 
-- [EchidnaML-1.6.2-arm64.dmg](https://github.com/EchidnaEducacion/echidnaml-releases/releases/download/v1.6.2/EchidnaML-1.6.2-arm64.dmg) (320 MB)
+- [EchidnaML-1.6.2-arm64.dmg](https://github.com/EchidnaEducacion/echidnaml-releases/releases/download/v1.6.2/EchidnaML-1.6.2-arm64.dmg) (320 MB): para procesadores Apple Silicon.
+- [EchidnaML-1.6.2-x64.dmg](https://github.com/EchidnaEducacion/echidnaml-releases/releases/download/main/EchidnaML-1.6.2-x64.dmg) (326 MB): para procesadores Intel.
 
 ### Instalación
 
