@@ -79,7 +79,7 @@ EchidnaML funciona en macOS 14 o posterior. Hay un instalador para cada tipo de 
 ### Descargas
 
 - [EchidnaML-1.6.2-arm64.dmg](https://github.com/EchidnaEducacion/echidnaml-releases/releases/download/v1.6.2/EchidnaML-1.6.2-arm64.dmg) (320 MB): para procesadores Apple Silicon.
-- [EchidnaML-1.6.2-x64.dmg](https://github.com/EchidnaEducacion/echidnaml-releases/releases/download/main/EchidnaML-1.6.2-x64.dmg) (326 MB): para procesadores Intel.
+- [EchidnaML-1.6.2-x64.dmg](https://github.com/EchidnaEducacion/echidnaml-releases/releases/download/v1.6.2-1/EchidnaML-1.6.2-x64.dmg) (326 MB): para procesadores Intel.
 
 ### Instalación
 
